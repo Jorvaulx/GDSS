@@ -1,5 +1,5 @@
 import { Component, ViewChild, AfterViewInit, ElementRef, Input, OnInit } from '@angular/core';
-import { Locker } from 'angular-safeguard'
+import { CoolLocalStorage } from 'angular2-cool-storage'
 import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
@@ -11,26 +11,28 @@ export class InstructionsComponent {
   title = 'Instructions';
   closeResult: string;
   templateRef: ElementRef;
+  localStorage: CoolLocalStorage;
 
 
   constructor(
     private modalService: NgbModal,
-    private locker: Locker
-  ) {}
+    localStorage: CoolLocalStorage
+  ) {
+    this.localStorage = localStorage;
+  }
 
   @ViewChild('content')
   set content(ref: any) {
     console.log(ref);
-    if (!this.locker.has('disclaimer') || this.locker.get('disclaimer')!==true) {
+    if (this.localStorage.getItem('disclaimer')!=='true') {
       this.open(ref);
     }
   }
 
-
   open(content) {
     this.modalService.open(content).result.then((result) => {
       if (result==='Agree') {
-        this.locker.set('disclaimer',true);
+        this.localStorage.setItem('disclaimer','true');
       }
       this.closeResult = `Closed with: ${result}`;
       console.log('Closed', this.closeResult);
@@ -40,7 +42,6 @@ export class InstructionsComponent {
       console.log('Dismissed', this.closeResult);
     });
   }
-
 
   private getDismissReason(reason: any): string {
     if (reason === ModalDismissReasons.ESC) {
