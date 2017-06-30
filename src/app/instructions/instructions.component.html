@@ -1,0 +1,96 @@
+<b style="font-size:14px" >OVERVIEW</b>
+<br/>
+	<p style="margin-left:20px">
+		You will be asked a series of questions which will result in selected geophysical methods, keywords, and citations tailored to your site.
+	</p> 
+<br/><br/><br/>
+
+<b style="font-size:14px">NAVIGATION</b>
+<br/>
+	<p style="margin-left:20px">
+		You can navigate through this application, from the beginning to the end,
+		using only the Back and Next buttons below.<br/> <br/>
+		
+		When you are in the Data Input section, you will also see Show/Hide Tree and Show/Hide Help buttons.
+		The window panes controlled by these buttons show a navigation tree for shortcutting to specific questions and a help item
+		based on the currently selected question.<br/>
+		<br/>
+		Using the tabs and the question tree, it is possible to quickly navigate directly to any question to alter your answers.  
+		When using the question tree, realize that only questions can be selected.  If you click on an answer, the parent question will be selected.
+		Answers with dependant questions have an arrow next to them.  Click the arrow to expand the answer and see its children.
+		
+		 
+	</p>
+<br/><br/><br/>
+
+<b style="font-size:14px">DATA INPUT</b>
+<br/>
+	<p style="margin-left:20px">
+		When you are navigating using the back and next buttons, you will be asked only relevant questions based on your previous questions. <br/>
+		<br/>
+		If you use the question tree to shortcut to specific questions of interest, keep in mind that a response to a question only shows up in the results if all its parent questions have been answered.
+	</p>
+<br/><br/><br/>
+
+<b style="font-size:14px">RESULTS</b>
+<br/> 
+	<p style="margin-left:20px">
+		When using the next button and you have completed the necessary questions, you will be taken to the results page.
+		If you are using the question tree, results are generated every time you select the results tab.
+		<br/>
+		<br/>
+		
+		<b>Metadata: </b>This section contains information about this application, as well as metadata you filled out about your site.  
+		Any question where you entered text is considered metadata.  You will not see metadata questions and responses in the Input Summary section...look for
+		your responses in the metadata section.
+		
+		<br/>
+		<br/>						
+		
+		<b>Notes: </b> This section is provided for your own personal notes to include in the saved html file.
+		<br/>
+		<br/>			
+					
+		<b>Methods: </b>These geophysical suggestions are ranked in the order of most relevant number of matches, given in parenthesis, to question inputs. 
+		Thes links will take you the specified pages on the main website.  When you see a double arrow, the symbol indicates that the reference is 
+		an anchor(sub-heading) within the html page.
+		<br/>
+		<br/>
+		
+		<b>Citations:</b> This section displays all citations that contain at least one keyword associated with the questions you answered.
+		<br/>
+		<br/>
+		
+		<b>Keywords:</b>This section displays all keywords associated with the questions you answered.
+		<br/>
+		<br/>
+									
+		<b>Input Summary: </b> This section displays a summary of all the the questions you responded to.
+		<br/>
+		<br/>
+
+		Remember, if you use the question tree, only questions with all parent questions answered will show in the results. 
+		
+	</p>
+<br/><br/>
+<ng-template #content let-c="close" let-d="dismiss">
+  <div class="modal-header">
+    <h4 class="modal-title">Disclaimer</h4>
+    <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <p>The EPA makes no claims about the accuracy of the results provided by the Geophysical Descision Support System</p>
+    <p>By clicking on the "I Agree" button below you accept that this application is to be used as an informal reference 
+    only and that the results provided by this application do note guarantee any level of accuracy.</p>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" (click)="c('Agree')">I Agree</button>
+    <button type="button" class="btn btn-secondary" (click)="c('Exit')">Exit</button>
+  </div>
+</ng-template>
+
+<hr>
+
+<pre>{{closeResult}}</pre>
