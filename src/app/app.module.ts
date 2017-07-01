@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { CoolStorageModule } from 'angular2-cool-storage'
+import { HttpModule } from '@angular/http';
+import { CoolStorageModule } from 'angular2-cool-storage';
 
 /* App Root */
 import { AppComponent } from './app.component';
@@ -18,6 +19,7 @@ import { AppRoutingModule  } from './app-routing.module';
   ],
   imports: [
     BrowserModule,
+    HttpModule,
     InstructionsModule,
     AppRoutingModule,
     NgbModule.forRoot(),
