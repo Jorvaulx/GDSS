@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { InputService } from './input.service';
+import { Questions } from '../models/questions';
 
 @Component({
   selector: 'app-instuctions-panel',
@@ -7,7 +8,17 @@ import { InputService } from './input.service';
   styleUrls: ['./input.component.css'],
   providers: [InputService]
 })
-export class InputComponent {
+export class InputComponent implements OnInit {
   title = 'Input';
+  questions: Questions;
+
   constructor(private inputService: InputService) {}
+
+  getQuestions(): void {
+    this.inputService.getQuestions().then(questions => this.questions = questions);
+  }
+
+  ngOnInit(): void {
+    this.getQuestions();
+  }
 }

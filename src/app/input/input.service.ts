@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
-import { Headers, Http } from '@angular/http';
+import { Http, Response } from '@angular/http';
 
+import { Observable } from 'rxjs/Observable';
+import 'rxjs/add/operator/catch';
 import 'rxjs/add/operator/toPromise';
 
 import { Questions } from '../models/questions';
@@ -9,15 +11,23 @@ import { Questions } from '../models/questions';
 export class InputService {
 
   private headers = new Headers({'Content-Type': 'application/json'});
-  private questionsUrl = 'api/heroes';  // URL to web api
+  // private questionsUrl = 'src/app/GeophysicalDecisionSupportSystem_questionXMLClass.xml';  // URL to web api
+ private questionsUrl = '/src/app/question.json';  // URL to web api
 
   constructor(private http: Http) { }
 
   getQuestions(): Promise<Questions> {
+    console.log('url:',this.questionsUrl,this.http.get(this.questionsUrl));
     return this.http.get(this.questionsUrl)
-               .toPromise()
-               .then(response => response.json().data as Questions)
-               .catch(this.handleError);
+              .toPromise()
+              .then(this.extractData)
+              .catch(this.handleError);
+  }
+
+  private extractData(res: Response) {
+    console.log('asdasdasdasd');
+    let body = res.json();
+    return body.data || { };
   }
 
 
