@@ -11,13 +11,12 @@ import { Questions } from '../models/questions';
 export class InputService {
 
   private headers = new Headers({'Content-Type': 'application/json'});
-  // private questionsUrl = 'src/app/GeophysicalDecisionSupportSystem_questionXMLClass.xml';  // URL to web api
- private questionsUrl = '/src/app/question.json';  // URL to web api
+  private questionsUrl = 'assets/question.json';  // URL to web api
+
 
   constructor(private http: Http) { }
 
   getQuestions(): Promise<Questions> {
-    console.log('url:',this.questionsUrl,this.http.get(this.questionsUrl));
     return this.http.get(this.questionsUrl)
               .toPromise()
               .then(this.extractData)
@@ -25,7 +24,6 @@ export class InputService {
   }
 
   private extractData(res: Response) {
-    console.log('asdasdasdasd');
     let body = res.json();
     return body.data || { };
   }
