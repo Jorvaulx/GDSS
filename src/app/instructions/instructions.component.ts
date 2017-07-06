@@ -1,5 +1,5 @@
 import { Component, ViewChild, AfterViewInit, ElementRef, Input, OnInit } from '@angular/core';
-import { CoolLocalStorage } from 'angular2-cool-storage'
+import { CoolLocalStorage } from 'angular2-cool-storage';
 import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
