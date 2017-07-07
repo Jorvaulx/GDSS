@@ -2,5 +2,7 @@ import { Answer } from './answer';
 
 export class Question {
   help: string;
-  answer: Answer;
+  answer: Answer[];
+  label: string;
+  type: string;
 }

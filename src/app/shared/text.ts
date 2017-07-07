@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 
-import { InputComponent } from './input.component';
+import { InputComponent } from './question.component';
 
 @Component({
   templateUrl: './text.html'

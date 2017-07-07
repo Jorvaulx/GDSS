@@ -1,0 +1,6 @@
+<div>
+	{{data.question}}
+</div>
+<li *ngFor="let answer of data.question.answer">
+	<input type="checkbox" name="answer" value="">{{answer.label}}
+</li>

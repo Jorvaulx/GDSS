@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { InputService } from './input.service';
 import { Questions } from '../models/questions';
+import { Question } from '../models/question';
 import { Folder } from '../models/folder';
 import { CoolLocalStorage } from 'angular2-cool-storage';
+import { QuestionItem } from '../shared/question-item';
 
 @Component({
   selector: 'app-instuctions-panel',
@@ -14,6 +16,7 @@ import { CoolLocalStorage } from 'angular2-cool-storage';
 export class InputComponent implements OnInit {
   title = 'Input';
   questions: Questions;
+  question: QuestionItem;
   localStorage: CoolLocalStorage;
 
   constructor(private inputService: InputService,
@@ -31,20 +34,13 @@ export class InputComponent implements OnInit {
       this.questions = this.localStorage.getObject<Questions>('questions');
     }
   }
+  getTestQuestion(): void {
+    this.question = this.inputService.getTestQuestion();
+  }
 
-  getCurrentResults(): void  {
-    if (this.localStorage.tryGetObject('results')) {
-      this.displayQuestion(this.questions.folder[0].question[0]);
-    } else {
-      this.questions = this.localStorage.getObject<Questions>('questions');
-    }
-  }
-  displayQuestion(question): void {
-    
-  }
 
   ngOnInit(): void {
-    this.getQuestions();
-    this.getCurrentResults()
+    // this.getQuestions();
+    this.getTestQuestion();
   }
 }

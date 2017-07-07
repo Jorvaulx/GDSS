@@ -5,7 +5,12 @@ import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/catch';
 import 'rxjs/add/operator/toPromise';
 
+import { CheckboxComponent } from '../shared/checkbox.component';
+
+import { QuestionItem } from '../shared/question-item';
 import { Questions } from '../models/questions';
+import { Question } from '../models/question';
+import { Answer } from '../models/answer';
 
 @Injectable()
 export class InputService {
@@ -21,6 +26,16 @@ export class InputService {
               .toPromise()
               .then(this.extractData)
               .catch(this.handleError);
+  }
+
+  getTestQuestion(): QuestionItem {
+    let question = new Question()
+    let answer = new Answer()
+    question.help='this is a help';
+    answer.label='This is a Label';
+    question.type = 'checkbox';
+    question.answer.push(answer)
+    return new QuestionItem(CheckboxComponent,question)
   }
 
   private extractData(res: Response) {
