@@ -32,10 +32,12 @@ export class InputService {
     let question = new Question()
     let answer = new Answer()
     question.help='this is a help';
+    question.label='What is the objective of your geophysical project?';
     answer.label='This is a Label';
     question.type = 'checkbox';
-    question.answer.push(answer)
-    return new QuestionItem(CheckboxComponent,question)
+    question.answer = [answer]
+    console.log('answer:',answer,question);
+    return new QuestionItem(CheckboxComponent,{question:question,label:'hello'})
   }
 
   private extractData(res: Response) {

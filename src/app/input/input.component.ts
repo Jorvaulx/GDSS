@@ -36,6 +36,7 @@ export class InputComponent implements OnInit {
   }
   getTestQuestion(): void {
     this.question = this.inputService.getTestQuestion();
+    console.log('getTest:',this.question);
   }
 
 
