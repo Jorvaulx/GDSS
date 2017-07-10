@@ -1,20 +1,26 @@
-import { Component, Input, AfterViewInit, ViewChild, ComponentFactoryResolver, OnDestroy } from '@angular/core';
+import { Component, Input, AfterViewInit, ViewChild, ComponentFactoryResolver, OnDestroy, OnInit, ChangeDetectorRef } from '@angular/core';
 import { QuestionDirective } from './question.directive';
 import { QuestionItem } from './question-item';
 import { QuestionComponent } from './question.component';
 
 @Component({
-  selector:'question-container',
-  templateUrl:'./question-container.component.html'
+  selector: 'question-container',
+  templateUrl: './question-container.component.html'
 })
 
-export class QuestionContainerComponent implements AfterViewInit, OnDestroy {
+export class QuestionContainerComponent implements AfterViewInit, OnInit, OnDestroy {
   @Input() question: QuestionItem;
   @ViewChild(QuestionDirective) inputHost: QuestionDirective;
 
-  constructor(private componentFactoryResolver: ComponentFactoryResolver) { }
+  constructor(private componentFactoryResolver: ComponentFactoryResolver,
+    private cd: ChangeDetectorRef) { }
 
   ngAfterViewInit() {
+    this.loadComponent();
+    this.cd.detectChanges();
+  }
+
+  ngOnInit() {
     this.loadComponent();
   }
 

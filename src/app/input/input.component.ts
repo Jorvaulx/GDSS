@@ -28,15 +28,17 @@ export class InputComponent implements OnInit {
     if (this.localStorage.tryGetObject('questions')) {
       this.inputService.getQuestions().then(questions => {
         this.questions = questions;
-        this.localStorage.setObject('questions',questions);
+        this.localStorage.setObject('questions', questions);
       });
     } else {
       this.questions = this.localStorage.getObject<Questions>('questions');
     }
   }
   getTestQuestion(): void {
-    this.question = this.inputService.getTestQuestion();
-    console.log('getTest:',this.question);
+    this.inputService.getTestQuestion().then(questionItem => {
+      this.question = questionItem
+      console.log('getTest:', this.question);
+    });
   }
 
 
@@ -44,4 +46,5 @@ export class InputComponent implements OnInit {
     // this.getQuestions();
     this.getTestQuestion();
   }
+
 }

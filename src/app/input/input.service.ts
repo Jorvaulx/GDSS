@@ -11,6 +11,8 @@ import { QuestionItem } from '../shared/question-item';
 import { Questions } from '../models/questions';
 import { Question } from '../models/question';
 import { Answer } from '../models/answer';
+import { RadioComponent } from '../shared/radio.component';
+import { TextComponent } from '../shared/text.component';
 
 @Injectable()
 export class InputService {
@@ -28,21 +30,39 @@ export class InputService {
               .catch(this.handleError);
   }
 
-  getTestQuestion(): QuestionItem {
-    let question = new Question()
-    let answer = new Answer()
-    question.help='this is a help';
-    question.label='What is the objective of your geophysical project?';
-    answer.label='This is a Label';
-    question.type = 'checkbox';
-    question.answer = [answer]
-    console.log('answer:',answer,question);
-    return new QuestionItem(CheckboxComponent,{question:question,label:'hello'})
+  getTestQuestion(): Promise<QuestionItem> {
+    let question1 = new Questions();
+    let question = new Question();
+    const answer = [];
+    return this.getQuestions().then(questions => {
+      question1 = questions;
+      question = questions.folder[0].question[0];
+      question.answer.forEach(function(value){
+        answer.push(value);
+      });
+      question.answer = answer;
+      console.log('answer:', answer, question);
+      return new QuestionItem(this.determineComponent( question ), { question: question });
+    });
+  }
+
+  private determineComponent(question: Question) {
+    switch (question.type) {
+     case 'checkbox': {
+       return CheckboxComponent;
+      }
+      case 'textline': {
+        return TextComponent;
+      }
+      default: {
+        return RadioComponent;
+      }
+    }
   }
 
   private extractData(res: Response) {
-    let body = res.json();
-    return body.data || { };
+    const body = res.json();
+    return body.questions || { };
   }
 
   private handleError(error: any): Promise<any> {

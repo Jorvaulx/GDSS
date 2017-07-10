@@ -11,7 +11,7 @@
             "label":"Objectives",
             "question":[  
                {  
-                  "help":"Select the option which best describes the purpose of your project.&amp;#xA&amp;#xA",
+                  "help":"Select the option which best describes the purpose of your project.",
                   "label":"What is the objective of your geophysical project?",
                   "answer":[  
                      {  
