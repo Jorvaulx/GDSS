@@ -1,0 +1,14 @@
+
+
+<hr style="border:4px solid #E7F5E7;margin:10px 0px 3px 0px;">
+<div style="font-size:16px;text-align: center;font-weight:bold;">Help</div>
+<hr style="margin:3px 0px 10px 0px;">
+<div style="padding:10px;" >
+	<span style="font-weight:bold;text-decoration:underline;">QUESTION:</span> {{question.data.question.label}}<br>
+	{{question.data.question.help}}
+</div>
+<div style="padding:10px;" *ngFor="let answer of question.data.question.answer">
+	<span style="font-weight:bold;text-decoration:underline;">ANSWER:</span> {{answer.label}} <br>
+	<div *ngIf="answer.help; else elseBlock">{{answer.help}}</div>
+    <ng-template #elseBlock>No help Available</ng-template>
+</div>
