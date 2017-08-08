@@ -8,7 +8,7 @@ import { QuestionComponent } from './question.component';
   templateUrl: './question-container.component.html'
 })
 
-export class QuestionContainerComponent implements AfterViewInit, OnInit, OnDestroy {
+export class QuestionContainerComponent implements AfterViewInit, OnInit {
   @Input() question: QuestionItem;
   @ViewChild(QuestionDirective) inputHost: QuestionDirective;
 
@@ -24,11 +24,7 @@ export class QuestionContainerComponent implements AfterViewInit, OnInit, OnDest
     this.loadComponent();
   }
 
-  ngOnDestroy() {
-  }
-
   loadComponent() {
-
     const componentFactory = this.componentFactoryResolver.resolveComponentFactory(this.question.component);
 
     const viewContainerRef = this.inputHost.viewContainerRef;

@@ -1,1476 +1,1506 @@
 {
-   "questions":{
-      "folder":[
-         {
-            "keywords":[
-
-            ],
-            "methods":[
-
-            ],
-            "label":"Objectives",
-            "question":[
-               {
-                  "expanded"
-                  "help":"Select the option which best describes the purpose of your project.",
-                  "label":"What is the objective of your geophysical project?",
-                  "answer":[
-                     {
-                        "help":"Is your goal to find and locate underground storage tanks, drums, utilities, old building foundations, abandoned wells, etc?",
-                        "keywords":[
-                           "electromagnetic",
-                           "landfill",
-                           "resistivity",
-                           "ground penetrating radar"
+  "questions": {
+    "folder": [
+      {
+        "keywords": [
+        ],
+        "methods": [
+        ],
+        "label": "Objectives",
+        "question": [
+          {
+            "type": "radio",
+            "expanded": true,
+            "answered": false,
+            "help": "Select the option which best describes the purpose of your project.",
+            "label": "What is the objective of your geophysical project?",
+            "answer": [
+              {
+                "help": "Is your goal to find and locate underground storage tanks, drums, utilities, old building foundations, abandoned wells, etc?",
+                "keywords": [
+                  "electromagnetic",
+                  "landfill",
+                  "resistivity",
+                  "ground penetrating radar"
+                ],
+                "label": "Map and Locate Anthropogenic Objects",
+                "question": [
+                  {
+                    "type": "checkbox",
+                    "expanded": false,
+                    "answered": false,
+                    "label": "Which of the following anthropogenic objects do you want to either map or locate?",
+                    "answer": [
+                      {
+                        "label": "Underground Storage Tanks",
+                        "question": [
+                          {
+                            "type": "checkbox",
+                            "expanded": false,
+                            "answered": false,
+                            "label": "What type of storage tanks are present?",
+                            "answer": [
+                              {
+                                "keywords": [
+                                  "Magnetic resonance sounding",
+                                  "electromagnetic",
+                                  "leak detection"
+                                ],
+                                "methods": [
+                                  "Surface_Geophysical_Methods\\Electromagnetic_Methods\\index.htm",
+                                  "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm",
+                                  "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
+                                  "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
+                                  "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Metal_Detectors.htm",
+                                  "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm"
+                                ],
+                                "label": "Metallic"
+                              },
+                              {
+                                "keywords": [
+                                  "electromagnetic",
+                                  "Ground penetrating radar",
+                                  "gravity;leak detection"
+                                ],
+                                "methods": [
+                                  "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Gravity_Methods.htm",
+                                  "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm"
+                                ],
+                                "label": "Fiberglass or non-metallic"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "label": "Drums",
+                        "question": {
+                          "type": "checkbox",
+                          "expanded": false,
+                          "answered": false,
+                          "label": "What type of drums are present?",
+                          "answer": [
+                            {
+                              "keywords": [
+                                "Magnetic resonance sounding",
+                                "electromagnetic;leak detection"
+                              ],
+                              "methods": [
+                                "Surface_Geophysical_Methods\\Electromagnetic_Methods\\index.htm",
+                                "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm",
+                                "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
+                                "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
+                                "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Metal_Detectors.htm",
+                                "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm"
+                              ],
+                              "label": "Metallic"
+                            },
+                            {
+                              "keywords": [
+                                "electromagnetic",
+                                "Ground penetrating radar",
+                                "gravity;leak detection"
+                              ],
+                              "methods": [
+                                "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Gravity_Methods.htm",
+                                "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm"
+                              ],
+                              "label": "Non-metallic"
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "label": "Underground Pipes and Utilities",
+                        "question": [
+                          {
+                            "type": "checkbox",
+                            "expanded": false,
+                            "answered": false,
+                            "label": "What type of pipes or utilities are present?",
+                            "answer": [
+                              {
+                                "keywords": [
+                                  "electromagnetic",
+                                  "ground penetrating radar",
+                                  "resistivity"
+                                ],
+                                "methods": [
+                                  "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
+                                  "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
+                                  "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Metal_Detectors.htm",
+                                  "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm",
+                                  "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Very_Low-Frequency_(VLF)_Method.htm",
+                                  "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm"
+                                ],
+                                "label": "Electric"
+                              },
+                              {
+                                "keywords": [
+                                  "electromagnetic",
+                                  "ground penetrating radar",
+                                  "resistivity"
+                                ],
+                                "methods": [
+                                  "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm"
+                                ],
+                                "label": "Natural Gas",
+                                "question": [
+                                  {
+                                    "expanded": false,
+                                    "answered": false,
+                                    "help": "",
+                                    "keywords": [
+                                    ],
+                                    "methods": [
+                                    ],
+                                    "label": "What type of material are these pipes?",
+                                    "answer": [
+                                      {
+                                        "help": "",
+                                        "keywords": [
+                                          "magnetic",
+                                          "magnetics",
+                                          "magnetometers;electromagnetic",
+                                          "electromagnetic induction",
+                                          "EM",
+                                          "GPR",
+                                          "Ground penetrating radar"
+                                        ],
+                                        "methods": [
+                                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\index.htm",
+                                          "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm",
+                                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
+                                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
+                                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Metal_Detectors.htm",
+                                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm"
+                                        ],
+                                        "label": "metallic"
+                                      },
+                                      {
+                                        "help": "",
+                                        "keywords": [
+                                          "GPR",
+                                          "Ground penetrating radar",
+                                          "electromagnetic",
+                                          "electromagnetic induction",
+                                          "EM",
+                                          "moisture content",
+                                          "moisture"
+                                        ],
+                                        "methods": [
+                                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm"
+                                        ],
+                                        "label": "non-metallic"
+                                      },
+                                      {
+                                        "help": "",
+                                        "keywords": [
+                                          "GPR",
+                                          "Ground penetrating radar",
+                                          "electromagnetic",
+                                          "electromagnetic induction",
+                                          "EM",
+                                          "moisture content",
+                                          "moisture",
+                                          "magnetic",
+                                          "magnetics",
+                                          "magnetometers"
+                                        ],
+                                        "methods": [
+                                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\index.htm",
+                                          "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm",
+                                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
+                                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
+                                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Metal_Detectors.htm",
+                                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm"
+                                        ],
+                                        "label": "both"
+                                      },
+                                      {
+                                        "help": "",
+                                        "keywords": [
+                                          "EM",
+                                          "electromagnetic induction",
+                                          "magnetic",
+                                          "magnetics",
+                                          "magnetometers",
+                                          "Ground penetrating radar",
+                                          "GPR"
+                                        ],
+                                        "methods": [
+                                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\index.htm",
+                                          "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm",
+                                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
+                                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
+                                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Metal_Detectors.htm",
+                                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm"
+                                        ],
+                                        "label": "unknown"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "keywords": [
+                                ],
+                                "methods": [
+                                ],
+                                "label": "water",
+                                "question": [
+                                  {
+                                    "expanded": false,
+                                    "answered": false,
+                                    "help": "",
+                                    "keywords": [
+                                    ],
+                                    "methods": [
+                                    ],
+                                    "label": "What type of material are these pipes?",
+                                    "answer": [
+                                      {
+                                        "help": "",
+                                        "keywords": [
+                                          "magnetic",
+                                          "magnetics",
+                                          "magnetometers",
+                                          "electromagnetic",
+                                          "electromagnetic induction",
+                                          "EM",
+                                          "GPR",
+                                          "Ground penetrating radar"
+                                        ],
+                                        "methods": [
+                                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\index.htm",
+                                          "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm",
+                                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
+                                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
+                                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Metal_Detectors.htm",
+                                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm"
+                                        ],
+                                        "label": "metallic"
+                                      },
+                                      {
+                                        "help": "",
+                                        "keywords": [
+                                          "GPR",
+                                          "Ground penetrating radar",
+                                          "electromagnetic",
+                                          "electromagnetic induction",
+                                          "EM",
+                                          "moisture content",
+                                          "moisture"
+                                        ],
+                                        "methods": [
+                                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm"
+                                        ],
+                                        "label": "non-metallic"
+                                      },
+                                      {
+                                        "help": "",
+                                        "keywords": [
+                                          "GPR",
+                                          "Ground penetrating radar",
+                                          "electromagnetic",
+                                          "electromagnetic induction",
+                                          "EM",
+                                          "moisture content",
+                                          "moisture",
+                                          "magnetic",
+                                          "magnetics",
+                                          "magnetometers"
+                                        ],
+                                        "methods": [
+                                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\index.htm",
+                                          "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm",
+                                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
+                                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
+                                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Metal_Detectors.htm",
+                                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm"
+                                        ],
+                                        "label": "both"
+                                      },
+                                      {
+                                        "help": "",
+                                        "keywords": [
+                                          "EM",
+                                          "electromagnetic induction",
+                                          "magnetic",
+                                          "magnetics",
+                                          "magnetometers",
+                                          "Ground penetrating radar",
+                                          "GPR"
+                                        ],
+                                        "methods": [
+                                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\index.htm",
+                                          "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm",
+                                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
+                                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
+                                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Metal_Detectors.htm",
+                                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm"
+                                        ],
+                                        "label": "unknown"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "keywords": [
+                                ],
+                                "label": "all of the above",
+                                "question": [
+                                  {
+                                    "expanded": false,
+                                    "answered": false,
+                                    "label": "What type of material are these pipes?",
+                                    "answer": [
+                                      {
+                                        "keywords": [
+                                          "magnetic",
+                                          "magnetics",
+                                          "magnetometers",
+                                          "electromagnetic",
+                                          "electromagnetic induction",
+                                          "EM",
+                                          "GPR",
+                                          "Ground penetrating radar"
+                                        ],
+                                        "methods": [
+                                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\index.htm",
+                                          "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm",
+                                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
+                                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
+                                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Metal_Detectors.htm",
+                                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm"
+                                        ],
+                                        "label": "Metallic"
+                                      },
+                                      {
+                                        "keywords": [
+                                          "GPR",
+                                          "Ground penetrating radar",
+                                          "electromagnetic",
+                                          "electromagnetic induction",
+                                          "EM",
+                                          "moisture content",
+                                          "moisture"
+                                        ],
+                                        "methods": [
+                                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm"
+                                        ],
+                                        "label": "Non-Metallic"
+                                      },
+                                      {
+                                        "keywords": [
+                                          "GPR",
+                                          "Ground penetrating radar",
+                                          "electromagnetic",
+                                          "electromagnetic induction",
+                                          "EM",
+                                          "moisture content",
+                                          "moisture",
+                                          "magnetic",
+                                          "magnetics",
+                                          "magnetometers"
+                                        ],
+                                        "methods": [
+                                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\index.htm",
+                                          "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm",
+                                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
+                                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
+                                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Metal_Detectors.htm",
+                                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm"
+                                        ],
+                                        "label": "both"
+                                      },
+                                      {
+                                        "keywords": [
+                                          "EM",
+                                          "electromagnetic induction",
+                                          "magnetic",
+                                          "magnetics",
+                                          "magnetometers",
+                                          "Ground penetrating radar",
+                                          "GPR"
+                                        ],
+                                        "methods": [
+                                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\index.htm",
+                                          "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm",
+                                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
+                                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
+                                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Metal_Detectors.htm",
+                                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm"
+                                        ],
+                                        "label": "unknown"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "label": "Abandoned Wells",
+                        "question": [
+                          {
+                            "expanded": false,
+                            "answered": false,
+                            "label": "What type are the abandoned wells?",
+                            "answer": [
+                              {
+                                "help": "PVC or other non-metallic material",
+                                "keywords": [
+                                  "electromagnetic",
+                                  "ground penetrating radar"
+                                ],
+                                "methods": [
+                                  "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
+                                  "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method"
+                                ],
+                                "label": "PVC"
+                              },
+                              {
+                                "keywords": [
+                                  "electromagnetic",
+                                  "Ground penetrating radar",
+                                  "magnetic",
+                                  "magnetics",
+                                  "magnetometers",
+                                  "field"
+                                ],
+                                "methods": [
+                                  "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
+                                  "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Metal_Detectors.htm",
+                                  "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm",
+                                  "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm"
+                                ],
+                                "label": "Metallic"
+                              },
+                              {
+                                "keywords": [
+                                  "electromagnetic",
+                                  "Ground penetrating radar",
+                                  "resistivity",
+                                  "magnetics",
+                                  "magnetometers",
+                                  "magnetic"
+                                ],
+                                "methods": [
+                                  "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Metal_Detectors.htm",
+                                  "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Seismoelectrical_Method.htm",
+                                  "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
+                                  "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
+                                  "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm",
+                                  "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm"
+                                ],
+                                "label": "Unknown"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "keywords": [
+                          "conductivity",
+                          "electrical conductivity",
+                          "electrical resistivity",
+                          "electromagnetic",
+                          "Ground penetrating radar",
+                          "GPR",
+                          "resistivity",
+                          "seismic",
+                          "magnetic",
+                          "magnetics",
+                          "magnetometers",
+                          "Self Potential",
+                          "EM",
+                          "electromagnetic induction"
                         ],
-                        "label":"Map and Locate Anthropogenic Objects",
-                        "question":[
-                           {
-                              "type":"checkbox",
-                              "label":"Which of the following anthropogenic objects do you want to either map or locate?",
-                              "answer":[
-                                 {
-                                    "label":"Underground Storage Tanks",
-                                    "question":[
-                                       {
-                                          "type":"checkbox",
-                                          "label":"What type of storage tanks are present?",
-                                          "answer":[
-                                             {
-                                                "keywords":[
-                                                   "Magnetic resonance sounding",
-                                                   "electromagnetic",
-                                                   "leak detection"
-                                                ],
-                                                "methods":[
-                                                   "Surface_Geophysical_Methods\\Electromagnetic_Methods\\index.htm",
-                                                   "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm",
-                                                   "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
-                                                   "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
-                                                   "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Metal_Detectors.htm",
-                                                   "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm"
-                                                ],
-                                                "label":"Metallic"
-                                             },
-                                             {
-                                                "keywords":[
-                                                   "electromagnetic",
-                                                   "Ground penetrating radar",
-                                                   "gravity;leak detection"
-                                                ],
-                                                "methods":[
-                                                   "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Gravity_Methods.htm",
-                                                   "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm"
-                                                ],
-                                                "label":"Fiberglass or non-metallic"
-                                             }
-                                          ]
-                                       }
-                                    ]
-                                 },
-                                 {
-                                    "label":"Drums",
-                                    "question":{
-                                       "type":"checkbox",
-                                       "label":"What type of drums are present?",
-                                       "answer":[
-                                          {
-                                             "keywords":[
-                                                "Magnetic resonance sounding",
-                                                "electromagnetic;leak detection"
-                                             ],
-                                             "methods":[
-                                                "Surface_Geophysical_Methods\\Electromagnetic_Methods\\index.htm",
-                                                "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm",
-                                                "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
-                                                "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
-                                                "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Metal_Detectors.htm",
-                                                "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm"
-                                             ],
-                                             "label":"Metallic"
-                                          },
-                                          {
-                                             "keywords":[
-                                                "electromagnetic",
-                                                "Ground penetrating radar",
-                                                "gravity;leak detection"
-                                             ],
-                                             "methods":[
-                                                "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Gravity_Methods.htm",
-                                                "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm"
-                                             ],
-                                             "label":"Non-metallic"
-                                          }
-                                       ]
-                                    }
-                                 },
-                                 {
-                                    "label":"Underground Pipes and Utilities",
-                                    "question":[
-                                       {
-                                          "type":"checkbox",
-                                          "label":"What type of pipes or utilities are present?",
-                                          "answer":[
-                                             {
-                                                "keywords":[
-                                                   "electromagnetic",
-                                                   "ground penetrating radar",
-                                                   "resistivity"
-                                                ],
-                                                "methods":[
-                                                   "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
-                                                   "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
-                                                   "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Metal_Detectors.htm",
-                                                   "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm",
-                                                   "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Very_Low-Frequency_(VLF)_Method.htm",
-                                                   "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm"
-                                                ],
-                                                "label":"Electric"
-                                             },
-                                             {
-                                                "keywords":[
-                                                   "electromagnetic",
-                                                   "ground penetrating radar",
-                                                   "resistivity"
-                                                ],
-                                                "methods":[
-                                                   "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm"
-                                                ],
-                                                "label":"Natural Gas",
-                                                "question":[
-                                                   {
-                                                      "help":"",
-                                                      "keywords":[
-
-                                                      ],
-                                                      "methods":[
-
-                                                      ],
-                                                      "label":"What type of material are these pipes?",
-                                                      "answer":[
-                                                         {
-                                                            "help":"",
-                                                            "keywords":[
-                                                               "magnetic",
-                                                               "magnetics",
-                                                               "magnetometers;electromagnetic",
-                                                               "electromagnetic induction",
-                                                               "EM",
-                                                               "GPR",
-                                                               "Ground penetrating radar"
-                                                            ],
-                                                            "methods":[
-                                                               "Surface_Geophysical_Methods\\Electromagnetic_Methods\\index.htm",
-                                                               "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm",
-                                                               "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
-                                                               "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
-                                                               "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Metal_Detectors.htm",
-                                                               "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm"
-                                                            ],
-                                                            "label":"metallic"
-                                                         },
-                                                         {
-                                                            "help":"",
-                                                            "keywords":[
-                                                               "GPR",
-                                                               "Ground penetrating radar",
-                                                               "electromagnetic",
-                                                               "electromagnetic induction",
-                                                               "EM",
-                                                               "moisture content",
-                                                               "moisture"
-                                                            ],
-                                                            "methods":[
-                                                               "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm"
-                                                            ],
-                                                            "label":"non-metallic"
-                                                         },
-                                                         {
-                                                            "help":"",
-                                                            "keywords":[
-                                                               "GPR",
-                                                               "Ground penetrating radar",
-                                                               "electromagnetic",
-                                                               "electromagnetic induction",
-                                                               "EM",
-                                                               "moisture content",
-                                                               "moisture",
-                                                               "magnetic",
-                                                               "magnetics",
-                                                               "magnetometers"
-                                                            ],
-                                                            "methods":[
-                                                               "Surface_Geophysical_Methods\\Electromagnetic_Methods\\index.htm",
-                                                               "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm",
-                                                               "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
-                                                               "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
-                                                               "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Metal_Detectors.htm",
-                                                               "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm"
-                                                            ],
-                                                            "label":"both"
-                                                         },
-                                                         {
-                                                            "help":"",
-                                                            "keywords":[
-                                                               "EM",
-                                                               "electromagnetic induction",
-                                                               "magnetic",
-                                                               "magnetics",
-                                                               "magnetometers",
-                                                               "Ground penetrating radar",
-                                                               "GPR"
-                                                            ],
-                                                            "methods":[
-                                                               "Surface_Geophysical_Methods\\Electromagnetic_Methods\\index.htm",
-                                                               "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm",
-                                                               "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
-                                                               "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
-                                                               "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Metal_Detectors.htm",
-                                                               "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm"
-                                                            ],
-                                                            "label":"unknown"
-                                                         }
-                                                      ]
-                                                   }
-                                                ]
-                                             },
-                                             {
-                                                "keywords":[
-
-                                                ],
-                                                "methods":[
-
-                                                ],
-                                                "label":"water",
-                                                "question":[
-                                                   {
-                                                      "help":"",
-                                                      "keywords":[
-
-                                                      ],
-                                                      "methods":[
-
-                                                      ],
-                                                      "label":"What type of material are these pipes?",
-                                                      "answer":[
-                                                         {
-                                                            "help":"",
-                                                            "keywords":[
-                                                               "magnetic",
-                                                               "magnetics",
-                                                               "magnetometers",
-                                                               "electromagnetic",
-                                                               "electromagnetic induction",
-                                                               "EM",
-                                                               "GPR",
-                                                               "Ground penetrating radar"
-                                                            ],
-                                                            "methods":[
-                                                               "Surface_Geophysical_Methods\\Electromagnetic_Methods\\index.htm",
-                                                               "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm",
-                                                               "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
-                                                               "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
-                                                               "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Metal_Detectors.htm",
-                                                               "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm"
-                                                            ],
-                                                            "label":"metallic"
-                                                         },
-                                                         {
-                                                            "help":"",
-                                                            "keywords":[
-                                                               "GPR",
-                                                               "Ground penetrating radar",
-                                                               "electromagnetic",
-                                                               "electromagnetic induction",
-                                                               "EM",
-                                                               "moisture content",
-                                                               "moisture"
-                                                            ],
-                                                            "methods":[
-                                                               "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm"
-                                                            ],
-                                                            "label":"non-metallic"
-                                                         },
-                                                         {
-                                                            "help":"",
-                                                            "keywords":[
-                                                               "GPR",
-                                                               "Ground penetrating radar",
-                                                               "electromagnetic",
-                                                               "electromagnetic induction",
-                                                               "EM",
-                                                               "moisture content",
-                                                               "moisture",
-                                                               "magnetic",
-                                                               "magnetics",
-                                                               "magnetometers"
-                                                            ],
-                                                            "methods":[
-                                                               "Surface_Geophysical_Methods\\Electromagnetic_Methods\\index.htm",
-                                                               "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm",
-                                                               "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
-                                                               "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
-                                                               "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Metal_Detectors.htm",
-                                                               "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm"
-                                                            ],
-                                                            "label":"both"
-                                                         },
-                                                         {
-                                                            "help":"",
-                                                            "keywords":[
-                                                               "EM",
-                                                               "electromagnetic induction",
-                                                               "magnetic",
-                                                               "magnetics",
-                                                               "magnetometers",
-                                                               "Ground penetrating radar",
-                                                               "GPR"
-                                                            ],
-                                                            "methods":[
-                                                               "Surface_Geophysical_Methods\\Electromagnetic_Methods\\index.htm",
-                                                               "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm",
-                                                               "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
-                                                               "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
-                                                               "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Metal_Detectors.htm",
-                                                               "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm"
-                                                            ],
-                                                            "label":"unknown"
-                                                         }
-                                                      ]
-                                                   }
-                                                ]
-                                             },
-                                             {
-                                                "keywords":[
-
-                                                ],
-                                                "label":"all of the above",
-                                                "question":[
-                                                   {
-                                                      "label":"What type of material are these pipes?",
-                                                      "answer":[
-                                                         {
-                                                            "keywords":[
-                                                               "magnetic",
-                                                               "magnetics",
-                                                               "magnetometers",
-                                                               "electromagnetic",
-                                                               "electromagnetic induction",
-                                                               "EM",
-                                                               "GPR",
-                                                               "Ground penetrating radar"
-                                                            ],
-                                                            "methods":[
-                                                               "Surface_Geophysical_Methods\\Electromagnetic_Methods\\index.htm",
-                                                               "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm",
-                                                               "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
-                                                               "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
-                                                               "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Metal_Detectors.htm",
-                                                               "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm"
-                                                            ],
-                                                            "label":"Metallic"
-                                                         },
-                                                         {
-                                                            "keywords":[
-                                                               "GPR",
-                                                               "Ground penetrating radar",
-                                                               "electromagnetic",
-                                                               "electromagnetic induction",
-                                                               "EM",
-                                                               "moisture content",
-                                                               "moisture"
-                                                            ],
-                                                            "methods":[
-                                                               "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm"
-                                                            ],
-                                                            "label":"Non-Metallic"
-                                                         },
-                                                         {
-                                                            "keywords":[
-                                                               "GPR",
-                                                               "Ground penetrating radar",
-                                                               "electromagnetic",
-                                                               "electromagnetic induction",
-                                                               "EM",
-                                                               "moisture content",
-                                                               "moisture",
-                                                               "magnetic",
-                                                               "magnetics",
-                                                               "magnetometers"
-                                                            ],
-                                                            "methods":[
-                                                               "Surface_Geophysical_Methods\\Electromagnetic_Methods\\index.htm",
-                                                               "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm",
-                                                               "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
-                                                               "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
-                                                               "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Metal_Detectors.htm",
-                                                               "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm"
-                                                            ],
-                                                            "label":"both"
-                                                         },
-                                                         {
-                                                            "keywords":[
-                                                               "EM",
-                                                               "electromagnetic induction",
-                                                               "magnetic",
-                                                               "magnetics",
-                                                               "magnetometers",
-                                                               "Ground penetrating radar",
-                                                               "GPR"
-                                                            ],
-                                                            "methods":[
-                                                               "Surface_Geophysical_Methods\\Electromagnetic_Methods\\index.htm",
-                                                               "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm",
-                                                               "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
-                                                               "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
-                                                               "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Metal_Detectors.htm",
-                                                               "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm"
-                                                            ],
-                                                            "label":"unknown"
-                                                         }
-                                                      ]
-                                                   }
-                                                ]
-                                             }
-                                          ]
-                                       }
-                                    ]
-                                 },
-                                 {
-                                    "label":"Abandoned Wells",
-                                    "question":[
-                                       {
-                                          "label":"What type are the abandoned wells?",
-                                          "answer":[
-                                             {
-                                                "help":"PVC or other non-metallic material",
-                                                "keywords":[
-                                                   "electromagnetic",
-                                                   "ground penetrating radar"
-                                                ],
-                                                "methods":[
-                                                   "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
-                                                   "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method"
-                                                ],
-                                                "label":"PVC"
-                                             },
-                                             {
-                                                "keywords":[
-                                                   "electromagnetic",
-                                                   "Ground penetrating radar",
-                                                   "magnetic",
-                                                   "magnetics",
-                                                   "magnetometers",
-                                                   "field"
-                                                ],
-                                                "methods":[
-                                                   "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
-                                                   "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Metal_Detectors.htm",
-                                                   "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm",
-                                                   "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm"
-                                                ],
-                                                "label":"Metallic"
-                                             },
-                                             {
-                                                "keywords":[
-                                                   "electromagnetic",
-                                                   "Ground penetrating radar",
-                                                   "resistivity",
-                                                   "magnetics",
-                                                   "magnetometers",
-                                                   "magnetic"
-                                                ],
-                                                "methods":[
-                                                   "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Metal_Detectors.htm",
-                                                   "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Seismoelectrical_Method.htm",
-                                                   "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
-                                                   "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
-                                                   "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm",
-                                                   "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm"
-                                                ],
-                                                "label":"Unknown"
-                                             }
-                                          ]
-                                       }
-                                    ]
-                                 },
-                                 {
-                                    "keywords":[
-                                       "conductivity",
-                                       "electrical conductivity",
-                                       "electrical resistivity",
-                                       "electromagnetic",
-                                       "Ground penetrating radar",
-                                       "GPR",
-                                       "resistivity",
-                                       "seismic",
-                                       "magnetic",
-                                       "magnetics",
-                                       "magnetometers",
-                                       "Self Potential",
-                                       "EM",
-                                       "electromagnetic induction"
-                                    ],
-                                    "methods":[
-                                       "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm",
-                                       "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
-                                       "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
-                                       "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Metal_Detectors.htm",
-                                       "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm",
-                                       "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Very_Low-Frequency_(VLF)_Method.htm",
-                                       "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
-                                       "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Gravity_Methods.htm"
-                                    ],
-                                    "label":"Building Foundations"
-                                 }
-                              ]
-                           }
+                        "methods": [
+                          "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm",
+                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
+                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
+                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Metal_Detectors.htm",
+                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm",
+                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Very_Low-Frequency_(VLF)_Method.htm",
+                          "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
+                          "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Gravity_Methods.htm"
+                        ],
+                        "label": "Building Foundations"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "label": "Subsurface Contaminant Plume Detection",
+                "question": [
+                  {
+                    "expanded": false,
+                    "answered": false,
+                    "label": "What type of plume imaging results are desired?",
+                    "answer": [
+                      {
+                        "help": "",
+                        "keywords": [
+                          "resistivity",
+                          "SIP",
+                          "IP",
+                          "field",
+                          "TEM",
+                          "TEM method"
+                        ],
+                        "methods": [
+                          "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
+                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm",
+                          "Surface_Geophysical_Methods\\Electrical_Methods\\Induced_Polarization.htm"
+                        ],
+                        "label": "1D surface depth sounding"
+                      },
+                      {
+                        "help": "",
+                        "keywords": [
+                          "EM",
+                          "electromagnetic induction",
+                          "electromagnetic",
+                          "frequency domain EM",
+                          "magnetic",
+                          "magnetics",
+                          "magnetometers",
+                          "NMR",
+                          "gravity"
+                        ],
+                        "methods": [
+                          "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm",
+                          "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Gravity_Methods.htm",
+                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method"
+                        ],
+                        "label": "1D surface profile"
+                      },
+                      {
+                        "help": "",
+                        "keywords": [
+                          "borehole radar",
+                          "gamma logging",
+                          "neutron logging",
+                          "direct push",
+                          "conductivity",
+                          "electrical conductivity",
+                          "electrical conductivity measurement",
+                          "electrical measurements",
+                          "electrical resistivity logs",
+                          "electrical resistivity"
+                        ],
+                        "methods": [
+                          "Borehole_Geophysical_Methods\\index.htm",
+                          "Borehole_Geophysical_Methods\\General_Crosshole_Procedures.htm",
+                          "Borehole_Geophysical_Methods\\General_In-Hole_Procedures.htm",
+                          "Borehole_Geophysical_Methods\\Logging_Techniques_and_Tools\\index.htm",
+                          "Borehole_Geophysical_Methods\\Logging_Techniques_and_Tools\\Acoustic_Logging.htm",
+                          "Borehole_Geophysical_Methods\\Logging_Techniques_and_Tools\\Electrical_Methods.htm",
+                          "Borehole_Geophysical_Methods\\Logging_Techniques_and_Tools\\Hole-to-Hole_Logging.htm",
+                          "Borehole_Geophysical_Methods\\Logging_Techniques_and_Tools\\Nuclear_Logging.htm"
+                        ],
+                        "label": "1D borehole profile"
+                      },
+                      {
+                        "keywords": [
+                          "electromagnetic",
+                          "surface nuclear magnetic resonance"
+                        ],
+                        "methods": [
+                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
+                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm",
+                          "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
+                          "Surface_Geophysical_Methods\\Electrical_Methods\\Self-Potential_(SP)_Method.htm",
+                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm",
+                          "Surface_Geophysical_Methods\\Electrical_Methods\\Equipotential_and_Mise-a-la-Messe_Methods.htm"
+                        ],
+                        "label": "2D surface aerial map (plan view)"
+                      },
+                      {
+                        "keywords": [
+                          "borehole radar",
+                          "cross-hole methods",
+                          "electrical resistivity",
+                          "electromagnetic",
+                          "GPR",
+                          "ground penetrating radar",
+                          "IP",
+                          "magnetic resonance sounding",
+                          "seismic",
+                          "seismic methods",
+                          "tomography"
+                        ],
+                        "methods": [
+                          "Surface_Geophysical_Methods\\Electrical_Methods\\Equipotential_and_Mise-a-la-Messe_Methods.htm",
+                          "Surface_Geophysical_Methods\\Electrical_Methods\\Induced_Polarization.htm",
+                          "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
+                          "Surface_Geophysical_Methods\\Electrical_Methods\\Self-Potential_(SP)_Method.htm",
+                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm"
+                        ],
+                        "label": "2D subsurface cross-section"
+                      },
+                      {
+                        "help": "",
+                        "keywords": [
+                          "cross borehole",
+                          "cross hole",
+                          "Cross-hole methods"
+                        ],
+                        "methods": [
+                          "Borehole_Geophysical_Methods\\Logging_Techniques_and_Tools\\Hole-to-Hole_Logging.htm",
+                          "Surface_Geophysical_Methods\\Electrical_Methods\\Induced_Polarization.htm",
+                          "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
+                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm"
+                        ],
+                        "label": "2D cross-borehole image"
+                      },
+                      {
+                        "keywords": [
+                          "borehole radar",
+                          "cross-hole methods",
+                          "electrical resistivity",
+                          "electromagnetic",
+                          "GPR",
+                          "ground penetrating radar",
+                          "IP",
+                          "magnetic resonance sounding",
+                          "seismic",
+                          "seismic methods",
+                          "tomography"
+                        ],
+                        "methods": [
+                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
+                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm",
+                          "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
+                          "Surface_Geophysical_Methods\\Electrical_Methods\\Self-Potential_(SP)_Method.htm",
+                          "Surface_Geophysical_Methods\\Electrical_Methods\\Equipotential_and_Mise-a-la-Messe_Methods.htm",
+                          "Surface_Geophysical_Methods\\Electrical_Methods\\Induced_Polarization.htm",
+                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm"
+                        ],
+                        "label": "3D map (surface and depth)"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "checkbox",
+                    "label": "What is the predominant contaminant of interest?",
+                    "answer": [
+                      {
+                        "help": "NAPL = non-aqueous phase liquid",
+                        "keywords": [
+                          "contaminant",
+                          "contamination",
+                          "groundwater contamination",
+                          "hazardous organic compounds",
+                          "LNAPL",
+                          "toluene"
+                        ],
+                        "methods": [
+                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
+                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
+                          "Surface_Geophysical_Methods\\Electrical_Methods\\Equipotential_and_Mise-a-la-Messe_Methods.htm",
+                          "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
+                          "Surface_Geophysical_Methods\\Electrical_Methods\\Self-Potential_(SP)_Method.htm",
+                          "Surface_Geophysical_Methods\\Electrical_Methods\\Induced_Polarization.htm",
+                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm"
+                        ],
+                        "label": "LNAPL",
+                        "question": [
+                          {
+                            "expanded": false,
+                            "answered": false,
+                            "help": "To the best of your knowledge, what type of NAPL is present?",
+                            "type": "textline",
+                            "label": "Describe the type of LNAPL (eg. petroleum product, etc.).",
+                            "answer": [
+                              {
+                                "label": "LNAPL Type:"
+                              }
+                            ]
+                          }
                         ]
-                     },
-                     {
-                        "label":"Subsurface Contaminant Plume Detection",
-                        "question":[
-                           {
-                              "label":"What type of plume imaging results are desired?",
-                              "answer":[
-                                 {
-                                    "help":"",
-                                    "keywords":[
-                                       "resistivity",
-                                       "SIP",
-                                       "IP",
-                                       "field",
-                                       "TEM",
-                                       "TEM method"
-                                    ],
-                                    "methods":[
-                                       "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
-                                       "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm",
-                                       "Surface_Geophysical_Methods\\Electrical_Methods\\Induced_Polarization.htm"
-                                    ],
-                                    "label":"1D surface depth sounding"
-                                 },
-                                 {
-                                    "help":"",
-                                    "keywords":[
-                                       "EM",
-                                       "electromagnetic induction",
-                                       "electromagnetic",
-                                       "frequency domain EM",
-                                       "magnetic",
-                                       "magnetics",
-                                       "magnetometers",
-                                       "NMR",
-                                       "gravity"
-                                    ],
-                                    "methods":[
-                                       "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm",
-                                       "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Gravity_Methods.htm",
-                                       "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method"
-                                    ],
-                                    "label":"1D surface profile"
-                                 },
-                                 {
-                                    "help":"",
-                                    "keywords":[
-                                       "borehole radar",
-                                       "gamma logging",
-                                       "neutron logging",
-                                       "direct push",
-                                       "conductivity",
-                                       "electrical conductivity",
-                                       "electrical conductivity measurement",
-                                       "electrical measurements",
-                                       "electrical resistivity logs",
-                                       "electrical resistivity"
-                                    ],
-                                    "methods":[
-                                       "Borehole_Geophysical_Methods\\index.htm",
-                                       "Borehole_Geophysical_Methods\\General_Crosshole_Procedures.htm",
-                                       "Borehole_Geophysical_Methods\\General_In-Hole_Procedures.htm",
-                                       "Borehole_Geophysical_Methods\\Logging_Techniques_and_Tools\\index.htm",
-                                       "Borehole_Geophysical_Methods\\Logging_Techniques_and_Tools\\Acoustic_Logging.htm",
-                                       "Borehole_Geophysical_Methods\\Logging_Techniques_and_Tools\\Electrical_Methods.htm",
-                                       "Borehole_Geophysical_Methods\\Logging_Techniques_and_Tools\\Hole-to-Hole_Logging.htm",
-                                       "Borehole_Geophysical_Methods\\Logging_Techniques_and_Tools\\Nuclear_Logging.htm"
-                                    ],
-                                    "label":"1D borehole profile"
-                                 },
-                                 {
-                                    "keywords":[
-                                       "electromagnetic",
-                                       "surface nuclear magnetic resonance"
-                                    ],
-                                    "methods":[
-                                       "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
-                                       "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm",
-                                       "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
-                                       "Surface_Geophysical_Methods\\Electrical_Methods\\Self-Potential_(SP)_Method.htm",
-                                       "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm",
-                                       "Surface_Geophysical_Methods\\Electrical_Methods\\Equipotential_and_Mise-a-la-Messe_Methods.htm"
-                                    ],
-                                    "label":"2D surface aerial map (plan view)"
-                                 },
-                                 {
-                                    "keywords":[
-                                       "borehole radar",
-                                       "cross-hole methods",
-                                       "electrical resistivity",
-                                       "electromagnetic",
-                                       "GPR",
-                                       "ground penetrating radar",
-                                       "IP",
-                                       "magnetic resonance sounding",
-                                       "seismic",
-                                       "seismic methods",
-                                       "tomography"
-                                    ],
-                                    "methods":[
-                                       "Surface_Geophysical_Methods\\Electrical_Methods\\Equipotential_and_Mise-a-la-Messe_Methods.htm",
-                                       "Surface_Geophysical_Methods\\Electrical_Methods\\Induced_Polarization.htm",
-                                       "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
-                                       "Surface_Geophysical_Methods\\Electrical_Methods\\Self-Potential_(SP)_Method.htm",
-                                       "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm"
-                                    ],
-                                    "label":"2D subsurface cross-section"
-                                 },
-                                 {
-                                    "help":"",
-                                    "keywords":[
-                                       "cross borehole",
-                                       "cross hole",
-                                       "Cross-hole methods"
-                                    ],
-                                    "methods":[
-                                       "Borehole_Geophysical_Methods\\Logging_Techniques_and_Tools\\Hole-to-Hole_Logging.htm",
-                                       "Surface_Geophysical_Methods\\Electrical_Methods\\Induced_Polarization.htm",
-                                       "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
-                                       "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm"
-                                    ],
-                                    "label":"2D cross-borehole image"
-                                 },
-                                 {
-                                    "keywords":[
-                                       "borehole radar",
-                                       "cross-hole methods",
-                                       "electrical resistivity",
-                                       "electromagnetic",
-                                       "GPR",
-                                       "ground penetrating radar",
-                                       "IP",
-                                       "magnetic resonance sounding",
-                                       "seismic",
-                                       "seismic methods",
-                                       "tomography"
-                                    ],
-                                    "methods":[
-                                       "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
-                                       "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm",
-                                       "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
-                                       "Surface_Geophysical_Methods\\Electrical_Methods\\Self-Potential_(SP)_Method.htm",
-                                       "Surface_Geophysical_Methods\\Electrical_Methods\\Equipotential_and_Mise-a-la-Messe_Methods.htm",
-                                       "Surface_Geophysical_Methods\\Electrical_Methods\\Induced_Polarization.htm",
-                                       "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm"
-                                    ],
-                                    "label":"3D map (surface and depth)"
-                                 }
-                              ]
-                           },
-                           {
-                              "type":"checkbox",
-                              "label":"What is the predominant contaminant of interest?",
-                              "answer":[
-                                 {
-                                    "help":"NAPL = non-aqueous phase liquid",
-                                    "keywords":[
-                                       "contaminant",
-                                       "contamination",
-                                       "groundwater contamination",
-                                       "hazardous organic compounds",
-                                       "LNAPL",
-                                       "toluene"
-                                    ],
-                                    "methods":[
-                                       "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
-                                       "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
-                                       "Surface_Geophysical_Methods\\Electrical_Methods\\Equipotential_and_Mise-a-la-Messe_Methods.htm",
-                                       "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
-                                       "Surface_Geophysical_Methods\\Electrical_Methods\\Self-Potential_(SP)_Method.htm",
-                                       "Surface_Geophysical_Methods\\Electrical_Methods\\Induced_Polarization.htm",
-                                       "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm"
-                                    ],
-                                    "label":"LNAPL",
-                                    "question":[
-                                       {
-                                          "help":"To the best of your knowledge, what type of NAPL is present?",
-                                          "type":"textline",
-                                          "label":"Describe the type of LNAPL (eg. petroleum product, etc.).",
-                                          "answer":[
-                                             {
-                                                "label":"LNAPL Type:"
-                                             }
-                                          ]
-                                       }
-                                    ]
-                                 },
-                                 {
-                                    "help":"dense non-aqeuos phase liquid.  Dense is determined by having a specific gravity greater than 1 g/cc",
-                                    "keywords":[
-                                       "chlorinated hydrocarbons",
-                                       "DNAPL",
-                                       "hazardous organic compounds"
-                                    ],
-                                    "methods":[
-                                       "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
-                                       "Surface_Geophysical_Methods\\Electrical_Methods\\Equipotential_and_Mise-a-la-Messe_Methods.htm",
-                                       "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm",
-                                       "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
-                                       "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
-                                       "Surface_Geophysical_Methods\\Electrical_Methods\\Induced_Polarization.htm"
-                                    ],
-                                    "label":"DNAPL",
-                                    "question":[
-                                       {
-                                          "type":"textbox",
-                                          "label":"Describe the type of DNAPL (eg, chlorinated solvent, creosote, etc.).",
-                                          "answer":[
-                                             {
-                                                "label":"DNAPL Type:"
-                                             }
-                                          ]
-                                       }
-                                    ]
-                                 },
-                                 {
-                                    "keywords":[
-                                       "surface nuclear magnetic resonance"
-                                    ],
-                                    "methods":[
-                                       "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm"
-                                    ],
-                                    "label":"Radiological waste"
-                                 },
-                                 {
-                                    "keywords":[
-                                       "seismic",
-                                       "seismic methods"
-                                    ],
-                                    "methods":[
-                                       "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Seismoelectrical_Method.htm",
-                                       "Surface_Geophysical_Methods\\Seismic_Methods\\index.htm",
-                                       "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm"
-                                    ],
-                                    "label":"Vapor"
-                                 },
-                                 {
-                                    "keywords":[
-                                       "Solute Transport",
-                                       "Solvents",
-                                       "Groundwater",
-                                       "groundwater contamination",
-                                       "groundwater hydrology",
-                                       "hazardous organic compounds"
-                                    ],
-                                    "methods":[
-                                       "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
-                                       "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
-                                       "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
-                                       "Surface_Geophysical_Methods\\Electrical_Methods\\Equipotential_and_Mise-a-la-Messe_Methods.htm"
-                                    ],
-                                    "label":"Soluble"
-                                 },
-                                 {
-                                    "keywords":[
-                                       "conductivity",
-                                       "electrical conductivity",
-                                       "electrical resistivity",
-                                       "electromagnetic",
-                                       "seismic",
-                                       "seismic methods"
-                                    ],
-                                    "methods":[
-                                       "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
-                                       "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm",
-                                       "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
-                                       "Surface_Geophysical_Methods\\Electrical_Methods\\Equipotential_and_Mise-a-la-Messe_Methods.htm"
-                                    ],
-                                    "label":"Mine waste"
-                                 },
-                                 {
-                                    "keywords":[
-                                       "SP",
-                                       "resistivity",
-                                       "electrical conductivity",
-                                       "electrical resistivity"
-                                    ],
-                                    "methods":[
-                                       "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
-                                       "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm",
-                                       "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
-                                       "Surface_Geophysical_Methods\\Electrical_Methods\\Equipotential_and_Mise-a-la-Messe_Methods.htm",
-                                       "Surface_Geophysical_Methods\\Electrical_Methods\\Self-Potential_(SP)_Method.htm"
-                                    ],
-                                    "label":"Brine plume"
-                                 }
-                              ]
-                           },
-                           {
-                              "label":"What is the source of contamination?",
-                              "answer":[
-                                 {
-                                    "help":"Is the contaminant source from one known, or suspected location?",
-                                    "label":"Point",
-                                    "question":[
-                                       {
-                                          "label":"What type of point source contamination?",
-                                          "answer":[
-                                             {
-                                                "keywords":[
-                                                   "GPR",
-                                                   "ground penetrating radar"
-                                                ],
-                                                "methods":[
-                                                   "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
-                                                   "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm",
-                                                   "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
-                                                   "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method"
-                                                ],
-                                                "label":"UST/LUST"
-                                             },
-                                             {
-                                                "keywords":[
-                                                   "contaminant",
-                                                   "contamination",
-                                                   "conductivity",
-                                                   "electrical resistivity",
-                                                   "electromagnetic",
-                                                   "field",
-                                                   "GPR",
-                                                   "ground penetrating radar",
-                                                   "groundwater contamination",
-                                                   "hazardous organic compounds",
-                                                   "hydrocarbon leakage",
-                                                   "LNAPL",
-                                                   "resistivity",
-                                                   "seismic",
-                                                   "seismic methods",
-                                                   "SP"
-                                                ],
-                                                "methods":[
-                                                   "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
-                                                   "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
-                                                   "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm"
-                                                ],
-                                                "label":"Leaking pipeline"
-                                             },
-                                             {
-                                                "keywords":[
-                                                   "contaminant",
-                                                   "contamination",
-                                                   "conductivity",
-                                                   "electrical resistivity",
-                                                   "electromagnetic",
-                                                   "field",
-                                                   "GPR",
-                                                   "ground penetrating radar",
-                                                   "groundwater contamination",
-                                                   "hazardous organic compounds",
-                                                   "hydrocarbon leakage",
-                                                   "LNAPL",
-                                                   "resistivity",
-                                                   "seismic",
-                                                   "seismic methods",
-                                                   "SP",
-                                                   "proton magnetic resonance",
-                                                   "magnetic resonance sounding"
-                                                ],
-                                                "methods":[
-                                                   "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm",
-                                                   "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
-                                                   "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Metal_Detectors.htm"
-                                                ],
-                                                "label":"Drums"
-                                             },
-                                             {
-                                                "keywords":[
-                                                   "contaminant",
-                                                   "contamination",
-                                                   "conductivity",
-                                                   "electrical resistivity",
-                                                   "electromagnetic",
-                                                   "field",
-                                                   "GPR",
-                                                   "ground penetrating radar",
-                                                   "groundwater contamination",
-                                                   "hazardous organic compounds",
-                                                   "hydrocarbon leakage",
-                                                   "LNAPL",
-                                                   "resistivity",
-                                                   "seismic",
-                                                   "seismic methods",
-                                                   "SP",
-                                                   "proton magnetic resonance",
-                                                   "magnetic resonance sounding"
-                                                ],
-                                                "methods":[
-                                                   "Surface_Geophysical_Methods\\Electrical_Methods\\Equipotential_and_Mise-a-la-Messe_Methods.htm"
-                                                ],
-                                                "label":"Well"
-                                             },
-                                             {
-                                                "keywords":[
-                                                   "contaminant",
-                                                   "contamination",
-                                                   "conductivity",
-                                                   "electrical resistivity",
-                                                   "electromagnetic",
-                                                   "field",
-                                                   "GPR",
-                                                   "ground penetrating radar",
-                                                   "groundwater contamination",
-                                                   "hazardous organic compounds",
-                                                   "hydrocarbon leakage",
-                                                   "LNAPL",
-                                                   "resistivity",
-                                                   "seismic",
-                                                   "seismic methods",
-                                                   "SP",
-                                                   "proton magnetic resonance",
-                                                   "magnetic resonance sounding"
-                                                ],
-                                                "methods":[
-                                                   "Surface_Geophysical_Methods\\Electrical_Methods\\Equipotential_and_Mise-a-la-Messe_Methods.htm"
-                                                ],
-                                                "label":"Deep injection well"
-                                             },
-                                             {
-                                                "keywords":[
-                                                   "attenuation",
-                                                   "contaminant",
-                                                   "contamination",
-                                                   "electrical conductivity",
-                                                   "electrical resistivity",
-                                                   "electromagnetic",
-                                                   "field",
-                                                   "GPR",
-                                                   "ground penetrating radar",
-                                                   "groundwater contamination",
-                                                   "hazardous organic compounds",
-                                                   "hydrocarbon leakage",
-                                                   "LNAPL",
-                                                   "multiphase flow"
-                                                ],
-                                                "methods":[
-                                                   "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method"
-                                                ],
-                                                "label":"Surface Spill"
-                                             }
-                                          ]
-                                       }
-                                    ]
-                                 },
-                                 {
-                                    "help":"Is the contaminant source from a broad application or unknown point",
-                                    "label":"Non-Point",
-                                    "question":[
-                                       {
-                                          "label":"What type of non-point source contamination?",
-                                          "answer":[
-                                             {
-                                                "keywords":[
-                                                   "conductivity",
-                                                   "contaminant",
-                                                   "contamination",
-                                                   "electromagnetic",
-                                                   "electrical resistivity",
-                                                   "electrical conductivity",
-                                                   "field",
-                                                   "GPR",
-                                                   "ground penetrating radar",
-                                                   "moisture content",
-                                                   "seismic methods",
-                                                   "seismic"
-                                                ],
-                                                "methods":[
-                                                   "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
-                                                   "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm"
-                                                ],
-                                                "label":"Agriculture Type-N"
-                                             },
-                                             {
-                                                "label":"Other"
-                                             }
-                                          ]
-                                       }
-                                    ]
-                                 },
-                                 {
-                                    "keywords":[
-
-                                    ],
-                                    "label":"Unknown"
-                                 }
-                              ]
-                           }
+                      },
+                      {
+                        "help": "dense non-aqeuos phase liquid.  Dense is determined by having a specific gravity greater than 1 g/cc",
+                        "keywords": [
+                          "chlorinated hydrocarbons",
+                          "DNAPL",
+                          "hazardous organic compounds"
+                        ],
+                        "methods": [
+                          "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
+                          "Surface_Geophysical_Methods\\Electrical_Methods\\Equipotential_and_Mise-a-la-Messe_Methods.htm",
+                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm",
+                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
+                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
+                          "Surface_Geophysical_Methods\\Electrical_Methods\\Induced_Polarization.htm"
+                        ],
+                        "label": "DNAPL",
+                        "question": [
+                          {
+                            "expanded": false,
+                            "answered": false,
+                            "type": "textbox",
+                            "label": "Describe the type of DNAPL (eg, chlorinated solvent, creosote, etc.).",
+                            "answer": [
+                              {
+                                "label": "DNAPL Type:"
+                              }
+                            ]
+                          }
                         ]
-                     },
-                     {
-                        "label":"Monitor Remediation Efforts",
-                        "question":[
-                           {
-                              "help":"Could also be considered to characterize the site changes over time.",
-                              "label":"Do you want to monitor remediation efforts?",
-                              "answer":[
-                                 {
-                                    "label":"Yes",
-                                    "question":[
-                                       {
-                                          "label":"What type of remediation is desired?",
-                                          "answer":[
-                                             {
-                                                "help":"Direct intervention to remediate the contamination",
-                                                "label":"Active",
-                                                "question":[
-                                                   {
-                                                      "label":"What type of active remediation?",
-                                                      "answer":[
-                                                         {
-                                                            "keywords":[
-                                                               "4-D survey",
-                                                               "conductivity",
-                                                               "multiphase flow",
-                                                               "SP",
-                                                               "GPR",
-                                                               "ground penetrating radar"
-                                                            ],
-                                                            "methods":[
-                                                               "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
-                                                               "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
-                                                               "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
-                                                               "Surface_Geophysical_Methods\\Electrical_Methods\\Self-Potential_(SP)_Method.htm",
-                                                               "Surface_Geophysical_Methods\\Electrical_Methods\\Equipotential_and_Mise-a-la-Messe_Methods.htm"
-                                                            ],
-                                                            "label":"Pump and treat"
-                                                         },
-                                                         {
-                                                            "keywords":[
-                                                               "4-D survey",
-                                                               "conductivity",
-                                                               "multiphase flow",
-                                                               "SP",
-                                                               "GPR",
-                                                               "Ground penetrating radar",
-                                                               "tomography",
-                                                               "PRB",
-                                                               "Permeable Reactive Barriers"
-                                                            ],
-                                                            "methods":[
-                                                               "Surface_Geophysical_Methods\\Electrical_Methods\\Self-Potential_(SP)_Method.htm",
-                                                               "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
-                                                               "Surface_Geophysical_Methods\\Electrical_Methods\\Induced_Polarization.htm"
-                                                            ],
-                                                            "label":"Permeable reactive barrier (PRB)"
-                                                         },
-                                                         {
-                                                            "keywords":[
-                                                               "4-D survey",
-                                                               "electrical conductivity",
-                                                               "electrical resistivity",
-                                                               "electromagnetic",
-                                                               "field",
-                                                               "GPR",
-                                                               "Ground penetrating radar",
-                                                               "SP",
-                                                               "Solvents",
-                                                               "Solute Transport"
-                                                            ],
-                                                            "methods":[
-                                                               "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
-                                                               "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm",
-                                                               "Surface_Geophysical_Methods\\Electrical_Methods\\Induced_Polarization.htm",
-                                                               "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
-                                                               "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
-                                                               "Surface_Geophysical_Methods\\Electrical_Methods\\Equipotential_and_Mise-a-la-Messe_Methods.htm"
-                                                            ],
-                                                            "label":"Solvent or co-solvent flush"
-                                                         },
-                                                         {
-                                                            "keywords":[
-                                                               "4-D survey",
-                                                               "conductivity",
-                                                               "contamination",
-                                                               "electrical conductivity",
-                                                               "electrical resistivity",
-                                                               "electromagnetic",
-                                                               "experiments",
-                                                               "field",
-                                                               "GPR",
-                                                               "Ground penetrating radar",
-                                                               "groundwater contamination",
-                                                               "biodegredation monitoring",
-                                                               "biodegredation",
-                                                               "biogeophysics",
-                                                               "Complex Conductivity",
-                                                               "Complex resistivity"
-                                                            ],
-                                                            "methods":[
-                                                               "Surface_Geophysical_Methods\\Electrical_Methods\\Induced_Polarization.htm",
-                                                               "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
-                                                               "Surface_Geophysical_Methods\\Electrical_Methods\\Self-Potential_(SP)_Method.htm"
-                                                            ],
-                                                            "label":"Bioagumentation"
-                                                         }
-                                                      ]
-                                                   }
-                                                ]
-                                             },
-                                             {
-                                                "help":"Passive remediation does not involved active treatment, but allowing the natural decay of the contaminant while monitoring changes",
-                                                "label":"Passive",
-                                                "question":[
-                                                   {
-                                                      "label":"What type of passive remediation?",
-                                                      "answer":[
-                                                         {
-                                                            "keywords":[
-                                                               "4-D survey",
-                                                               "conductivity",
-                                                               "contamination",
-                                                               "electrical conductivity",
-                                                               "electrical resistivity",
-                                                               "electromagnetic",
-                                                               "experiments",
-                                                               "field",
-                                                               "GPR",
-                                                               "Ground penetrating radar",
-                                                               "groundwater contamination",
-                                                               "biogeophysics",
-                                                               "biodegredation monitoring",
-                                                               "biodegredation",
-                                                               "Complex Conductivity",
-                                                               "Complex resistivity",
-                                                               "cross borehole",
-                                                               "electrical measurements"
-                                                            ],
-                                                            "methods":[
-                                                               "Surface_Geophysical_Methods\\Electrical_Methods\\Induced_Polarization.htm",
-                                                               "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
-                                                               "Surface_Geophysical_Methods\\Electrical_Methods\\Self-Potential_(SP)_Method.htm",
-                                                               "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm"
-                                                            ],
-                                                            "label":"Monitored natural attenuation"
-                                                         }
-                                                      ]
-                                                   }
-                                                ]
-                                             },
-                                             {
-                                                "label":"Unknown"
-                                             }
-                                          ]
-                                       }
+                      },
+                      {
+                        "keywords": [
+                          "surface nuclear magnetic resonance"
+                        ],
+                        "methods": [
+                          "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm"
+                        ],
+                        "label": "Radiological waste"
+                      },
+                      {
+                        "keywords": [
+                          "seismic",
+                          "seismic methods"
+                        ],
+                        "methods": [
+                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Seismoelectrical_Method.htm",
+                          "Surface_Geophysical_Methods\\Seismic_Methods\\index.htm",
+                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm"
+                        ],
+                        "label": "Vapor"
+                      },
+                      {
+                        "keywords": [
+                          "Solute Transport",
+                          "Solvents",
+                          "Groundwater",
+                          "groundwater contamination",
+                          "groundwater hydrology",
+                          "hazardous organic compounds"
+                        ],
+                        "methods": [
+                          "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
+                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
+                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
+                          "Surface_Geophysical_Methods\\Electrical_Methods\\Equipotential_and_Mise-a-la-Messe_Methods.htm"
+                        ],
+                        "label": "Soluble"
+                      },
+                      {
+                        "keywords": [
+                          "conductivity",
+                          "electrical conductivity",
+                          "electrical resistivity",
+                          "electromagnetic",
+                          "seismic",
+                          "seismic methods"
+                        ],
+                        "methods": [
+                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
+                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm",
+                          "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
+                          "Surface_Geophysical_Methods\\Electrical_Methods\\Equipotential_and_Mise-a-la-Messe_Methods.htm"
+                        ],
+                        "label": "Mine waste"
+                      },
+                      {
+                        "keywords": [
+                          "SP",
+                          "resistivity",
+                          "electrical conductivity",
+                          "electrical resistivity"
+                        ],
+                        "methods": [
+                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
+                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm",
+                          "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
+                          "Surface_Geophysical_Methods\\Electrical_Methods\\Equipotential_and_Mise-a-la-Messe_Methods.htm",
+                          "Surface_Geophysical_Methods\\Electrical_Methods\\Self-Potential_(SP)_Method.htm"
+                        ],
+                        "label": "Brine plume"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "What is the source of contamination?",
+                    "answer": [
+                      {
+                        "help": "Is the contaminant source from one known, or suspected location?",
+                        "label": "Point",
+                        "question": [
+                          {
+                            "expanded": false,
+                            "answered": false,
+                            "label": "What type of point source contamination?",
+                            "answer": [
+                              {
+                                "keywords": [
+                                  "GPR",
+                                  "ground penetrating radar"
+                                ],
+                                "methods": [
+                                  "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
+                                  "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm",
+                                  "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
+                                  "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method"
+                                ],
+                                "label": "UST/LUST"
+                              },
+                              {
+                                "keywords": [
+                                  "contaminant",
+                                  "contamination",
+                                  "conductivity",
+                                  "electrical resistivity",
+                                  "electromagnetic",
+                                  "field",
+                                  "GPR",
+                                  "ground penetrating radar",
+                                  "groundwater contamination",
+                                  "hazardous organic compounds",
+                                  "hydrocarbon leakage",
+                                  "LNAPL",
+                                  "resistivity",
+                                  "seismic",
+                                  "seismic methods",
+                                  "SP"
+                                ],
+                                "methods": [
+                                  "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
+                                  "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
+                                  "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm"
+                                ],
+                                "label": "Leaking pipeline"
+                              },
+                              {
+                                "keywords": [
+                                  "contaminant",
+                                  "contamination",
+                                  "conductivity",
+                                  "electrical resistivity",
+                                  "electromagnetic",
+                                  "field",
+                                  "GPR",
+                                  "ground penetrating radar",
+                                  "groundwater contamination",
+                                  "hazardous organic compounds",
+                                  "hydrocarbon leakage",
+                                  "LNAPL",
+                                  "resistivity",
+                                  "seismic",
+                                  "seismic methods",
+                                  "SP",
+                                  "proton magnetic resonance",
+                                  "magnetic resonance sounding"
+                                ],
+                                "methods": [
+                                  "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm",
+                                  "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
+                                  "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Metal_Detectors.htm"
+                                ],
+                                "label": "Drums"
+                              },
+                              {
+                                "keywords": [
+                                  "contaminant",
+                                  "contamination",
+                                  "conductivity",
+                                  "electrical resistivity",
+                                  "electromagnetic",
+                                  "field",
+                                  "GPR",
+                                  "ground penetrating radar",
+                                  "groundwater contamination",
+                                  "hazardous organic compounds",
+                                  "hydrocarbon leakage",
+                                  "LNAPL",
+                                  "resistivity",
+                                  "seismic",
+                                  "seismic methods",
+                                  "SP",
+                                  "proton magnetic resonance",
+                                  "magnetic resonance sounding"
+                                ],
+                                "methods": [
+                                  "Surface_Geophysical_Methods\\Electrical_Methods\\Equipotential_and_Mise-a-la-Messe_Methods.htm"
+                                ],
+                                "label": "Well"
+                              },
+                              {
+                                "keywords": [
+                                  "contaminant",
+                                  "contamination",
+                                  "conductivity",
+                                  "electrical resistivity",
+                                  "electromagnetic",
+                                  "field",
+                                  "GPR",
+                                  "ground penetrating radar",
+                                  "groundwater contamination",
+                                  "hazardous organic compounds",
+                                  "hydrocarbon leakage",
+                                  "LNAPL",
+                                  "resistivity",
+                                  "seismic",
+                                  "seismic methods",
+                                  "SP",
+                                  "proton magnetic resonance",
+                                  "magnetic resonance sounding"
+                                ],
+                                "methods": [
+                                  "Surface_Geophysical_Methods\\Electrical_Methods\\Equipotential_and_Mise-a-la-Messe_Methods.htm"
+                                ],
+                                "label": "Deep injection well"
+                              },
+                              {
+                                "keywords": [
+                                  "attenuation",
+                                  "contaminant",
+                                  "contamination",
+                                  "electrical conductivity",
+                                  "electrical resistivity",
+                                  "electromagnetic",
+                                  "field",
+                                  "GPR",
+                                  "ground penetrating radar",
+                                  "groundwater contamination",
+                                  "hazardous organic compounds",
+                                  "hydrocarbon leakage",
+                                  "LNAPL",
+                                  "multiphase flow"
+                                ],
+                                "methods": [
+                                  "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method"
+                                ],
+                                "label": "Surface Spill"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "help": "Is the contaminant source from a broad application or unknown point",
+                        "label": "Non-Point",
+                        "question": [
+                          {
+                            "expanded": false,
+                            "answered": false,
+                            "label": "What type of non-point source contamination?",
+                            "answer": [
+                              {
+                                "keywords": [
+                                  "conductivity",
+                                  "contaminant",
+                                  "contamination",
+                                  "electromagnetic",
+                                  "electrical resistivity",
+                                  "electrical conductivity",
+                                  "field",
+                                  "GPR",
+                                  "ground penetrating radar",
+                                  "moisture content",
+                                  "seismic methods",
+                                  "seismic"
+                                ],
+                                "methods": [
+                                  "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
+                                  "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm"
+                                ],
+                                "label": "Agriculture Type-N"
+                              },
+                              {
+                                "label": "Other"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "keywords": [
+                        ],
+                        "label": "Unknown"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "label": "Monitor Remediation Efforts",
+                "question": [
+                  {
+                    "expanded": false,
+                    "answered": false,
+                    "help": "Could also be considered to characterize the site changes over time.",
+                    "label": "Do you want to monitor remediation efforts?",
+                    "answer": [
+                      {
+                        "label": "Yes",
+                        "question": [
+                          {
+                            "expanded": false,
+                            "answered": false,
+                            "label": "What type of remediation is desired?",
+                            "answer": [
+                              {
+                                "help": "Direct intervention to remediate the contamination",
+                                "label": "Active",
+                                "question": [
+                                  {
+                                    "expanded": false,
+                                    "answered": false,
+                                    "label": "What type of active remediation?",
+                                    "answer": [
+                                      {
+                                        "keywords": [
+                                          "4-D survey",
+                                          "conductivity",
+                                          "multiphase flow",
+                                          "SP",
+                                          "GPR",
+                                          "ground penetrating radar"
+                                        ],
+                                        "methods": [
+                                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
+                                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
+                                          "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
+                                          "Surface_Geophysical_Methods\\Electrical_Methods\\Self-Potential_(SP)_Method.htm",
+                                          "Surface_Geophysical_Methods\\Electrical_Methods\\Equipotential_and_Mise-a-la-Messe_Methods.htm"
+                                        ],
+                                        "label": "Pump and treat"
+                                      },
+                                      {
+                                        "keywords": [
+                                          "4-D survey",
+                                          "conductivity",
+                                          "multiphase flow",
+                                          "SP",
+                                          "GPR",
+                                          "Ground penetrating radar",
+                                          "tomography",
+                                          "PRB",
+                                          "Permeable Reactive Barriers"
+                                        ],
+                                        "methods": [
+                                          "Surface_Geophysical_Methods\\Electrical_Methods\\Self-Potential_(SP)_Method.htm",
+                                          "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
+                                          "Surface_Geophysical_Methods\\Electrical_Methods\\Induced_Polarization.htm"
+                                        ],
+                                        "label": "Permeable reactive barrier (PRB)"
+                                      },
+                                      {
+                                        "keywords": [
+                                          "4-D survey",
+                                          "electrical conductivity",
+                                          "electrical resistivity",
+                                          "electromagnetic",
+                                          "field",
+                                          "GPR",
+                                          "Ground penetrating radar",
+                                          "SP",
+                                          "Solvents",
+                                          "Solute Transport"
+                                        ],
+                                        "methods": [
+                                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
+                                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm",
+                                          "Surface_Geophysical_Methods\\Electrical_Methods\\Induced_Polarization.htm",
+                                          "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
+                                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
+                                          "Surface_Geophysical_Methods\\Electrical_Methods\\Equipotential_and_Mise-a-la-Messe_Methods.htm"
+                                        ],
+                                        "label": "Solvent or co-solvent flush"
+                                      },
+                                      {
+                                        "keywords": [
+                                          "4-D survey",
+                                          "conductivity",
+                                          "contamination",
+                                          "electrical conductivity",
+                                          "electrical resistivity",
+                                          "electromagnetic",
+                                          "experiments",
+                                          "field",
+                                          "GPR",
+                                          "Ground penetrating radar",
+                                          "groundwater contamination",
+                                          "biodegredation monitoring",
+                                          "biodegredation",
+                                          "biogeophysics",
+                                          "Complex Conductivity",
+                                          "Complex resistivity"
+                                        ],
+                                        "methods": [
+                                          "Surface_Geophysical_Methods\\Electrical_Methods\\Induced_Polarization.htm",
+                                          "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
+                                          "Surface_Geophysical_Methods\\Electrical_Methods\\Self-Potential_(SP)_Method.htm"
+                                        ],
+                                        "label": "Bioagumentation"
+                                      }
                                     ]
-                                 },
-                                 {
-                                    "label":"No"
-                                 }
-                              ]
-                           }
+                                  }
+                                ]
+                              },
+                              {
+                                "help": "Passive remediation does not involved active treatment, but allowing the natural decay of the contaminant while monitoring changes",
+                                "label": "Passive",
+                                "question": [
+                                  {
+                                    "expanded": false,
+                                    "answered": false,
+                                    "label": "What type of passive remediation?",
+                                    "answer": [
+                                      {
+                                        "keywords": [
+                                          "4-D survey",
+                                          "conductivity",
+                                          "contamination",
+                                          "electrical conductivity",
+                                          "electrical resistivity",
+                                          "electromagnetic",
+                                          "experiments",
+                                          "field",
+                                          "GPR",
+                                          "Ground penetrating radar",
+                                          "groundwater contamination",
+                                          "biogeophysics",
+                                          "biodegredation monitoring",
+                                          "biodegredation",
+                                          "Complex Conductivity",
+                                          "Complex resistivity",
+                                          "cross borehole",
+                                          "electrical measurements"
+                                        ],
+                                        "methods": [
+                                          "Surface_Geophysical_Methods\\Electrical_Methods\\Induced_Polarization.htm",
+                                          "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
+                                          "Surface_Geophysical_Methods\\Electrical_Methods\\Self-Potential_(SP)_Method.htm",
+                                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm"
+                                        ],
+                                        "label": "Monitored natural attenuation"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "label": "Unknown"
+                              }
+                            ]
+                          }
                         ]
-                     },
-                     {
-                        "label":"Landfill Investigation",
-                        "question":[
-                           {
-                              "type":"checkbox",
-                              "label":"What type of landfill investigation do you wish to conduct?",
-                              "answer":[
-                                 {
-                                    "keywords":[
-                                       "conductivity",
-                                       "Contaminant",
-                                       "contamination",
-                                       "Cross-hole methods",
-                                       "electrical conductivity",
-                                       "electrical resistivity",
-                                       "electromagnetic",
-                                       "experiments",
-                                       "GPR",
-                                       "Ground penetrating radar",
-                                       "groundwater contamination",
-                                       "hazardous organic compounds",
-                                       "landfill",
-                                       "seismic",
-                                       "Seismic methods",
-                                       "SP",
-                                       "resistivity",
-                                       "Self Potential",
-                                       "mise-a-la-masse",
-                                       "magnetics",
-                                       "magnetometers",
-                                       "magnetic",
-                                       "EM",
-                                       "electromagnetic induction"
-                                    ],
-                                    "methods":[
-                                       "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
-                                       "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
-                                       "Surface_Geophysical_Methods\\Electrical_Methods\\Induced_Polarization.htm",
-                                       "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
-                                       "Surface_Geophysical_Methods\\Electrical_Methods\\Equipotential_and_Mise-a-la-Messe_Methods.htm",
-                                       "Surface_Geophysical_Methods\\Electrical_Methods\\Self-Potential_(SP)_Method.htm",
-                                       "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm"
-                                    ],
-                                    "label":"Landfill plume map"
-                                 },
-                                 {
-                                    "keywords":[
-                                       "conductivity",
-                                       "contaminant",
-                                       "contamination",
-                                       "cross-hole methods",
-                                       "electrical conductivity",
-                                       "electrical resistivity",
-                                       "electromagnetic",
-                                       "experiments",
-                                       "GPR",
-                                       "ground penetrating radar",
-                                       "groundwater contamination",
-                                       "hazardous organic compounds",
-                                       "landfill",
-                                       "seismic",
-                                       "seismic methods",
-                                       "SP",
-                                       "magnetic resonance sounding",
-                                       "magnetic resonance tomography"
-                                    ],
-                                    "methods":[
-                                       "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Gravity_Methods.htm",
-                                       "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm",
-                                       "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Metal_Detectors.htm",
-                                       "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm",
-                                       "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
-                                       "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
-                                       "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
-                                       "Surface_Geophysical_Methods\\Electrical_Methods\\Equipotential_and_Mise-a-la-Messe_Methods.htm"
-                                    ],
-                                    "label":"Map contents of landfill"
-                                 },
-                                 {
-                                    "keywords":[
-                                       "conductivity",
-                                       "contaminant",
-                                       "contamination",
-                                       "cross-hole methods",
-                                       "electrical conductivity",
-                                       "electrical resistivity",
-                                       "electromagnetic",
-                                       "experiments",
-                                       "GPR",
-                                       "ground penetrating radar",
-                                       "groundwater contamination",
-                                       "hazardous organic compounds",
-                                       "landfill",
-                                       "seismic",
-                                       "seismic methods",
-                                       "SP",
-                                       "magnetic resonance sounding",
-                                       "magnetic resonance tomography"
-                                    ],
-                                    "methods":[
-                                       "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Gravity_Methods.htm",
-                                       "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm",
-                                       "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Metal_Detectors.htm",
-                                       "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm",
-                                       "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
-                                       "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
-                                       "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
-                                       "Surface_Geophysical_Methods\\Electrical_Methods\\Equipotential_and_Mise-a-la-Messe_Methods.htm"
-                                    ],
-                                    "label":"Map landfill extent/boundary"
-                                 }
-                              ]
-                           },
-                           {
-                              "label":"What percentage of the Landfill surface is covered by buildings",
-                              "answer":[
-                                 {
-                                    "keywords":[
-                                       "electrical resistivity",
-                                       "EM",
-                                       "electromagnetic induction",
-                                       "electromagnetic",
-                                       "seismic",
-                                       "Seismic methods",
-                                       "Self Potential"
-                                    ],
-                                    "methods":[
-                                       "NOT:Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm",
-                                       "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Gravity_Methods.htm"
-                                    ],
-                                    "label":"Greater than 50%"
-                                 },
-                                 {
-                                    "keywords":[
-                                       "4-D survey",
-                                       "Characterization",
-                                       "CPT",
-                                       "direct push",
-                                       "electrical conductivity",
-                                       "electrical resistivity",
-                                       "electromagnetic induction",
-                                       "EM",
-                                       "electromagnetic",
-                                       "ERT",
-                                       "landfill",
-                                       "GPR",
-                                       "Induced Polarization",
-                                       "leachate plume",
-                                       "leak detection",
-                                       "magnetics",
-                                       "resistivity",
-                                       "seismic",
-                                       "Seismic measurements",
-                                       "Seismic methods",
-                                       "Self Potential",
-                                       "TEM"
-                                    ],
-                                    "methods":[
-                                       "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
-                                       "Surface_Geophysical_Methods\\Electrical_Methods\\Equipotential_and_Mise-a-la-Messe_Methods.htm",
-                                       "Surface_Geophysical_Methods\\Electrical_Methods\\Self-Potential_(SP)_Method.htm",
-                                       "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
-                                       "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Metal_Detectors.htm",
-                                       "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm",
-                                       "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
-                                       "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm"
-                                    ],
-                                    "label":"Less than or equal to 50%"
-                                 }
-                              ]
-                           }
-                        ]
-                     },
-                     {
-                        "label":"CSM (Conceptual Site Model) Development",
-                        "question":[
-                           {
-                              "type":"checkbox",
-                              "label":"What type of CSM (Conceptual Site Model) do you wish to develop?",
-                              "answer":[
-                                 {
-                                    "keywords":[
-                                       "conductivity",
-                                       "cross-hole methods",
-                                       "electrical conductivity",
-                                       "electrical resistivity",
-                                       "electromagnetic",
-                                       "field",
-                                       "forward modeling",
-                                       "GPR",
-                                       "ground penetrating radar",
-                                       "inversion",
-                                       "seismic methods",
-                                       "seismic"
-                                    ],
-                                    "methods":[
-                                       "Surface_Geophysical_Methods\\Seismic_Methods\\Seismic_Reflection_Methods.htm",
-                                       "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Gravity_Methods.htm",
-                                       "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm",
-                                       "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
-                                       "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
-                                       "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm"
-                                    ],
-                                    "label":"Map subsurface geology (includes depth to strata)"
-                                 },
-                                 {
-                                    "keywords":[
-                                       "conductivity",
-                                       "cross-hole methods",
-                                       "electrical conductivity",
-                                       "electrical resistivity",
-                                       "electromagnetic",
-                                       "field",
-                                       "forward modeling",
-                                       "GPR",
-                                       "ground penetrating radar",
-                                       "inversion",
-                                       "seismic methods",
-                                       "seismic",
-                                       "karstic conduit"
-                                    ],
-                                    "methods":[
-                                       "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm",
-                                       "Surface_Geophysical_Methods\\Electrical_Methods\\Equipotential_and_Mise-a-la-Messe_Methods.htm",
-                                       "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Very_Low-Frequency_(VLF)_Method.htm",
-                                       "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
-                                       "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm"
-                                    ],
-                                    "label":"Map or characterize fractures"
-                                 },
-                                 {
-                                    "keywords":[
-                                       "conductivity",
-                                       "electrical conductivity",
-                                       "electrical resistivity",
-                                       "electromagnetic",
-                                       "seismic",
-                                       "seismic methods"
-                                    ],
-                                    "methods":[
-                                       "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Gravity_Methods.htm",
-                                       "Surface_Geophysical_Methods\\Seismic_Methods\\Seismic_Reflection_Methods.htm",
-                                       "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
-                                       "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm",
-                                       "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm"
-                                    ],
-                                    "label":"Map bedrock surface or determine depth to bedrock"
-                                 },
-                                 {
-                                    "keywords":[
-                                       "tomography",
-                                       "water content",
-                                       "SP",
-                                       "resistivity",
-                                       "groundwater",
-                                       "ground penetrating radar",
-                                       "GPR",
-                                       "electromagnetic",
-                                       "electrical resistivity",
-                                       "electrical conductivity"
-                                    ],
-                                    "methods":[
-                                       "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
-                                       "Surface_Geophysical_Methods\\Electrical_Methods\\Self-Potential_(SP)_Method.htm",
-                                       "Borehole_Geophysical_Methods\\index.htm"
-                                    ],
-                                    "label":"Groundwater surfacewater interface"
-                                 },
-                                 {
-                                    "keywords":[
-                                       "conductivity",
-                                       "groundwater",
-                                       "ground penetrating radar",
-                                       "electrical resistivity",
-                                       "electrical conductivity",
-                                       "electromagnetic",
-                                       "seismic",
-                                       "seismic methods"
-                                    ],
-                                    "methods":[
-                                       "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
-                                       "Surface_Geophysical_Methods\\Seismic_Methods\\index.htm"
-                                    ],
-                                    "label":"Map,find or locate groundwater or water table"
-                                 }
-                              ]
-                           }
-                        ]
-                     }
-                  ]
-               }
+                      },
+                      {
+                        "label": "No"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "label": "Landfill Investigation",
+                "question": [
+                  {
+                    "expanded": false,
+                    "answered": false,
+                    "type": "checkbox",
+                    "label": "What type of landfill investigation do you wish to conduct?",
+                    "answer": [
+                      {
+                        "keywords": [
+                          "conductivity",
+                          "Contaminant",
+                          "contamination",
+                          "Cross-hole methods",
+                          "electrical conductivity",
+                          "electrical resistivity",
+                          "electromagnetic",
+                          "experiments",
+                          "GPR",
+                          "Ground penetrating radar",
+                          "groundwater contamination",
+                          "hazardous organic compounds",
+                          "landfill",
+                          "seismic",
+                          "Seismic methods",
+                          "SP",
+                          "resistivity",
+                          "Self Potential",
+                          "mise-a-la-masse",
+                          "magnetics",
+                          "magnetometers",
+                          "magnetic",
+                          "EM",
+                          "electromagnetic induction"
+                        ],
+                        "methods": [
+                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
+                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
+                          "Surface_Geophysical_Methods\\Electrical_Methods\\Induced_Polarization.htm",
+                          "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
+                          "Surface_Geophysical_Methods\\Electrical_Methods\\Equipotential_and_Mise-a-la-Messe_Methods.htm",
+                          "Surface_Geophysical_Methods\\Electrical_Methods\\Self-Potential_(SP)_Method.htm",
+                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm"
+                        ],
+                        "label": "Landfill plume map"
+                      },
+                      {
+                        "keywords": [
+                          "conductivity",
+                          "contaminant",
+                          "contamination",
+                          "cross-hole methods",
+                          "electrical conductivity",
+                          "electrical resistivity",
+                          "electromagnetic",
+                          "experiments",
+                          "GPR",
+                          "ground penetrating radar",
+                          "groundwater contamination",
+                          "hazardous organic compounds",
+                          "landfill",
+                          "seismic",
+                          "seismic methods",
+                          "SP",
+                          "magnetic resonance sounding",
+                          "magnetic resonance tomography"
+                        ],
+                        "methods": [
+                          "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Gravity_Methods.htm",
+                          "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm",
+                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Metal_Detectors.htm",
+                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm",
+                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
+                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
+                          "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
+                          "Surface_Geophysical_Methods\\Electrical_Methods\\Equipotential_and_Mise-a-la-Messe_Methods.htm"
+                        ],
+                        "label": "Map contents of landfill"
+                      },
+                      {
+                        "keywords": [
+                          "conductivity",
+                          "contaminant",
+                          "contamination",
+                          "cross-hole methods",
+                          "electrical conductivity",
+                          "electrical resistivity",
+                          "electromagnetic",
+                          "experiments",
+                          "GPR",
+                          "ground penetrating radar",
+                          "groundwater contamination",
+                          "hazardous organic compounds",
+                          "landfill",
+                          "seismic",
+                          "seismic methods",
+                          "SP",
+                          "magnetic resonance sounding",
+                          "magnetic resonance tomography"
+                        ],
+                        "methods": [
+                          "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Gravity_Methods.htm",
+                          "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm",
+                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Metal_Detectors.htm",
+                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm",
+                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
+                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
+                          "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
+                          "Surface_Geophysical_Methods\\Electrical_Methods\\Equipotential_and_Mise-a-la-Messe_Methods.htm"
+                        ],
+                        "label": "Map landfill extent/boundary"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "What percentage of the Landfill surface is covered by buildings",
+                    "answer": [
+                      {
+                        "keywords": [
+                          "electrical resistivity",
+                          "EM",
+                          "electromagnetic induction",
+                          "electromagnetic",
+                          "seismic",
+                          "Seismic methods",
+                          "Self Potential"
+                        ],
+                        "methods": [
+                          "NOT:Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm",
+                          "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Gravity_Methods.htm"
+                        ],
+                        "label": "Greater than 50%"
+                      },
+                      {
+                        "keywords": [
+                          "4-D survey",
+                          "Characterization",
+                          "CPT",
+                          "direct push",
+                          "electrical conductivity",
+                          "electrical resistivity",
+                          "electromagnetic induction",
+                          "EM",
+                          "electromagnetic",
+                          "ERT",
+                          "landfill",
+                          "GPR",
+                          "Induced Polarization",
+                          "leachate plume",
+                          "leak detection",
+                          "magnetics",
+                          "resistivity",
+                          "seismic",
+                          "Seismic measurements",
+                          "Seismic methods",
+                          "Self Potential",
+                          "TEM"
+                        ],
+                        "methods": [
+                          "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
+                          "Surface_Geophysical_Methods\\Electrical_Methods\\Equipotential_and_Mise-a-la-Messe_Methods.htm",
+                          "Surface_Geophysical_Methods\\Electrical_Methods\\Self-Potential_(SP)_Method.htm",
+                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
+                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Metal_Detectors.htm",
+                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm",
+                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
+                          "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm"
+                        ],
+                        "label": "Less than or equal to 50%"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "label": "CSM (Conceptual Site Model) Development",
+                "question": [
+                  {
+                    "expanded": false,
+                    "answered": false,
+                    "type": "checkbox",
+                    "label": "What type of CSM (Conceptual Site Model) do you wish to develop?",
+                    "answer": [
+                      {
+                        "keywords": [
+                          "conductivity",
+                          "cross-hole methods",
+                          "electrical conductivity",
+                          "electrical resistivity",
+                          "electromagnetic",
+                          "field",
+                          "forward modeling",
+                          "GPR",
+                          "ground penetrating radar",
+                          "inversion",
+                          "seismic methods",
+                          "seismic"
+                        ],
+                        "methods": [
+                          "Surface_Geophysical_Methods\\Seismic_Methods\\Seismic_Reflection_Methods.htm",
+                          "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Gravity_Methods.htm",
+                          "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm",
+                          "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
+                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
+                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm"
+                        ],
+                        "label": "Map subsurface geology (includes depth to strata)"
+                      },
+                      {
+                        "keywords": [
+                          "conductivity",
+                          "cross-hole methods",
+                          "electrical conductivity",
+                          "electrical resistivity",
+                          "electromagnetic",
+                          "field",
+                          "forward modeling",
+                          "GPR",
+                          "ground penetrating radar",
+                          "inversion",
+                          "seismic methods",
+                          "seismic",
+                          "karstic conduit"
+                        ],
+                        "methods": [
+                          "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm",
+                          "Surface_Geophysical_Methods\\Electrical_Methods\\Equipotential_and_Mise-a-la-Messe_Methods.htm",
+                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Very_Low-Frequency_(VLF)_Method.htm",
+                          "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
+                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm"
+                        ],
+                        "label": "Map or characterize fractures"
+                      },
+                      {
+                        "keywords": [
+                          "conductivity",
+                          "electrical conductivity",
+                          "electrical resistivity",
+                          "electromagnetic",
+                          "seismic",
+                          "seismic methods"
+                        ],
+                        "methods": [
+                          "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Gravity_Methods.htm",
+                          "Surface_Geophysical_Methods\\Seismic_Methods\\Seismic_Reflection_Methods.htm",
+                          "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
+                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm",
+                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm"
+                        ],
+                        "label": "Map bedrock surface or determine depth to bedrock"
+                      },
+                      {
+                        "keywords": [
+                          "tomography",
+                          "water content",
+                          "SP",
+                          "resistivity",
+                          "groundwater",
+                          "ground penetrating radar",
+                          "GPR",
+                          "electromagnetic",
+                          "electrical resistivity",
+                          "electrical conductivity"
+                        ],
+                        "methods": [
+                          "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
+                          "Surface_Geophysical_Methods\\Electrical_Methods\\Self-Potential_(SP)_Method.htm",
+                          "Borehole_Geophysical_Methods\\index.htm"
+                        ],
+                        "label": "Groundwater surfacewater interface"
+                      },
+                      {
+                        "keywords": [
+                          "conductivity",
+                          "groundwater",
+                          "ground penetrating radar",
+                          "electrical resistivity",
+                          "electrical conductivity",
+                          "electromagnetic",
+                          "seismic",
+                          "seismic methods"
+                        ],
+                        "methods": [
+                          "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
+                          "Surface_Geophysical_Methods\\Seismic_Methods\\index.htm"
+                        ],
+                        "label": "Map,find or locate groundwater or water table"
+                      }
+                    ]
+                  }
+                ]
+              }
             ]
-         }
-      ]
-   }
+          }
+        ]
+      }
+    ]
+  }
 }

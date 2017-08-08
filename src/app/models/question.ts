@@ -5,4 +5,6 @@ export class Question {
   answer: Answer[];
   label: string;
   type: string;
+  expanded: boolean;
+  answered: boolean;
 }
