@@ -4,7 +4,7 @@ import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-instuctions-panel',
-  templateUrl: './instructions.component.html',
+  templateUrl: './instructions.component.html', 
   styleUrls: ['./instructions.component.css']
 })
 export class InstructionsComponent {

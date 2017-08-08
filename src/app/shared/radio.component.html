@@ -1,10 +1,15 @@
-
-<h3>
-	{{data.question.label}}
-</h3>
-<ul style="list-style:none">
-<li *ngFor="let answer of data.question.answer">
-	<input type="radio" name="answer" value=""> {{answer.label}} 
-</li>
-</ul>
+<div class="form-item form-type-radios form-item-radios">
+  <strong>
+    <label for="radio-site">{{data.question.label}}
+      <div class="helpText" *ngIf="data.question.help">({{data.question.help}})</div>
+    </label>
+  </strong>
+  <div class="form-radios" id="radio-site">
+    <div class="form-item form-type-radio form-item-radios">
+      <div *ngFor="let answer of data.question.answer">
+        <input class="form-radio" type="radio" name="answer" value="">
+        <label class="option" for="">{{answer.label}} <i>{{answer.help}}</i><label>
+      </div>
+    </div>
+  </div>
 
