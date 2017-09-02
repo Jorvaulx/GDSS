@@ -7,4 +7,5 @@ export class Question {
   type: string;
   expanded: boolean;
   answered: boolean;
+  value: string[];
 }

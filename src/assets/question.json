@@ -6,7 +6,7 @@
         ],
         "methods": [
         ],
-        "label": "Objectives",
+        "label": "Objectiv",
         "question": [
           {
             "type": "radio",
@@ -60,7 +60,8 @@
                                 "keywords": [
                                   "electromagnetic",
                                   "Ground penetrating radar",
-                                  "gravity;leak detection"
+                                  "gravity",
+                                  "leak detection"
                                 ],
                                 "methods": [
                                   "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Gravity_Methods.htm",
@@ -83,7 +84,8 @@
                             {
                               "keywords": [
                                 "Magnetic resonance sounding",
-                                "electromagnetic;leak detection"
+                                "electromagnetic",
+                                "leak detection"
                               ],
                               "methods": [
                                 "Surface_Geophysical_Methods\\Electromagnetic_Methods\\index.htm",
@@ -99,7 +101,8 @@
                               "keywords": [
                                 "electromagnetic",
                                 "Ground penetrating radar",
-                                "gravity;leak detection"
+                                "gravity",
+                                "leak detection"
                               ],
                               "methods": [
                                 "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Gravity_Methods.htm",
@@ -161,7 +164,8 @@
                                         "keywords": [
                                           "magnetic",
                                           "magnetics",
-                                          "magnetometers;electromagnetic",
+                                          "magnetometers",
+                                          "electromagnetic",
                                           "electromagnetic induction",
                                           "EM",
                                           "GPR",
@@ -1498,9 +1502,983 @@
                 ]
               }
             ]
+          },
+          {
+            "type": "textline",
+            "label": "Enter site information",
+            "answer": [
+              {
+                "help": "This ID will be used for record location and for your reference",
+                "label": "Site name or ID:"
+              }
+            ]
+          },
+          {
+            "label": "What is the climate of the site?",
+            "answer": [
+              {
+                "keywords": "frozen ground",
+                "methods": [
+                  "NOT:Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
+                  "Surface_Geophysical_Methods\\Electrical_Methods\\Induced_Polarization.htm",
+                  "Surface_Geophysical_Methods\\Electrical_Methods\\Self-Potential_(SP)_Method.htm",
+                  "Surface_Geophysical_Methods\\Electrical_Methods\\Equipotential_and_Mise-a-la-Messe_Methods.htm"
+                ],
+                "label": "arctic"
+              },
+              {
+                "label": "temperate"
+              },
+              {
+                "methods": [
+                  "Warnings_and_Special_Considerations.htm#Dry_Surface_Requires_Significant_Field_Procedures",
+                  "Warnings_and_Special_Considerations.htm#Some_Methods_Difficult_or_Impossible"
+                ],
+                "label": "dry or arid"
+              },
+              {
+                "methods": [
+                  "Warnings_and_Special_Considerations.htm#Some_Methods_Difficult_or_Impossible"
+                ],
+                "label": "tropical"
+              }
+            ]
+          },
+          {
+            "keywords": "",
+            "label": "What is the type of land surface at the site?",
+            "answer": [
+              {
+                "label": "Rural: general rural land surface"
+              },
+              {
+                "methods": [
+                  "NOT:Surface_Geophysical_Methods\\Potentia_Field_Methods\\Gravity_Methods.htm",
+                  "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm",
+                  "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Very_Low-Frequency_(VLF)_Method.htm"
+                ],
+                "label": "Suburban:  3 or more houses per acre"
+              },
+              {
+                "label": "Urban: high density city",
+                "question": [
+                  {
+                    "label": "Can traffic be controlled?",
+                    "answer": [
+                      {
+                        "label": "Yes."
+                      },
+                      {
+                        "keywords": [
+                          "NOT:magnetic resonance sounding",
+                          "electromagnetic",
+                          "electrical conductivity",
+                          "electrical resistivity",
+                          "seismic",
+                          "seismic methods"
+                        ],
+                        "methods": [
+                          "NOT:Surface_Geophysical_Methods\\Potentia_Field_Methods\\Gravity_Methods.htm",
+                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
+                          "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm"
+                        ],
+                        "label": "No."
+                      }
+                    ]
+                  },
+                  {
+                    "label": "What percentage of the site is covered by buildings?",
+                    "answer": [
+                      {
+                        "methods": [
+                          "Warnings_and_Special_Considerations.htm#Some_Methods_Difficult_or_Impossible"
+                        ],
+                        "label": "Greater than 50%"
+                      },
+                      {
+                        "label": "Less than or equal to 50%"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "label": "Industrial:  warehouse, manufacturing, retail, etc.",
+                "question": [
+                  {
+                    "help": "",
+                    "keywords": [],
+                    "methods": [],
+                    "label": "Is there uncontrolled electromagnetic or electric noise?",
+                    "answer": [
+                      {
+                        "help": "",
+                        "keywords": [],
+                        "methods": [
+                          "NOT:Surface_Geophysical_Methods\\Electromagnetic_Methods\\index.htm",
+                          "Surface_Geophysical_Methods\\Electrical_Methods\\index.htm",
+                          "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm"
+                        ],
+                        "label": "Yes"
+                      },
+                      {
+                        "help": "",
+                        "keywords": "",
+                        "methods": "",
+                        "label": "No"
+                      }
+                    ]
+                  },
+                  {
+                    "help": "",
+                    "keywords": "",
+                    "methods": [],
+                    "label": "Is there uncontrolled seismic noise?",
+                    "answer": [
+                      {
+                        "help": "",
+                        "keywords": [],
+                        "methods": [
+                          "NOT:Surface_Geophysical_Methods\\Seismic_Methods\\index.htm"
+                        ],
+                        "label": "Yes"
+                      },
+                      {
+                        "help": "",
+                        "keywords": "",
+                        "methods": "",
+                        "label": "No"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Can traffic be controlled?",
+                    "answer": [
+                      {
+                        "label": "Yes."
+                      },
+                      {
+                        "keywords": [
+                          "NOT:magnetic resonance sounding",
+                          "electromagnetic",
+                          "electrical conductivity",
+                          "electrical resistivity",
+                          "seismic",
+                          "seismic methods"
+                        ],
+                        "methods": [
+                          "NOT:Surface_Geophysical_Methods\\Potentia_Field_Methods\\Gravity_Methods.htm",
+                          "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm"
+                        ],
+                        "label": "No."
+                      }
+                    ]
+                  },
+                  {
+                    "label": "What percentage of site is covered by buildings?",
+                    "answer": [
+                      {
+                        "methods": [
+                          "Warnings_and_Special_Considerations.htm#Some_Methods_Difficult_or_Impossible"
+                        ],
+                        "label": "Greater than 50%"
+                      },
+                      {
+                        "label": "Less than or equal to 50%"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "methods": [],
+                "label": "Active Military Base ",
+                "question": [
+                  {
+                    "help": "",
+                    "keywords": [],
+                    "methods": [],
+                    "label": "Is there uncontrolled electromagnetic and electric noise?",
+                    "answer": [
+                      {
+                        "help": "",
+                        "keywords": [],
+                        "methods": [
+                          "NOT:Surface_Geophysical_Methods\\Electromagnetic_Methods\\index.htm",
+                          "Surface_Geophysical_Methods\\Electrical_Methods\\index.htm",
+                          "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm"
+                        ],
+                        "label": "Yes"
+                      },
+                      {
+                        "help": "",
+                        "keywords": [],
+                        "methods": [],
+                        "label": "No"
+                      }
+                    ]
+                  },
+                  {
+                    "help": "",
+                    "keywords": [],
+                    "methods": [],
+                    "label": "Is there uncontrolled siesmic noise?",
+                    "answer": [
+                      {
+                        "help": "",
+                        "keywords": [],
+                        "methods": [
+                          "NOT:Surface_Geophysical_Methods\\Seismic_Methods\\index.htm"
+                        ],
+                        "label": "Yes"
+                      },
+                      {
+                        "help": "",
+                        "keywords": [],
+                        "methods": [],
+                        "label": "No"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Can traffic be controlled?",
+                    "answer": [
+                      {
+                        "label": "Yes."
+                      },
+                      {
+                        "keywords": [
+                          "NOT:magnetic resonance sounding",
+                          "electromagnetic",
+                          "electrical conductivity",
+                          "electrical resistivity",
+                          "seismic",
+                          "seismic methods"
+                        ],
+                        "methods": [
+                          "NOT:Surface_Geophysical_Methods\\Potentia_Field_Methods\\Gravity_Methods.htm",
+                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
+                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm",
+                          "Surface_Geophysical_Methods\\Electrical_Methods\\index.htm"
+                        ],
+                        "label": "No."
+                      }
+                    ]
+                  },
+                  {
+                    "label": "What percentage of site is covered by buildings?",
+                    "answer": [
+                      {
+                        "methods": [
+                          "Warnings_and_Special_Considerations.htm#Some_Methods_Difficult_or_Impossible"
+                        ],
+                        "label": "Greater than 50%"
+                      },
+                      {
+                        "label": "Less than or equal to 50%"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "label": "Service station: automobile service station",
+                "question": [
+                  {
+                    "label": "Can traffic be controlled?",
+                    "answer": [
+                      {
+                        "label": "Yes."
+                      },
+                      {
+                        "keywords": [
+                          "NOT:magnetic resonance sounding",
+                          "electromagnetic",
+                          "electrical conductivity",
+                          "electrical resistivity",
+                          "seismic",
+                          "seismic methods"
+                        ],
+                        "methods": [
+                          "NOT:Surface_Geophysical_Methods\\Potentia_Field_Methods\\Gravity_Methods.htm",
+                          "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm"
+                        ],
+                        "label": "No."
+                      }
+                    ]
+                  },
+                  {
+                    "label": "What percentage of site is covered by buildings?",
+                    "answer": [
+                      {
+                        "keywords": [
+                          "NOT:magnetic",
+                          "Magnetic resonance sounding",
+                          "Magnetic resonance tomography",
+                          "Magnetic susceptibility",
+                          "magnetics",
+                          "magnetometers",
+                          "gravity"
+                        ],
+                        "methods": [
+                          "Warnings_and_Special_Considerations.htm#Some_Methods_Difficult_or_Impossible",
+                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Metal_Detectors.htm",
+                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
+                          "Warnings_and_Special_Considerations.htm"
+                        ],
+                        "label": "Greater than 50%"
+                      },
+                      {
+                        "methods": [
+                          "Surface_Geophysical_Methods\\Electrical_Methods\\index.htm",
+                          "Surface_Geophysical_Methods\\Electrical_Methods\\Equipotential_and_Mise-a-la-Messe_Methods.htm",
+                          "Surface_Geophysical_Methods\\Electrical_Methods\\Induced_Polarization.htm",
+                          "Surface_Geophysical_Methods\\Electrical_Methods\\Self-Potential_(SP)_Method.htm",
+                          "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
+                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
+                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
+                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Metal_Detectors.htm",
+                          "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Seismoelectrical_Method.htm",
+                          "Surface_Geophysical_Methods\\Seismic_Methods\\index.htm",
+                          "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm",
+                          "Warnings_and_Special_Considerations.htm"
+                        ],
+                        "label": "Less than or equal to 50%"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "label": "Surface water body",
+                "question": [
+                  {
+                    "label": "What type of water?",
+                    "answer": [
+                      {
+                        "label": "Fresh"
+                      },
+                      {
+                        "methods": [
+                          "NOT:Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm"
+                        ],
+                        "label": "Marine"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "What type of water body?",
+                    "answer": [
+                      {
+                        "methods": [
+                          "Marine_Geophysical_Methods\\index.htm"
+                        ],
+                        "label": "creek/stream"
+                      },
+                      {
+                        "methods": [
+                          "Marine_Geophysical_Methods\\index.htm"
+                        ],
+                        "label": "river"
+                      },
+                      {
+                        "methods": [
+                          "Marine_Geophysical_Methods\\index.htm"
+                        ],
+                        "label": "lake"
+                      },
+                      {
+                        "methods": [
+                          "Warnings_and_Special_Considerations.htm#Dry_Surface_Requires_Significant_Field_Procedures"
+                        ],
+                        "label": "bay/estuary"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "methods": [
+                  "Warnings_and_Special_Considerations.htm#Some_Methods_Difficult_or_Impossible"
+                ],
+                "label": "Inside a building"
+              }
+            ]
+          },
+          {
+            "help": "",
+            "keywords": "",
+            "methods": "",
+            "type": "checkbox",
+            "label": "What are the anticipated near surface geologic conditions?",
+            "answer": [
+              {
+                "help": "",
+                "keywords": [],
+                "methods": [],
+                "label": "Unknown"
+              },
+              {
+                "help": "",
+                "keywords": [],
+                "methods": [
+                  "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
+                  "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Tilt_Angle_Method",
+                  "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
+                  "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm",
+                  "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Gravity_Methods.htm",
+                  "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm",
+                  "Surface_Geophysical_Methods\\Seismic_Methods\\Seismic_Reflection_Methods.htm",
+                  "Surface_Geophysical_Methods\\Seismic_Methods\\index.htm",
+                  "Surface_Geophysical_Methods\\Seismic_Methods\\Surface_Wave_Methods.htm",
+                  "Warnings_and_Special_Considerations.htm",
+                  "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm",
+                  "Surface_Geophysical_Methods\\Electrical_Methods\\Self-Potential_(SP)_Method.htm",
+                  "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
+                  "Surface_Geophysical_Methods\\Electrical_Methods\\Induced_Polarization.htm",
+                  "Surface_Geophysical_Methods\\Electrical_Methods\\Equipotential_and_Mise-a-la-Messe_Methods.htm"
+                ],
+                "label": "Competent Bedrock"
+              },
+              {
+                "help": "",
+                "keywords": [],
+                "methods": [],
+                "label": "Fractured/ Weathered Bedrock"
+              },
+              {
+                "help": "",
+                "keywords": [],
+                "methods": [],
+                "label": "Alluvial / Unconsolidated Sediment"
+              },
+              {
+                "help": "",
+                "keywords": [],
+                "methods": [
+                  "Warnings_and_Special_Considerations.htm#Some_Methods_Difficult_or_Impossible"
+                ],
+                "label": "High Clay Content Unconsolidated Sediment"
+              },
+              {
+                "help": "",
+                "keywords": [],
+                "methods": [
+                  "Warnings_and_Special_Considerations.htm#Some_Methods_Difficult_or_Impossible"
+                ],
+                "label": "Peat / Organic Sediment"
+              }
+            ]
+          },
+          {
+            "help": "",
+            "keywords": [],
+            "methods": [],
+            "label": "What is the anticipated depth to target?",
+            "answer": [
+              {
+                "help": "",
+                "keywords": [],
+                "methods": [],
+                "label": "Unknown"
+              },
+              {
+                "help": "",
+                "keywords": [],
+                "methods": [
+                  "Surface_Geophysical_Methods\\Electromagnetic_Methods\\index.htm",
+                  "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm",
+                  "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Tilt_Angle_Method",
+                  "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
+                  "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Metal_Detectors.htm",
+                  "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm",
+                  "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm"
+                ],
+                "label": "Ground Surface"
+              },
+              {
+                "help": "",
+                "keywords": [],
+                "methods": [
+                  "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
+                  "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Metal_Detectors.htm",
+                  "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm",
+                  "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method"
+                ],
+                "label": "< 3 Feet Below Ground Surface (BGS)"
+              },
+              {
+                "help": "",
+                "keywords": [],
+                "methods": [
+                  "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
+                  "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method"
+                ],
+                "label": "< 10 Feet BGS"
+              },
+              {
+                "help": "",
+                "keywords": [],
+                "methods": [
+                  "Surface_Geophysical_Methods\\Electrical_Methods\\index.htm",
+                  "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
+                  "Surface_Geophysical_Methods\\Electrical_Methods\\Induced_Polarization.htm",
+                  "Surface_Geophysical_Methods\\Seismic_Methods\\index.htm",
+                  "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm",
+                  "Surface_Geophysical_Methods\\Electrical_Methods\\Equipotential_and_Mise-a-la-Messe_Methods.htm",
+                  "Surface_Geophysical_Methods\\Electrical_Methods\\Self-Potential_(SP)_Method.htm",
+                  "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm"
+                ],
+                "label": "< 50 feet BGS"
+              },
+              {
+                "help": "",
+                "keywords": [
+                  "TEM",
+                  "TEM method",
+                  "time domain",
+                  "VLF",
+                  "SP",
+                  "resistivity"
+                ],
+                "methods": [
+                  "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm",
+                  "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm",
+                  "Surface_Geophysical_Methods\\Electrical_Methods\\Self-Potential_(SP)_Method.htm",
+                  "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
+                  "Surface_Geophysical_Methods\\Electrical_Methods\\Induced_Polarization.htm",
+                  "Surface_Geophysical_Methods\\Electrical_Methods\\Equipotential_and_Mise-a-la-Messe_Methods.htm",
+                  "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Very_Low-Frequency_(VLF)_Method.htm",
+                  "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Gravity_Methods.htm"
+                ],
+                "label": "< 100 Feet BGS"
+              },
+              {
+                "help": "",
+                "keywords": [
+                  "gravity",
+                  "Seismic methods",
+                  "Seismic measurements",
+                  "seismology"
+                ],
+                "methods": [
+                  "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Gravity_Methods.htm",
+                  "Surface_Geophysical_Methods\\Seismic_Methods\\index.htm"
+                ],
+                "label": "> 500 Feet BGS"
+              }
+            ]
+          },
+          {
+            "label": "Are manmade features present on the surface at the site?",
+            "answer": [
+              {
+                "label": "Yes.",
+                "question": [
+                  {
+                    "type": "checkbox",
+                    "label": "Which of the following manmade objects are on the surface of the site.",
+                    "answer": [
+                      {
+                        "methods": [
+                          "Warnings_and_Special_Considerations.htm#Some_Methods_Difficult_or_Impossible"
+                        ],
+                        "label": "Roads"
+                      },
+                      {
+                        "methods": [
+                          "Warnings_and_Special_Considerations.htm#Some_Methods_Difficult_or_Impossible"
+                        ],
+                        "label": "Metallic fences"
+                      },
+                      {
+                        "methods": [
+                          "Warnings_and_Special_Considerations.htm#Some_Methods_Difficult_or_Impossible"
+                        ],
+                        "label": "Pipes"
+                      },
+                      {
+                        "methods": [
+                          "Warnings_and_Special_Considerations.htm#Some_Methods_Difficult_or_Impossible"
+                        ],
+                        "label": "Miscellaneous surface metallic objects"
+                      },
+                      {
+                        "label": "Buildings and Structures"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "label": "No, the site is empty, with few or no manmade features."
+              }
+            ]
+          },
+          {
+            "label": "What type of vegetation cover is on the surface of the site?",
+            "answer": [
+              {
+                "methods": [
+                  "Surface_Geophysical_Methods\\index.htm",
+                  "Surface_Geophysical_Methods\\Electrical_Methods\\index.htm",
+                  "Surface_Geophysical_Methods\\Electrical_Methods\\Self-Potential_(SP)_Method.htm",
+                  "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
+                  "Surface_Geophysical_Methods\\Electrical_Methods\\Induced_Polarization.htm",
+                  "Surface_Geophysical_Methods\\Electrical_Methods\\Equipotential_and_Mise-a-la-Messe_Methods.htm",
+                  "Surface_Geophysical_Methods\\Electromagnetic_Methods\\index.htm",
+                  "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm",
+                  "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
+                  "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Metal_Detectors.htm",
+                  "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Seismoelectrical_Method.htm",
+                  "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm",
+                  "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Very_Low-Frequency_(VLF)_Method.htm",
+                  "Surface_Geophysical_Methods\\Nuclear_Methods.htm",
+                  "Surface_Geophysical_Methods\\Potentia_Field_Methods\\index.htm",
+                  "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Gravity_Methods.htm",
+                  "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm",
+                  "Surface_Geophysical_Methods\\Seismic_Methods\\index.htm",
+                  "Surface_Geophysical_Methods\\Seismic_Methods\\Seismic_Reflection_Methods.htm",
+                  "Surface_Geophysical_Methods\\Seismic_Methods\\Seismic_Reflection_Methods.htm#Common-Offset_Seismic_Reflection_Method",
+                  "Surface_Geophysical_Methods\\Seismic_Methods\\Surface_Wave_Methods.htm",
+                  "Warnings_and_Special_Considerations.htm#Survey_When_Dry",
+                  "Warnings_and_Special_Considerations.htm#Dry_Surface_Requires_Significant_Field_Procedures",
+                  "Warnings_and_Special_Considerations.htm#Some_Methods_Difficult_or_Impossible"
+                ],
+                "label": "None or sparse vegetation"
+              },
+              {
+                "methods": [
+                  "Warnings_and_Special_Considerations.htm#Some_Methods_Difficult_or_Impossible"
+                ],
+                "label": "Thick"
+              },
+              {
+                "methods": [
+                  "Warnings_and_Special_Considerations.htm#Some_Methods_Difficult_or_Impossible"
+                ],
+                "label": "Trees"
+              },
+              {
+                "keywords": [],
+                "methods": [
+                  "Warnings_and_Special_Considerations.htm#Some_Methods_Difficult_or_Impossible"
+                ],
+                "label": "Shrubs"
+              }
+            ]
+          },
+          {
+            "label": "Is the site generally accessible?",
+            "answer": [
+              {
+                "label": "Yes."
+              },
+              {
+                "methods": [
+                  "Warnings_and_Special_Considerations.htm#Some_Methods_Difficult_or_Impossible"
+                ],
+                "label": "No."
+              }
+            ]
+          },
+          {
+            "type": "checkbox",
+            "label": "Are any of the following subsurface objects known to exist at the site?",
+            "answer": [
+              {
+                "methods": [
+                  "Warnings_and_Special_Considerations.htm#Some_Methods_Difficult_or_Impossible"
+                ],
+                "label": "Pipes"
+              },
+              {
+                "methods": [
+                  "Warnings_and_Special_Considerations.htm",
+                  "Warnings_and_Special_Considerations.htm#Some_Methods_Difficult_or_Impossible"
+                ],
+                "label": "Underground utilities",
+                "question": [
+                  {
+                    "label": "What type of underground utilities?",
+                    "answer": [
+                      {
+                        "help": "",
+                        "keywords": [],
+                        "methods": [],
+                        "label": "unknown"
+                      },
+                      {
+                        "methods": [
+                          "Warnings_and_Special_Considerations.htm#Some_Methods_Difficult_or_Impossible"
+                        ],
+                        "label": "electric"
+                      },
+                      {
+                        "methods": [
+                          "Warnings_and_Special_Considerations.htm#Some_Methods_Difficult_or_Impossible"
+                        ],
+                        "label": "phone"
+                      },
+                      {
+                        "methods": [
+                          "Warnings_and_Special_Considerations.htm#Some_Methods_Difficult_or_Impossible"
+                        ],
+                        "label": "cable"
+                      },
+                      {
+                        "methods": [
+                          "Warnings_and_Special_Considerations.htm#Some_Methods_Difficult_or_Impossible"
+                        ],
+                        "label": "internet"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "methods": [
+                  "Warnings_and_Special_Considerations.htm#Some_Methods_Difficult_or_Impossible"
+                ],
+                "label": "Utility or other trenches"
+              },
+              {
+                "label": "Wells",
+                "question": [
+                  {
+                    "type": "checkbox",
+                    "label": "What type of wells are present at the site?",
+                    "answer": [
+                      {
+                        "label": "Monitoring wells",
+                        "question": [
+                          {
+                            "label": "Are sampling or supply pumps present in wells?",
+                            "answer": [
+                              {
+                                "label": "No."
+                              },
+                              {
+                                "methods": [
+                                  "Warnings_and_Special_Considerations.htm#Some_Methods_Difficult_or_Impossible"
+                                ],
+                                "label": "Yes."
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "label": "Supply wells",
+                        "question": [
+                          {
+                            "label": "Are sampling or supply pumps present in wells?",
+                            "answer": [
+                              {
+                                "label": "No."
+                              },
+                              {
+                                "methods": [
+                                  "Warnings_and_Special_Considerations.htm#Some_Methods_Difficult_or_Impossible"
+                                ],
+                                "label": "Yes."
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "checkbox",
+                    "label": "What is (are) the well casing type(s)?",
+                    "answer": [
+                      {
+                        "label": "PVC"
+                      },
+                      {
+                        "methods": [
+                          "Warnings_and_Special_Considerations.htm#Some_Methods_Difficult_or_Impossible"
+                        ],
+                        "label": "Metallic"
+                      },
+                      {
+                        "methods": [
+                          "Warnings_and_Special_Considerations.htm#Some_Methods_Difficult_or_Impossible"
+                        ],
+                        "label": "Ferrous"
+                      },
+                      {
+                        "label": "Non-ferrous"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "help": "",
+                "keywords": [],
+                "methods": [],
+                "label": "None of the above"
+              }
+            ]
+          },
+          {
+            "type": "checkbox",
+            "label": "What are the characteristics of the ground surface?",
+            "answer": [
+              {
+                "label": "Concrete",
+                "question": [
+                  {
+                    "label": "What is the type of rebar in the concrete?",
+                    "answer": [
+                      {
+                        "help": "",
+                        "keywords": [],
+                        "methods": [],
+                        "label": "There is no rebar"
+                      },
+                      {
+                        "methods": [
+                          "Warnings_and_Special_Considerations.htm#Some_Methods_Difficult_or_Impossible"
+                        ],
+                        "label": "Rebar is present, click to define the spacing",
+                        "question": [
+                          {
+                            "methods": [
+                              "Warnings_and_Special_Considerations.htm#Some_Methods_Difficult_or_Impossible"
+                            ],
+                            "type": "textline",
+                            "label": "What is the spacing of the rebar?",
+                            "answer": [
+                              {
+                                "label": "Rebar Spacing:"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "methods": [
+                          "Warnings_and_Special_Considerations.htm#Some_Methods_Difficult_or_Impossible"
+                        ],
+                        "label": "Wire mesh"
+                      },
+                      {
+                        "help": "",
+                        "keywords": [],
+                        "methods": [],
+                        "label": "unknown"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "methods": [
+                  "Warnings_and_Special_Considerations.htm#Some_Methods_Difficult_or_Impossible"
+                ],
+                "label": "Asphalt"
+              },
+              {
+                "help": "",
+                "keywords": [],
+                "methods": [
+                  "Warnings_and_Special_Considerations.htm#Some_Methods_Difficult_or_Impossible"
+                ],
+                "label": "Clay / Significant Clay Content"
+              },
+              {
+                "label": "Grass"
+              },
+              {
+                "label": "Gravel"
+              },
+              {
+                "methods": [
+                  "Warnings_and_Special_Considerations.htm#Some_Methods_Difficult_or_Impossible"
+                ],
+                "label": "Surface vegetation",
+                "question": [
+                  {
+                    "label": "What type of surface vegetation?",
+                    "answer": [
+                      {
+                        "methods": [
+                          "Warnings_and_Special_Considerations.htm#Some_Methods_Difficult_or_Impossible",
+                          "Warnings_and_Special_Considerations.htm"
+                        ],
+                        "label": "Thick (jungle, old growth forest, corn field)"
+                      },
+                      {
+                        "label": "Moderate (forest)"
+                      },
+                      {
+                        "label": "Sparse (meadow)"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "methods": [
+                  "Warnings_and_Special_Considerations.htm"
+                ],
+                "label": "Wetland",
+                "question": [
+                  {
+                    "label": "What type of wetland?",
+                    "answer": [
+                      {
+                        "methods": [
+                          "Warnings_and_Special_Considerations.htm#Survey_When_Dry"
+                        ],
+                        "label": "Intermittent wetland"
+                      },
+                      {
+                        "methods": [
+                          "Warnings_and_Special_Considerations.htm#Some_Methods_Difficult_or_Impossible"
+                        ],
+                        "label": "Swamp/bog"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "What is the Surface topography?",
+            "answer": [
+              {
+                "label": "Flat"
+              },
+              {
+                "methods": [
+                  "Warnings_and_Special_Considerations.htm#Some_Methods_Difficult_or_Impossible"
+                ],
+                "label": "Undulating (~ 6 feet relief)"
+              },
+              {
+                "methods": [
+                  "Warnings_and_Special_Considerations.htm#Some_Methods_Difficult_or_Impossible"
+                ],
+                "label": "Hummocky (~ 15 feet relief)"
+              },
+              {
+                "methods": [
+                  "Warnings_and_Special_Considerations.htm#Some_Methods_Difficult_or_Impossible"
+                ],
+                "label": "Hilly (~ 30 feet relief)"
+              }
+            ]
           }
         ]
       }
     ]
   }
 }
+
+
+

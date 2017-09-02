@@ -1,6 +1,6 @@
 import { Component, Input, AfterViewInit, ViewChild, ComponentFactoryResolver, OnDestroy, OnInit, ChangeDetectorRef } from '@angular/core';
 import { QuestionDirective } from './question.directive';
-import { QuestionItem } from './question-item';
+import { QuestionItem } from '../models/question-item';
 import { QuestionComponent } from './question.component';
 
 @Component({

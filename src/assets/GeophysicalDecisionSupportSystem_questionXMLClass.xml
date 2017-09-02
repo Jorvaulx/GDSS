@@ -1,5 +1,5 @@
 <questions>
-    <!--Question type attributes: radiobutton(only one answer can be selected),checkbox(multiple answers can be selected),textline(Single line of text input),textbox(Multiple lines of text input)-->
+    <!--Question type attributes: radiobutton(only one answer can be selected),checkbox(multiple answer can be selected),textline(Single line of text input),textbox(Multiple lines of text input)-->
     <!--Methods Output/Logic option:  define a field/variable to store the methods as defined for each question.  Then update this output variable by adding or subtracting methods from its value based on the responses to the questions.  Therefore, in the comment sections for each answer: where there are method codes listed, these should be compared to the value of "output variable" and then output variable is appended with duplicates getting higher weight and moved to the front of the methods list and considered a higher probability of working.  If, on the other hand, the comments for the answer says NOT _____, then this method is removed from the output variable list.    -->
     <folder keywords="" methods="" label="Objectives" >
         <question help="Select the option which best describes the purpose of your project.&amp;#xA&amp;#xA" label="What is the objective of your geophysical project?" >
@@ -149,7 +149,7 @@
         </question>
     </folder>
     <folder label="Site Information" >
-        <!-- most of the answers to these questions in "Site Information" should be stored for comparison to the key words and title in the references -->
+        <!-- most of the answer to these questions in "Site Information" should be stored for comparison to the key words and title in the references -->
         <question type="textline" label="Enter site information" >
             <answer help="This ID will be used for record location and for your reference" label="Site name or ID:" />
             <!-- use this for header/meta data for file storage, record keeping, header data for output of results -->

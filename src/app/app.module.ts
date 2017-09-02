@@ -2,6 +2,7 @@ import {NgModule, NO_ERRORS_SCHEMA} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 import {HttpModule} from '@angular/http';
 import {CoolStorageModule} from 'angular2-cool-storage';
+import * as $ from 'jquery';
 
 /* App Root */
 import {AppComponent} from './app.component';

@@ -3,18 +3,20 @@
 <div class="panel-pane pane-node-content">
   <div class="pane-content">
     <div class="node node-page clearfix view-mode-full">
-      <div class="row">
-        <div class="nav-item">
-          <a class="nav-link" routerLink="instructions" routerLinkActive="active"><b>Instructions</b></a>
+      <div class="row" style="margin-left:40px">
+        <div class="nav-item" style="width:33%;">
+          <a class="nav-link" routerLink="instructions" routerLinkActive="active"><b>Instructions</b></a>---------------
         </div>
-        <div class="nav-item">
-          <a class="nav-link" routerLink="input" routerLinkActive="active"><b>Data Input</b></a>
+        <div class="nav-item" style="width:33%">
+          <a class="nav-link" routerLink="input" routerLinkActive="active"><b>Data Input</b></a>-----------------
         </div>
         <div class="nav-item">
           <a class="nav-link" routerLink="results" routerLinkActive="active"><b>Results</b></a>
         </div>
       </div>
-      <router-outlet></router-outlet>
+      <p style="margin-top: 20px;">
+        <router-outlet></router-outlet>
+      </p>
     </div>
   </div>
 </div>

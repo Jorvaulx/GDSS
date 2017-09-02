@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { QuestionItem } from './question-item';
+import { Question } from '../models/question';
 
 @Component({
   selector: 'navigation-container',
@@ -7,7 +7,7 @@ import { QuestionItem } from './question-item';
 })
 
 export class NavigationComponent implements OnInit {
-  @Input() question: QuestionItem;
+  @Input() question: Question;
 
   constructor() { }
 

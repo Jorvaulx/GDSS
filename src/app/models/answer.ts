@@ -7,4 +7,5 @@ export class Answer {
   question: Question;
   keywords: string;
   methods: string;
+  value: string;
 }

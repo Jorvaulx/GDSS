@@ -1,17 +1,32 @@
-<h1>radio</h1>
 <div class="form-item form-type-radios form-item-radios">
-  <strong>
-    <label for="radio-site">{{data.question.label}}
-      <div class="helpText" *ngIf="data.question.help">({{data.question.help}})</div>
-    </label>
-  </strong>
-  <div class="form-radios" id="radio-site">
-    <div class="form-item form-type-radio form-item-radios">
-      <div *ngFor="let answer of data.question.answer">
-        <input class="form-radio" type="radio" name="answer" value=""/>
-        <label class="option" for=" ">{{answer.label}} <i>{{answer.help}}</i></label>
-      </div>
+  <div class="row">
+    <div class="firstColumn">
+      <strong>
+        <label for="radio-site">{{data.question.label}}<br>
+          <div class="helpText" *ngIf="data.question.help" style="float:left;">({{data.question.help}})</div>
+        </label>
+      </strong>
+    </div>
+    <div class="secondColumn" (click)="toggleExpand()">
+      <div *ngIf="data.question.expanded;else elseBlock"> -</div>
+      <ng-template #elseBlock> +</ng-template>
     </div>
   </div>
+  <div style="clear:both;"></div>
+  <div class="form-radios" id="radio-site" *ngIf="data.question.expanded; else notActive">
+    <div class="form-item form-type-radio form-item-radios">
+      <div *ngFor="let answer of data.question.answer" (click)="selectAnswer(answer)">
+        <input type="radio" name="answer" value="{{answer.label}}" [(ngModel)]="answer" class="form-radio"/>
+        <label class="option" for=" ">
+          {{answer.label}}
+          <div class="helpText">{{answer.help}}</div>
+        </label>
+      </div>
+    </div>
+    <navigation-container [question]="data"></navigation-container>
+  </div>
+  <ng-template #notActive>
+    <not-active [answers]="data.question.value"></not-active>
+  </ng-template>
 </div>
 

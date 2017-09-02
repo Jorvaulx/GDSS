@@ -1,3 +1,12 @@
-<div>
-	{{data.question}}
+<div class="form-item" (click)="toggleExpand()">
+  <strong>
+    <label for="text-site">{{data.question.label}}<br>
+      <div class="helpText" *ngIf="data.question.help">({{data.question.help}})</div>
+    </label>
+  </strong>
+  <div *ngIf="data.question.expanded" id="text-site">
+    <input type="text" value="{{data.question.answer[0].value}}"><br>
+    <div class="helpText">{{data.question.answer[0].help}}</div>
+    <navigation-container [question]="data"></navigation-container>
+  </div>
 </div>
