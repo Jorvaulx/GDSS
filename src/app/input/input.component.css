@@ -32,3 +32,26 @@ li {
 .row:after {
   clear:both;
 }
+
+.nav-button {
+  margin-top: -23px;
+  float: right;
+  padding-right: 15px;
+}
+div.inline div {
+  float:left;
+}
+div.inline:after {
+  clear:both;
+}
+.flipLetter {
+  /* Rotate div */
+  -ms-transform: rotate(180deg); /* IE 9 */
+  -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+  transform: rotate(180deg);
+  padding: 0px 7px 0px 0px;
+}
+
+div.secondColumn img {
+  width:18px;
+}

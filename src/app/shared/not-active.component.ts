@@ -13,11 +13,14 @@ export class NotActiveComponent {
   @Input()
   set answers(answers: Array<string>) {
     let localArray = [];
-    if (answers) {
-      answers.forEach(function (answer) {
-        localArray.push(answer);
-      })
-    }
+    // if (answers) {
+    //   console.log("answers forEach begin");
+    //   answers.forEach(function (answer) {
+    //     localArray.push(answer);
+    //   });
+    //
+    //   console.log("answers forEach end");
+    // }
     this._answers = localArray;
   }
 

@@ -1,14 +1,27 @@
-<div class="form-item" (click)="toggleExpand()">
+<div class="form-item">
+  <div class="row">
+  <div class="firstColumn">
   <strong>
     <label for="checkbox-site">{{data.question.label}}<br>
       <div class="helpText" *ngIf="data.question.help">({{data.question.help}})</div>
     </label>
   </strong>
+  </div>
+  <div class="secondColumn" (click)="toggleExpand()">
+    <ng-template [ngIf]="!data.question.value&&!data.question.expanded">
+      <img src="../../assets/images/lock.png" width="50"/>
+    </ng-template>
+    <ng-template [ngIf]="data.question.expanded"> -</ng-template>
+    <ng-template [ngIf]="data.question.value&&!data.question.expanded"> +</ng-template>
+  </div>
+  </div>
   <div id="checkbox-site" *ngIf="data.question.expanded">
     <div *ngFor="let answer of data.question.answer">
       <input type="checkbox" name="answer" value="">
       <label class="option" for=" ">{{answer.label}}<br> <i>{{answer.help}}</i></label>
     </div>
-    <navigation-container [question]="data"></navigation-container>
+    <div *ngIf="enableNavigation">
+      <navigation-container [questions]="nextQuestions"></navigation-container>
+    </div>
   </div>
 </div>

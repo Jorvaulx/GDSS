@@ -1,12 +1,25 @@
-<div class="form-item" (click)="toggleExpand()">
-  <strong>
-    <label for="text-site">{{data.question.label}}<br>
-      <div class="helpText" *ngIf="data.question.help">({{data.question.help}})</div>
-    </label>
-  </strong>
+<div class="form-item">
+  <div class="row">
+    <div class="firstColumn">
+      <strong>
+        <label for="text-site">{{data.question.label}}<br>
+          <div class="helpText" *ngIf="data.question.help">({{data.question.help}})</div>
+        </label>
+      </strong>
+    </div>
+    <div class="secondColumn" (click)="toggleExpand()">
+      <ng-template [ngIf]="!data.question.value&&!data.question.expanded">
+        <img src="../../assets/images/lock.png" width="50"/>
+      </ng-template>
+      <ng-template [ngIf]="data.question.expanded"> -</ng-template>
+      <ng-template [ngIf]="data.question.value&&!data.question.expanded"> +</ng-template>
+    </div>
+  </div>
   <div *ngIf="data.question.expanded" id="text-site">
     <input type="text" value="{{data.question.answer[0].value}}"><br>
     <div class="helpText">{{data.question.answer[0].help}}</div>
-    <navigation-container [question]="data"></navigation-container>
+    <div *ngIf="enableNavigation">
+      <navigation-container [questions]="nextQuestions"></navigation-container>
+    </div>
   </div>
 </div>

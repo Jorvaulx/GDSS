@@ -1,2 +1,8 @@
-Enabled when question is answered
-<button>Next</button>
+<div class="row">
+  <div class="nav-button">
+    <button (click)="handleNavigation()"><div class="inline"><div>Next</div><div class="flipLetter">&nbsp;&nbsp;^</div></div></button>
+  </div>
+</div>
+<ng-template [ngIf]="nextQuestion">
+  <question-container [question]="nextQuestion"></question-container>
+</ng-template>

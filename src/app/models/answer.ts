@@ -4,7 +4,7 @@ export class Answer {
   label: string;
   type: string;
   help: string;
-  question: Question;
+  question: Question[];
   keywords: string;
   methods: string;
   value: string;
