@@ -9,7 +9,7 @@
     </div>
     <div class="secondColumn" (click)="toggleExpand()">
       <ng-template [ngIf]="!data.question.value&&!data.question.expanded">
-        <img src="../../assets/images/lock.png" width="50"/>
+        <img src="../../assets/images/lock.png" title="Questions unlocked when prior questions are answered." alt="Questions unlocked when prior questions are answered."/>
       </ng-template>
       <ng-template [ngIf]="data.question.expanded"> -</ng-template>
       <ng-template [ngIf]="data.question.value&&!data.question.expanded"> +</ng-template>

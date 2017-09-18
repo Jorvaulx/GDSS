@@ -4,5 +4,7 @@
   </div>
 </div>
 <ng-template [ngIf]="nextQuestion">
-  <question-container [question]="nextQuestion"></question-container>
+  <div *ngFor="let item of nextQuestion.questions">
+  <question-container [question]="item"></question-container>
+  </div>
 </ng-template>

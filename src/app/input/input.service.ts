@@ -45,44 +45,6 @@ export class InputService {
     }
   }
 
-  getTestQuestions(): Promise<QuestionItemList> {
-    let forward = new Question();
-    let back = new Question();
-    let question = new Question();
-    let questionList = new QuestionItemList();
-    let self = this;
-
-    const tempQuestions = [];
-    return this.getQuestions().then(questions => {
-      let first = true;
-      jQuery.each(questions.folder[0].question, function (index, value) {
-        question = new Question();
-        const answer = [];
-        value['answer'].forEach(function (value) {
-          answer.push(value);
-        });
-        question.answer = answer;
-        question.type = value['type']
-
-        if (first) {
-          question.expanded = true;
-          first = false;
-        } else {
-          question.expanded = value['expanded']?value['expanded']:false;
-        }
-        question.help = value['help']?value['help']:'';
-        question.label = value['label']?value['label']:'label missing';
-
-        console.log("value,index",value,index,question,answer);
-        tempQuestions.push(new QuestionItem(self.determineComponent(question), {question: question}));
-        console.log("question",question,questions);
-      });
-      questionList.questions = tempQuestions;
-      console.log('tempQuestions',tempQuestions);
-      return questionList;
-    });
-  }
-
   getTestQuestion(): Promise<QuestionItem> {
     let forward = new Question();
     let back = new Question();
@@ -118,6 +80,87 @@ export class InputService {
 
       return new QuestionItem(this.determineComponent(question), {question: question});
     });
+  }
+
+  getTestQuestions(): Promise<QuestionItemList> {
+    let forward = new Question();
+    let back = new Question();
+    let question = new Question();
+    let questionList = new QuestionItemList();
+    let self = this;
+
+    const tempQuestions = [];
+    return this.getQuestions().then(questions => {
+      let first = true;
+      jQuery.each(questions.folder[0].question, function (index, value) {
+        question = new Question();
+        const answer = [];
+        const depth = 0;
+        value['answer'].forEach(function (value) {
+          if (value.question)
+            value.question = self.buildTree(value.question, depth);
+          answer.push(value);
+        });
+        question.answer = answer;
+        question.type = value['type']
+        question.show = true;
+
+        if (first) {
+          question.expanded = true;
+          first = false;
+        } else {
+          question.expanded = value['expanded'] ? value['expanded'] : false;
+        }
+        question.help = value['help'] ? value['help'] : '';
+        question.label = value['label'] ? value['label'] : 'label missing';
+
+        console.log("value,index", value, index, question, answer);
+        tempQuestions.push(new QuestionItem(self.determineComponent(question), {question: question}));
+        console.log("question", question, questions);
+      });
+      questionList.questions = tempQuestions;
+      console.log('tempQuestions', tempQuestions);
+      return questionList;
+    });
+  }
+
+  buildTree(questions: Question[], depth: number): QuestionItemList {
+    let complete = false;
+    let results = [];
+    let self = this;
+    let questionList = new QuestionItemList();
+    depth = +1;
+
+    questions.every(function (element, index) {
+      let questionItem = new Question();
+      let answers = [];
+
+      questionItem = element;
+
+      if (questionItem.value && questionItem.value.length) {
+        answers = questionItem.answer;
+        questionItem.answer = []; // Clear out answers
+        answers.forEach(function (answerItem) {
+          questionItem.value.forEach(function (savedValue) {
+            if (answerItem.question) {
+              answerItem.question = self.buildTree(answerItem.question, depth);
+            }
+            questionItem.answer.push(answerItem);
+          });
+        });
+        console.log("found values", questionItem);
+        results.push(new QuestionItem(self.determineComponent(questionItem), {question: questionItem}));
+      } else {
+        console.log("not found values", questionItem);
+        questionItem.answer.forEach(function (answerItem) {
+          answerItem.question = []; // clear out questions above
+        })
+        results.push(new QuestionItem(self.determineComponent(questionItem), {question: questionItem}));
+      }
+      return true;
+    });
+    questionList.questions = results;
+    return questionList;
   }
 
   private determineComponent(question: Question) {
