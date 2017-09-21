@@ -1,7 +1,6 @@
 import {Injectable} from '@angular/core';
 import {Http, Response} from '@angular/http';
 
-import {Observable} from 'rxjs/Observable';
 import 'rxjs/add/operator/catch';
 import 'rxjs/add/operator/toPromise';
 import {CoolLocalStorage} from 'angular2-cool-storage';
@@ -11,99 +10,81 @@ import {CheckboxComponent} from '../shared/checkbox.component';
 import {QuestionItem} from '../models/question-item';
 import {Questions} from '../models/questions';
 import {Question} from '../models/question';
-import {Answer} from '../models/answer';
 import {RadioComponent} from '../shared/radio.component';
 import {TextComponent} from '../shared/text.component';
 import {QuestionItemList} from "../models/question-item-list";
+import {Answer} from "../models/answer";
 
 @Injectable()
 export class InputService {
   private headers = new Headers({'Content-Type': 'application/json'});
   private questionsUrl = 'assets/question.json';  // URL to web api
-  localStorage: CoolLocalStorage;
-
 
   constructor(private http: Http,
-              localStorage: CoolLocalStorage) {
-    this.localStorage = localStorage;
+              private localStorage: CoolLocalStorage) {
   }
 
   getQuestions(): Promise<Questions> {
-    if (!this.localStorage.tryGetObject('questions')) {
-      console.log('not in Cache');
-      return this.http.get(this.questionsUrl)
-        .toPromise()
-        .then(res => {
-          const body = res.json();
-          this.localStorage.setObject('questions', body.questions || {});
-          return body.questions || {};
-        })
-        .catch(this.handleError);
-    } else {
-      console.log('from Cache');
-      return Promise.resolve(this.localStorage.getObject<Questions>('questions'));
-    }
+    //if (!this.localStorage.tryGetObject('questions')) {
+    console.log('not in Cache');
+    return this.http.get(this.questionsUrl)
+      .toPromise()
+      .then(res => {
+        const body = res.json();
+        console.log('asdasda', body);
+        this.localStorage.setObject('questions', body.question || {});
+        return body.question || {};
+      })
+      .catch(this.handleError);
+    // } else {
+    //   console.log('from Cache');
+    //   return Promise.resolve(this.localStorage.getObject<Questions>('questions'));
+    // }
   }
 
-  getTestQuestion(): Promise<QuestionItem> {
-    let forward = new Question();
-    let back = new Question();
-    let question = new Question();
-    let folderIndex: number;
-    let questionIndex: string;
-    let questionTree: string;
-
-    const answers = [];
-    return this.getQuestions().then(questions => {
-      folderIndex = 0;
-      questionIndex = '';
-
-      if (this.localStorage.getItem('folder')) {
-        folderIndex = parseInt(this.localStorage.getItem('folder'), 10);
-        this.localStorage.setItem('folder', '0');
-      }
-
-
-      if (this.localStorage.getItem('')) {
-        questionTree = JSON.parse(this.localStorage.getItem('questionTree'));
-      }
-      question = questions.folder[folderIndex].question[0];
-      question.answer.forEach(function (value) {
-        answers.push(value);
-      });
-      question.answer = answers;
-      console.log('answer:', answers, question);
-
-      /* Navigation */
-      forward = question;
-      back = question;
-
-      return new QuestionItem(this.determineComponent(question), {question: question});
-    });
+  getTestQuestions(): Promise<Array<Question>> {
+    // if (!this.localStorage.tryGetObject('questionInstance')) {
+    console.log('buildQuestions');
+    return this.buildQuestions();
+    // }
+    //
+    // console.log('from Cache');
+    // return Promise.resolve(this.localStorage.getObject<QuestionItemList>('questionInstance'));
   }
 
-  getTestQuestions(): Promise<QuestionItemList> {
-    let forward = new Question();
-    let back = new Question();
-    let question = new Question();
-    let questionList = new QuestionItemList();
+  buildQuestions(): Promise<Array<Question>> {
+    let questionList: Array<Question> = new Array<Question>();
     let self = this;
 
     const tempQuestions = [];
     return this.getQuestions().then(questions => {
       let first = true;
-      jQuery.each(questions.folder[0].question, function (index, value) {
-        question = new Question();
-        const answer = [];
+      console.log('questions length', questions);
+      jQuery.each(questions, function (index, value) {
+        let question = new Question();
+        let answers: Array<Answer> = new Array<Answer>();
         const depth = 0;
-        value['answer'].forEach(function (value) {
-          if (value.question)
-            value.question = self.buildTree(value.question, depth);
-          answer.push(value);
+
+        console.log('value', value);
+        value['answer'].forEach(function (answerItem) {
+          let answer = new Answer();
+          answer.label = answerItem.label;
+          answer.value = '';
+          answer.help = answerItem.help;
+          answer.keywords = answerItem.keywords ? answerItem.keywords : [];
+          answer.methods = answerItem.methods ? answerItem.methods : [];
+
+          if (answerItem.question)
+            answer.question = self.buildTree(answerItem.question, depth);
+          answers.push(answer);
         });
-        question.answer = answer;
-        question.type = value['type']
+        question.answer = answers;
+        question.type = value['type'];
+        if (!question.type)
+          question.type = 'radio';
+        question.type = question.type.trim();
         question.show = true;
+        question.depth = 0;
 
         if (first) {
           question.expanded = true;
@@ -113,54 +94,59 @@ export class InputService {
         }
         question.help = value['help'] ? value['help'] : '';
         question.label = value['label'] ? value['label'] : 'label missing';
+        console.log('set type', question);
 
-        console.log("value,index", value, index, question, answer);
-        tempQuestions.push(new QuestionItem(self.determineComponent(question), {question: question}));
-        console.log("question", question, questions);
+        tempQuestions.push(question);
       });
-      questionList.questions = tempQuestions;
-      console.log('tempQuestions', tempQuestions);
-      return questionList;
+      this.localStorage.setObject('questionInstance', tempQuestions);
+      return tempQuestions;
     });
   }
 
-  buildTree(questions: Question[], depth: number): QuestionItemList {
-    let complete = false;
-    let results = [];
+  buildTree(questions: Question[], depth: number): Array<Question> {
+    let results: Array<Question> = new Array<Question>();
     let self = this;
-    let questionList = new QuestionItemList();
     depth = +1;
+    jQuery.each(questions, function (index, element) {
+      let questionItem: Question = new Question();
+      let answers: Array<Answer> = new Array<Answer>();
 
-    questions.every(function (element, index) {
-      let questionItem = new Question();
-      let answers = [];
-
-      questionItem = element;
-
-      if (questionItem.value && questionItem.value.length) {
-        answers = questionItem.answer;
-        questionItem.answer = []; // Clear out answers
-        answers.forEach(function (answerItem) {
-          questionItem.value.forEach(function (savedValue) {
-            if (answerItem.question) {
-              answerItem.question = self.buildTree(answerItem.question, depth);
-            }
-            questionItem.answer.push(answerItem);
-          });
-        });
-        console.log("found values", questionItem);
-        results.push(new QuestionItem(self.determineComponent(questionItem), {question: questionItem}));
-      } else {
-        console.log("not found values", questionItem);
-        questionItem.answer.forEach(function (answerItem) {
-          answerItem.question = []; // clear out questions above
-        })
-        results.push(new QuestionItem(self.determineComponent(questionItem), {question: questionItem}));
-      }
-      return true;
+      questionItem.help = element.help;
+      questionItem.value = [];
+      questionItem.label = element.label;
+      questionItem.show = false;
+      questionItem.expanded = false;
+      questionItem.depth = depth;
+      if (!questionItem.type)
+        questionItem.type = 'radio';
+      questionItem.type = questionItem.type.trim();
+      element.answer.forEach(function (answerItem) {
+        let answer = new Answer();
+        answer.label = answerItem.label;
+        answer.value = '';
+        answer.help = answerItem.help?answerItem.help:'';
+        answer.keywords = answerItem.keywords ? answerItem.keywords : [];
+        answer.methods = answerItem.methods ? answerItem.methods : [];
+        if (answerItem.question) {
+          answer.question = self.buildTree(answerItem.question, depth);
+        }  else {
+          answer.question = new Array<Question>();
+        }
+        answers.push(answer);
+      });
+      questionItem.answer = answers;
+      results.push(questionItem);
     });
-    questionList.questions = results;
-    return questionList;
+
+    return results;
+  }
+
+  saveQuestion(questionLabel: String, answer: String[]): void {
+    // console.log('questions e',questionLabel,answer);
+    // this.getTestQuestions().then(questions => {
+    //   let first = true;
+    //   console.log('questions',questions,questionLabel,answer);
+    // });
   }
 
   private determineComponent(question: Question) {

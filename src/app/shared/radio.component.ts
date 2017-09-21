@@ -1,38 +1,51 @@
-import {Component, Input, OnChanges, OnInit, SimpleChanges} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 import {QuestionComponent} from './question.component';
-import {FormBuilder, FormControl, FormGroup} from "@angular/forms";
+import {FormControl, FormGroup} from "@angular/forms";
 import {Question} from "../models/question";
+import {Answer} from "../models/answer";
 
 @Component({
+  selector: 'radio-component',
   templateUrl: './radio.component.html',
   styleUrls: ['../input/input.component.css']
 })
 export class RadioComponent implements QuestionComponent, OnInit {
-  @Input() data: any;
+  @Input() data: Question;
   radioForm: FormGroup;
-  radioControl: FormControl;
   enableNavigation: boolean;
   nextQuestions: Question[];
 
+  constructor() {
+  }
+
   toggleExpand(): void {
-    if (this.data.question.value) {
-      this.data.question.expanded = !this.data.question.expanded;
+    if (this.data.value) {
+      this.data.expanded = !this.data.expanded;
     }
   }
 
-  selectAnswer(answer): void {
-    this.data.question.value = answer.label;
-    this.data.question.answer.forEach(function (item) {
+  selectAnswer(answer: Answer): void {
+    this.data.value = [answer.label];
+    this.data.answer.forEach(function (item) {
       item.value = '';
     });
     answer.value = answer.label;
-    console.log("select answer", this.data.question, answer, answer.value, this.data.question.value);
+    console.log("select original:", this.data);
+    console.log("select answer:", answer);
+    console.log("select answer.value:", answer.value);
+    console.log("select this.data.question.value:", this.data.value);
+
     if (answer.question.length) {
+      console.log('navigation on?');
       this.nextQuestions = answer.question;
       this.enableNavigation = true;
     }
 
+  }
+
+  onNavigate(show: boolean): void {
+    console.log("onNavigate");
   }
 
   ngOnInit(): void {
@@ -40,13 +53,13 @@ export class RadioComponent implements QuestionComponent, OnInit {
     this.radioForm = new FormGroup({
       radioControl: new FormControl('radio' + (new Date().getUTCMilliseconds()))
     });
-
+    console.log('this.data:', this.data);
     // check if question has been answered
-    if (this.data.question.value && this.data.question.value.length) {
-      this.data.question.answer.forEach(function (item) {
-        if (item.value == this.data.question.value) {
-          this.selectAnswer(item);
-        }
+    if (this.data.value && this.data.value.length) {
+      this.data.answer.forEach(function (item) {
+        // if (self.data.value.indexOf(item.value)>-1) {
+        //   self.selectAnswer(item);
+        // }
       });
     }
   }

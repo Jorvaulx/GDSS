@@ -4,8 +4,8 @@ export class Answer {
   label: string;
   type: string;
   help: string;
-  question: Question[];
-  keywords: string;
-  methods: string;
+  question: Array<Question>;
+  keywords: Array<String>;
+  methods: Array<String>;
   value: string;
 }

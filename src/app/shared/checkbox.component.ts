@@ -2,23 +2,25 @@ import { Component, Input } from '@angular/core';
 
 import { QuestionComponent } from './question.component';
 import {Question} from "../models/question";
+import {Answer} from "../models/answer";
 
 @Component({
+  selector: 'checkbox-component',
   templateUrl: './checkbox.component.html',
   styleUrls: ['../input/input.component.css']
 })
 export class CheckboxComponent implements QuestionComponent {
-  @Input() data: any;
+  @Input() data: Question;
   enableNavigation: boolean;
-  nextQuestions: Question[];
+  nextQuestions: Array<Question>;
 
   toggleExpand(): void {
-    if (this.data.question.value) {
-      this.data.question.expanded = !this.data.question.expanded;
+    if (this.data.value) {
+      this.data.expanded = !this.data.expanded;
     }
   }
 
-  selectAnswer(answer): void {
+  selectAnswer(answer:Answer): void {
     // this.data.question.value = answer.label;
     // this.data.question.answer.forEach(function (item) {
     //   item.value = '';

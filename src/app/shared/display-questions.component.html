@@ -1,0 +1,15 @@
+
+<div *ngIf="questions">
+  <div *ngFor="let item of questions" [ngClass]="getCSSClass(item.depth)">
+    <div [ngSwitch]="item.type">
+      <div *ngSwitchCase="'radio'">
+        <radio-component [data]="item"></radio-component>
+      </div>
+      <div *ngSwitchCase="'checkbox'">
+        <checkbox-component [data]="item"></checkbox-component>
+      </div>
+      <div *ngSwitchDefault>
+        <textbox-component [data]="item"></textbox-component></div>
+    </div>
+  </div>
+</div>

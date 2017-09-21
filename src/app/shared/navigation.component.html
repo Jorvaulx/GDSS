@@ -3,8 +3,3 @@
     <button (click)="handleNavigation()"><div class="inline"><div>Next</div><div class="flipLetter">&nbsp;&nbsp;^</div></div></button>
   </div>
 </div>
-<ng-template [ngIf]="nextQuestion">
-  <div *ngFor="let item of nextQuestion.questions">
-  <question-container [question]="item"></question-container>
-  </div>
-</ng-template>

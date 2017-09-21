@@ -1,39 +1,47 @@
-<div class="form-item form-type-radios form-item-radios">
-  <div class="row">
-    <div class="firstColumn">
-      <strong>
-        <label for="radio-site">{{data.question.label}}<br>
-          <div class="helpText" *ngIf="data.question.help" style="float:left;">({{data.question.help}})</div>
-        </label>
-      </strong>
-    </div>
-    <div class="secondColumn" (click)="toggleExpand()">
-      <ng-template [ngIf]="!data.question.value&&!data.question.expanded">
-        <img src="../../assets/images/lock.png" title="Questions unlocked when prior questions are answered." alt="Questions unlocked when prior questions are answered."/>
-      </ng-template>
-      <ng-template [ngIf]="data.question.expanded"> -</ng-template>
-      <ng-template [ngIf]="data.question.value&&!data.question.expanded"> +</ng-template>
-    </div>
-  </div>
-  <div class="form-radios" id="radio-site" *ngIf="data.question.expanded; else notActive">
-    <form [formGroup]="radioForm">
-      <div class="form-item form-type-radio form-item-radios">
-        <div *ngFor="let answer of data.question.answer">
-          <input type="radio" value="{{answer.label}}" class="form-radio" formControlName="radioControl"
-                 [checked]="data.question.value==answer.value&&data.question.value"/>
-          <label class="option" for=" " (click)="selectAnswer(answer)">
-            {{answer.label}}
-            <div class="helpText">{{answer.help}}</div>
+<div *ngIf="data.show">
+  <div class="form-item form-type-radios form-item-radios">
+    <div class="row">
+      <div class="firstColumn">
+        <strong>
+          <label for="radio-site">{{data.label}}<br>
+            <div class="helpText" *ngIf="data.help" style="float:left;">({{data.help}})</div>
           </label>
-        </div>
+        </strong>
       </div>
-    </form>
+      <div class="secondColumn" (click)="toggleExpand()">
+        <ng-template [ngIf]="!data.value&&!data.expanded">
+          <img src="../../assets/images/lock.png" title="Questions unlocked when prior questions are answered."
+               alt="Questions unlocked when prior questions are answered."/>
+        </ng-template>
+        <ng-template [ngIf]="data.expanded"> -</ng-template>
+        <ng-template [ngIf]="data.value&&!data.expanded"> +</ng-template>
+      </div>
+    </div>
+    <div class="form-radios" id="radio-site" *ngIf="data.expanded; else notActive">
+      <form [formGroup]="radioForm">
+        <div class="form-item form-type-radio form-item-radios">
+          <div *ngFor="let answer of data.answer">
+            <input type="radio" value="{{answer.label}}" class="form-radio" formControlName="radioControl"
+                   [checked]="data.value&&data.value.indexOf(answer.value)>-1"/>
+            <label class="option" for=" " (click)="selectAnswer(answer)">
+              {{answer.label}}
+              <div class="helpText">{{answer.help}}</div>
+            </label>
+          </div>
+        </div>
+      </form>
+    </div>
+    <ng-template #notActive>
+      <not-active [answers]="data.value"></not-active>
+    </ng-template>
   </div>
-  <ng-template #notActive>
-    <not-active [answers]="data.question.value"></not-active>
-  </ng-template>
-</div>
-<div *ngIf="enableNavigation">
-  <navigation-container [questions]="nextQuestions"></navigation-container>
-</div>
+  <div *ngIf="enableNavigation">
+    <navigation-container [questions]="nextQuestions"></navigation-container>
+  </div>
 
+  <div *ngFor="let answer of data.answer">
+    <div *ngIf="answer.question">
+      <display-questions [questions]="answer.question" (onnavigate)="onNavigate($event)"></display-questions>
+    </div>
+  </div>
+</div>

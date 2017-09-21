@@ -2,7 +2,6 @@
 <h2>Questions:</h2>
 <div style="width:100px;background:orange;margin-left:200px;">% Complete</div>
 <ul *ngIf="questionList">
-  <li *ngFor="let item of questionList.questions">
-    <question-container [question]="item"></question-container>
-  </li>
+  <display-questions [questions]="questionList"></display-questions>
 </ul>
+

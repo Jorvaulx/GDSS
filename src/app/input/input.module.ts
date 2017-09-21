@@ -12,6 +12,7 @@ import {RadioComponent} from '../shared/radio.component';
 import {TextComponent} from '../shared/text.component';
 import {QuestionDirective} from '../shared/question.directive';
 import {NotActiveComponent} from "../shared/not-active.component";
+import {DisplayQuestionComponent} from "../shared/display-questions.component";
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import {NotActiveComponent} from "../shared/not-active.component";
     TextComponent,
     QuestionDirective,
     NavigationComponent,
-    NotActiveComponent],
+    NotActiveComponent,
+    DisplayQuestionComponent],
   exports: [InputComponent],
   entryComponents: [CheckboxComponent, RadioComponent, TextComponent, NotActiveComponent],
   providers: []

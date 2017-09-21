@@ -14,6 +14,9 @@ import {InstructionsModule} from './instructions/instructions.module';
 /* Routing Module */
 import {AppRoutingModule} from './app-routing.module';
 
+/* Services */
+import {InputService} from "./input/input.service";
+
 @NgModule({
   declarations: [
     AppComponent
@@ -26,7 +29,7 @@ import {AppRoutingModule} from './app-routing.module';
     NgbModule.forRoot(),
     CoolStorageModule
   ],
-  providers: [],
+  providers: [InputService],
   bootstrap: [AppComponent],
   schemas: [NO_ERRORS_SCHEMA]
 })

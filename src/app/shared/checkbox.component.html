@@ -1,27 +1,35 @@
-<div class="form-item">
-  <div class="row">
-  <div class="firstColumn">
-  <strong>
-    <label for="checkbox-site">{{data.question.label}}<br>
-      <div class="helpText" *ngIf="data.question.help">({{data.question.help}})</div>
-    </label>
-  </strong>
-  </div>
-  <div class="secondColumn" (click)="toggleExpand()">
-    <ng-template [ngIf]="!data.question.value&&!data.question.expanded">
-      <img src="../../assets/images/lock.png" width="50"/>
-    </ng-template>
-    <ng-template [ngIf]="data.question.expanded"> -</ng-template>
-    <ng-template [ngIf]="data.question.value&&!data.question.expanded"> +</ng-template>
-  </div>
-  </div>
-  <div id="checkbox-site" *ngIf="data.question.expanded">
-    <div *ngFor="let answer of data.question.answer">
-      <input type="checkbox" name="answer" value="">
-      <label class="option" for=" ">{{answer.label}}<br> <i>{{answer.help}}</i></label>
+<div *ngIf="data.show">
+  <div class="form-item">
+    <div class="row">
+      <div class="firstColumn">
+        <strong>
+          <label for="checkbox-site">{{data.label}}<br>
+            <div class="helpText" *ngIf="data.help">({{data.help}})</div>
+          </label>
+        </strong>
+      </div>
+      <div class="secondColumn" (click)="toggleExpand()">
+        <ng-template [ngIf]="!data.value&&!data.expanded">
+          <img src="../../assets/images/lock.png" width="50"/>
+        </ng-template>
+        <ng-template [ngIf]="data.expanded"> -</ng-template>
+        <ng-template [ngIf]="data.value&&!data.expanded"> +</ng-template>
+      </div>
     </div>
-    <div *ngIf="enableNavigation">
-      <navigation-container [questions]="nextQuestions"></navigation-container>
+    <div id="checkbox-site" *ngIf="data.expanded">
+      <div *ngFor="let answer of data.answer">
+        <input type="checkbox" name="answer" value="">
+        <label class="option" for=" ">{{answer.label}}<br> <i>{{answer.help}}</i></label>
+      </div>
+      <div *ngIf="enableNavigation">
+        <navigation-container [questions]="nextQuestions"></navigation-container>
+      </div>
+    </div>
+  </div>
+
+  <div *ngFor="let answer of data.answer">
+    <div *ngIf="answer.question">
+      <display-questions [questions]="answer.question"></display-questions>
     </div>
   </div>
 </div>
