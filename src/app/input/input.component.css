@@ -55,3 +55,22 @@ div.inline:after {
 div.secondColumn img {
   width:18px;
 }
+
+.arrow::after {
+   content:"\21B5";
+  display: inline-block;
+  -moz-transform: scale(-1, 1);
+  -webkit-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+  vertical-align: top;
+  float:left;
+}
+.arrow + radio-component {
+  display: inline-block;
+  width: 98%;
+}
+.padLeft10 {
+  padding-left:10px;
+}

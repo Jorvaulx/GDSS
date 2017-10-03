@@ -5,7 +5,9 @@ import {Question} from "../models/question";
 
 @Component({
   selector: 'display-questions',
-  templateUrl: './display-questions.component.html'
+  templateUrl: './display-questions.component.html',
+  styleUrls: ['../input/input.component.css']
+
 })
 
 export class DisplayQuestionComponent implements OnInit {

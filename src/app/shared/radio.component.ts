@@ -4,11 +4,13 @@ import {QuestionComponent} from './question.component';
 import {FormControl, FormGroup} from "@angular/forms";
 import {Question} from "../models/question";
 import {Answer} from "../models/answer";
+import {NavCommunicatorService} from "./nav-communicator.service";
 
 @Component({
   selector: 'radio-component',
   templateUrl: './radio.component.html',
-  styleUrls: ['../input/input.component.css']
+  styleUrls: ['../input/input.component.css'],
+  providers: [NavCommunicatorService]
 })
 export class RadioComponent implements QuestionComponent, OnInit {
   @Input() data: Question;
@@ -16,12 +18,24 @@ export class RadioComponent implements QuestionComponent, OnInit {
   enableNavigation: boolean;
   nextQuestions: Question[];
 
-  constructor() {
+  constructor(private navService: NavCommunicatorService) {
+    this.navService.confirmNavigation$.subscribe(nextQuestionProcessed =>{
+      console.log("this worked");
+      if (!nextQuestionProcessed) {
+        // Find next question to open
+      }
+      this.enableNavigation = false;
+      this.data.expanded = false;
+    })
   }
 
   toggleExpand(): void {
-    if (this.data.value) {
-      this.data.expanded = !this.data.expanded;
+    if (this.data.value && !this.data.expanded) {
+      // Call service to reset values
+      console.log("call service to clear values");
+      this.navService.clearQuestion(true);
+      this.data.value = [];
+      this.data.expanded = true;
     }
   }
 
@@ -39,13 +53,14 @@ export class RadioComponent implements QuestionComponent, OnInit {
     if (answer.question.length) {
       console.log('navigation on?');
       this.nextQuestions = answer.question;
-      this.enableNavigation = true;
     }
+
+    this.enableNavigation = true;
 
   }
 
-  onNavigate(show: boolean): void {
-    console.log("onNavigate");
+  onNavigate(show: boolean) {
+    console.log("onNavigate:",show);
   }
 
   ngOnInit(): void {

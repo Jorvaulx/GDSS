@@ -12,16 +12,8 @@ export class NotActiveComponent {
 
   @Input()
   set answers(answers: Array<string>) {
-    let localArray = [];
-    // if (answers) {
-    //   console.log("answers forEach begin");
-    //   answers.forEach(function (answer) {
-    //     localArray.push(answer);
-    //   });
-    //
-    //   console.log("answers forEach end");
-    // }
-    this._answers = localArray;
+    this._answers = answers;
+    console.log("not-active:",answers);
   }
 
   get answers(): Array<string> {

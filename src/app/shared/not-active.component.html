@@ -1,3 +1,5 @@
- <div *ngIf="answers.length">
-   found answers
- </div>
+<div *ngIf="answers&&answers.length">
+  <div *ngFor="let item of answers" class="padLeft10">
+    {{item}}
+  </div>
+</div>
