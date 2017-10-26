@@ -16,7 +16,7 @@ import {AppRoutingModule} from './app-routing.module';
 
 /* Services */
 import {InputService} from "./input/input.service";
-import {KeywordService} from "./input/keyword.service";
+import {ResultsService} from "./input/results.service";
 
 
 @NgModule({
@@ -33,7 +33,7 @@ import {KeywordService} from "./input/keyword.service";
   ],
   providers: [
     InputService,
-    KeywordService
+    ResultsService
   ],
   bootstrap: [AppComponent],
   schemas: [NO_ERRORS_SCHEMA]

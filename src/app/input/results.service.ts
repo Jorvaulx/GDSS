@@ -1,9 +1,11 @@
 import {Injectable} from "@angular/core";
 import {Http} from "@angular/http";
 import {CoolLocalStorage} from "angular2-cool-storage";
+import {Question} from "../models/question";
+import {Result} from "../models/Result";
 
 @Injectable()
-export class KeywordService {
+export class ResultsService {
   private keywordUrl: string = 'assets/testexport.txt';
 
   constructor(private http: Http,
@@ -27,8 +29,59 @@ export class KeywordService {
       });
   }
 
-  getKeywordFile():any {
+  getKeywordFile(): any {
     return this.localStorage.getObject('keywords') || this.retrieveKeywordsFile();
+  }
+
+  getResults(): Result {
+    let results: Result = new Result();
+    let questions: Array<Question> = $.extend(this.localStorage.getObject('questionInstance'), new Array<Question>()); // Copy from JSONObject to Array<Question>
+    results = this.getFromResults(results, questions);
+    return results;
+  }
+
+  getFromResults(results: Result, questions: Array<Question>): Result {
+    var self = this;
+    jQuery.each(questions, function (index, question: Question) {
+      console.log('question:', question);
+      if (question['value']) {
+        question['answer'].forEach(function (answerItem) {
+          if (question['value'].indexOf(answerItem.value) > -1) {
+            results = self.getFromResults(results, answerItem.question);
+            if (answerItem.keywords) {
+              console.log("keywords array:", answerItem.keywords);
+              answerItem.keywords.forEach(function (keyword) {
+                console.log("keyword:", keyword, keyword.toLowerCase().substring(0, 4), keyword.toLowerCase().substring(4, keyword.length));
+                if (keyword.toLowerCase().substring(0, 4) == 'not:') {
+                  let index: number = results.keywords.indexOf(keyword.substring(4, keyword.length));
+                  if (index != -1) {
+                    results.keywords.splice(index, 1);
+                  }
+                } else {
+                  results.keywords.push(keyword);
+                }
+
+              });
+            }
+            if (answerItem.methods)
+              answerItem.methods.forEach(function (method) {
+                console.log("methods:", method, method.toLowerCase().substring(0, 4), method.toLowerCase().substring(4, method.length));
+                if (method.toLowerCase().substring(0, 4) == 'not:') {
+                  let index: number = results.methods.indexOf(method.substring(4, method.length));
+                  if (index != -1) {
+                    results.methods.splice(index, 1);
+                  }
+                } else {
+                  results.methods.push(method);
+                }
+              });
+          }
+        });
+      }
+
+    });
+
+    return results;
   }
 
 

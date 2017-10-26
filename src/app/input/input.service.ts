@@ -12,9 +12,9 @@ import {Answer} from "../models/answer";
 
 @Injectable()
 export class InputService {
-  private headers = new Headers({'Content-Type': 'application/json','Access-Control-Allow-Origin':'*'});
-  private questionsUrl:string = 'assets/question.json';  // URL to web api
-  private keywordUrl:string = 'assets/testexport.txt';
+  private headers = new Headers({'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*'});
+  private questionsUrl: string = 'assets/question.json';  // URL to web api
+  private keywordUrl: string = 'assets/testexport.txt';
 
   constructor(private http: Http,
               private localStorage: CoolLocalStorage) {
@@ -39,7 +39,7 @@ export class InputService {
   }
 
   getKeywords(): Array<String> {
-    let results:Array<String> = new Array<string>();
+    let results: Array<String> = new Array<string>();
     return results;
   }
 
@@ -48,9 +48,10 @@ export class InputService {
     let self = this;
 
     let tempQuestions = new Array<Question>();
-    var  questions = this.localStorage.getObject('questionInstance');
-    if (questions) {
-      console.log('questions from cache:',questions);
+    let questions: Array<Question> = $.extend(this.localStorage.getObject('questionInstance'), new Array<Question>()); // Copy JSONObject to Array<Question>
+    // Check for valid object
+    if (questions && !(Object.keys(questions).length === 0 && questions.constructor === Object)) {
+      console.log('questions from cache:', questions);
       return Promise.resolve(questions);
     }
 

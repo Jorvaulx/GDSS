@@ -1515,7 +1515,9 @@
       "label": "What is the climate of the site?",
       "answer": [
         {
-          "keywords": "frozen ground",
+          "keywords": [
+            "frozen ground"
+          ],
           "methods": [
             "NOT:https://wcms.epa.gov/environmental-geophysics/marine-geophysical-methods#tab-2",
             "https://wcms.epa.gov/environmental-geophysics/electrical-methods-induced-polarization",
@@ -1548,7 +1550,7 @@
     },
     {
       "type": "radio",
-      "keywords": "",
+      "keywords": [],
       "label": "What is the type of land surface at the site?",
       "answer": [
         {
@@ -1635,8 +1637,8 @@
                 },
                 {
                   "help": "",
-                  "keywords": "",
-                  "methods": "",
+                  "keywords": [],
+                  "methods": [],
                   "label": "No",
                   "question":[]
                 }
@@ -1644,7 +1646,7 @@
             },
             {
               "help": "",
-              "keywords": "",
+              "keywords": [],
               "methods": [],
               "label": "Is there uncontrolled seismic noise?",
               "answer": [
@@ -1659,8 +1661,8 @@
                 },
                 {
                   "help": "",
-                  "keywords": "",
-                  "methods": "",
+                  "keywords": [],
+                  "methods": [],
                   "label": "No",
                   "question":[]
                 }
@@ -1937,8 +1939,8 @@
     {
       "type": "checkbox",
       "help": "",
-      "keywords": "",
-      "methods": "",
+      "keywords": [],
+      "methods": [],
       "label": "What are the anticipated near surface geologic conditions?",
       "answer": [
         {

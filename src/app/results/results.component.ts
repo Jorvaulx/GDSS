@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {KeywordService} from "../input/keyword.service";
+import {ResultsService} from "../input/results.service";
+import {Result} from "../models/Result";
 
 @Component({
   selector: 'app-results-panel',
@@ -7,13 +8,14 @@ import {KeywordService} from "../input/keyword.service";
   styleUrls: ['./results.component.css']
 })
 export class ResultsComponent implements OnInit {
-  title = 'Results';
+  title:string = 'Results';
+  results:Result;
 
-  constructor(private keywordService: KeywordService) {
+  constructor(private resultsService: ResultsService) {
   }
 
   ngOnInit(): void {
-    var data = this.keywordService.getKeywordFile()
-    console.log(data)
+    this.results = this.resultsService.getResults();
+    console.log(this.results)
   }
 }
