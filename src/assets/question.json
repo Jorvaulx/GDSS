@@ -39,12 +39,12 @@
                             "leak detection"
                           ],
                           "methods": [
-                            "Surface_Geophysical_Methods\\Electromagnetic_Methods\\index.htm",
-                            "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm",
-                            "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
-                            "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
-                            "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Metal_Detectors.htm",
-                            "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm"
+                            "https://wcms.epa.gov/environmental-geophysics/surface-geophysical-methods",
+                            "https://wcms.epa.gov/environmental-geophysics/potential-field-methods#tab-2",
+                            "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-frequency-domain-method",
+                            "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-ground-penetrating-radar",
+                            "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-metal-detectors",
+                            "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-time-domain"
                           ],
                           "label": "Metallic"
                         },
@@ -56,8 +56,8 @@
                             "leak detection"
                           ],
                           "methods": [
-                            "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Gravity_Methods.htm",
-                            "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm"
+                            "https://wcms.epa.gov/environmental-geophysics/potential-field-methods#tab-1",
+                            "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-ground-penetrating-radar"
                           ],
                           "label": "Fiberglass or non-metallic"
                         }
@@ -81,12 +81,12 @@
                             "leak detection"
                           ],
                           "methods": [
-                            "Surface_Geophysical_Methods\\Electromagnetic_Methods\\index.htm",
-                            "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm",
-                            "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
-                            "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
-                            "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Metal_Detectors.htm",
-                            "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm"
+                            "https://wcms.epa.gov/environmental-geophysics/surface-geophysical-methods",
+                            "https://wcms.epa.gov/environmental-geophysics/potential-field-methods#tab-2",
+                            "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-frequency-domain-method",
+                            "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-ground-penetrating-radar",
+                            "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-metal-detectors",
+                            "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-time-domain"
                           ],
                           "label": "Metallic"
                         },
@@ -98,8 +98,8 @@
                             "leak detection"
                           ],
                           "methods": [
-                            "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Gravity_Methods.htm",
-                            "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm"
+                            "https://wcms.epa.gov/environmental-geophysics/potential-field-methods#tab-1",
+                            "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-ground-penetrating-radar"
                           ],
                           "label": "Non-metallic"
                         }
@@ -123,12 +123,12 @@
                             "resistivity"
                           ],
                           "methods": [
-                            "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
-                            "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
-                            "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Metal_Detectors.htm",
-                            "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm",
-                            "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Very_Low-Frequency_(VLF)_Method.htm",
-                            "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm"
+                            "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-frequency-domain-method",
+                            "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-ground-penetrating-radar",
+                            "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-metal-detectors",
+                            "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-time-domain",
+                            "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-very-low-frequency-vlf-method",
+                            "https://wcms.epa.gov/environmental-geophysics/potential-field-methods#tab-2"
                           ],
                           "label": "Electric"
                         },
@@ -139,7 +139,7 @@
                             "resistivity"
                           ],
                           "methods": [
-                            "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm"
+                            "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-ground-penetrating-radar"
                           ],
                           "label": "Natural Gas",
                           "question": [
@@ -166,12 +166,12 @@
                                     "Ground penetrating radar"
                                   ],
                                   "methods": [
-                                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\index.htm",
-                                    "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm",
-                                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
-                                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
-                                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Metal_Detectors.htm",
-                                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm"
+                                    "https://wcms.epa.gov/environmental-geophysics/surface-geophysical-methods",
+                                    "https://wcms.epa.gov/environmental-geophysics/potential-field-methods#tab-2",
+                                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-frequency-domain-method",
+                                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-ground-penetrating-radar",
+                                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-metal-detectors",
+                                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-time-domain"
                                   ],
                                   "label": "metallic"
                                 },
@@ -187,7 +187,7 @@
                                     "moisture"
                                   ],
                                   "methods": [
-                                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm"
+                                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-ground-penetrating-radar"
                                   ],
                                   "label": "non-metallic"
                                 },
@@ -206,12 +206,12 @@
                                     "magnetometers"
                                   ],
                                   "methods": [
-                                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\index.htm",
-                                    "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm",
-                                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
-                                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
-                                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Metal_Detectors.htm",
-                                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm"
+                                    "https://wcms.epa.gov/environmental-geophysics/surface-geophysical-methods",
+                                    "https://wcms.epa.gov/environmental-geophysics/potential-field-methods#tab-2",
+                                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-frequency-domain-method",
+                                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-ground-penetrating-radar",
+                                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-metal-detectors",
+                                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-time-domain"
                                   ],
                                   "label": "both"
                                 },
@@ -227,12 +227,12 @@
                                     "GPR"
                                   ],
                                   "methods": [
-                                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\index.htm",
-                                    "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm",
-                                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
-                                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
-                                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Metal_Detectors.htm",
-                                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm"
+                                    "https://wcms.epa.gov/environmental-geophysics/surface-geophysical-methods",
+                                    "https://wcms.epa.gov/environmental-geophysics/potential-field-methods#tab-2",
+                                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-frequency-domain-method",
+                                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-ground-penetrating-radar",
+                                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-metal-detectors",
+                                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-time-domain"
                                   ],
                                   "label": "unknown"
                                 }
@@ -266,12 +266,12 @@
                                     "Ground penetrating radar"
                                   ],
                                   "methods": [
-                                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\index.htm",
-                                    "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm",
-                                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
-                                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
-                                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Metal_Detectors.htm",
-                                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm"
+                                    "https://wcms.epa.gov/environmental-geophysics/surface-geophysical-methods",
+                                    "https://wcms.epa.gov/environmental-geophysics/potential-field-methods#tab-2",
+                                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-frequency-domain-method",
+                                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-ground-penetrating-radar",
+                                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-metal-detectors",
+                                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-time-domain"
                                   ],
                                   "label": "metallic"
                                 },
@@ -287,7 +287,7 @@
                                     "moisture"
                                   ],
                                   "methods": [
-                                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm"
+                                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-ground-penetrating-radar"
                                   ],
                                   "label": "non-metallic"
                                 },
@@ -306,12 +306,12 @@
                                     "magnetometers"
                                   ],
                                   "methods": [
-                                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\index.htm",
-                                    "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm",
-                                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
-                                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
-                                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Metal_Detectors.htm",
-                                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm"
+                                    "https://wcms.epa.gov/environmental-geophysics/surface-geophysical-methods",
+                                    "https://wcms.epa.gov/environmental-geophysics/potential-field-methods#tab-2",
+                                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-frequency-domain-method",
+                                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-ground-penetrating-radar",
+                                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-metal-detectors",
+                                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-time-domain"
                                   ],
                                   "label": "both"
                                 },
@@ -327,12 +327,12 @@
                                     "GPR"
                                   ],
                                   "methods": [
-                                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\index.htm",
-                                    "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm",
-                                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
-                                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
-                                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Metal_Detectors.htm",
-                                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm"
+                                    "https://wcms.epa.gov/environmental-geophysics/surface-geophysical-methods",
+                                    "https://wcms.epa.gov/environmental-geophysics/potential-field-methods#tab-2",
+                                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-frequency-domain-method",
+                                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-ground-penetrating-radar",
+                                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-metal-detectors",
+                                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-time-domain"
                                   ],
                                   "label": "unknown"
                                 }
@@ -361,12 +361,12 @@
                                     "Ground penetrating radar"
                                   ],
                                   "methods": [
-                                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\index.htm",
-                                    "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm",
-                                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
-                                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
-                                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Metal_Detectors.htm",
-                                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm"
+                                    "https://wcms.epa.gov/environmental-geophysics/surface-geophysical-methods",
+                                    "https://wcms.epa.gov/environmental-geophysics/potential-field-methods#tab-2",
+                                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-frequency-domain-method",
+                                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-ground-penetrating-radar",
+                                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-metal-detectors",
+                                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-time-domain"
                                   ],
                                   "label": "Metallic"
                                 },
@@ -381,7 +381,7 @@
                                     "moisture"
                                   ],
                                   "methods": [
-                                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm"
+                                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-ground-penetrating-radar"
                                   ],
                                   "label": "Non-Metallic"
                                 },
@@ -399,12 +399,12 @@
                                     "magnetometers"
                                   ],
                                   "methods": [
-                                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\index.htm",
-                                    "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm",
-                                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
-                                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
-                                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Metal_Detectors.htm",
-                                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm"
+                                    "https://wcms.epa.gov/environmental-geophysics/surface-geophysical-methods",
+                                    "https://wcms.epa.gov/environmental-geophysics/potential-field-methods#tab-2",
+                                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-frequency-domain-method",
+                                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-ground-penetrating-radar",
+                                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-metal-detectors",
+                                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-time-domain"
                                   ],
                                   "label": "both"
                                 },
@@ -419,12 +419,12 @@
                                     "GPR"
                                   ],
                                   "methods": [
-                                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\index.htm",
-                                    "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm",
-                                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
-                                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
-                                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Metal_Detectors.htm",
-                                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm"
+                                    "https://wcms.epa.gov/environmental-geophysics/surface-geophysical-methods",
+                                    "https://wcms.epa.gov/environmental-geophysics/potential-field-methods#tab-2",
+                                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-frequency-domain-method",
+                                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-ground-penetrating-radar",
+                                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-metal-detectors",
+                                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-time-domain"
                                   ],
                                   "label": "unknown"
                                 }
@@ -452,8 +452,8 @@
                             "ground penetrating radar"
                           ],
                           "methods": [
-                            "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
-                            "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method"
+                            "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-ground-penetrating-radar",
+                            "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-frequency-domain-method"
                           ],
                           "label": "PVC"
                         },
@@ -467,10 +467,10 @@
                             "field"
                           ],
                           "methods": [
-                            "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
-                            "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Metal_Detectors.htm",
-                            "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm",
-                            "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm"
+                            "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-frequency-domain-method",
+                            "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-metal-detectors",
+                            "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-time-domain",
+                            "https://wcms.epa.gov/environmental-geophysics/potential-field-methods#tab-2"
                           ],
                           "label": "Metallic"
                         },
@@ -484,12 +484,12 @@
                             "magnetic"
                           ],
                           "methods": [
-                            "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Metal_Detectors.htm",
-                            "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Seismoelectrical_Method.htm",
-                            "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
-                            "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
-                            "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm",
-                            "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm"
+                            "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-metal-detectors",
+                            "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-seismoelectrical-method",
+                            "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-frequency-domain-method",
+                            "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-ground-penetrating-radar",
+                            "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-time-domain",
+                            "https://wcms.epa.gov/environmental-geophysics/potential-field-methods#tab-2"
                           ],
                           "label": "Unknown"
                         }
@@ -515,14 +515,14 @@
                     "electromagnetic induction"
                   ],
                   "methods": [
-                    "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm",
-                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
-                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
-                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Metal_Detectors.htm",
-                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm",
-                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Very_Low-Frequency_(VLF)_Method.htm",
-                    "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
-                    "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Gravity_Methods.htm"
+                    "https://wcms.epa.gov/environmental-geophysics/potential-field-methods#tab-2",
+                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-frequency-domain-method",
+                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-ground-penetrating-radar",
+                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-metal-detectors",
+                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-time-domain",
+                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-very-low-frequency-vlf-method",
+                    "https://wcms.epa.gov/environmental-geophysics/marine-geophysical-methods#tab-2",
+                    "https://wcms.epa.gov/environmental-geophysics/potential-field-methods#tab-1"
                   ],
                   "label": "Building Foundations"
                 }
@@ -550,9 +550,9 @@
                     "TEM method"
                   ],
                   "methods": [
-                    "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
-                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm",
-                    "Surface_Geophysical_Methods\\Electrical_Methods\\Induced_Polarization.htm"
+                    "https://wcms.epa.gov/environmental-geophysics/marine-geophysical-methods#tab-2",
+                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-time-domain",
+                    "https://wcms.epa.gov/environmental-geophysics/electrical-methods-induced-polarization"
                   ],
                   "label": "1D surface depth sounding"
                 },
@@ -570,9 +570,9 @@
                     "gravity"
                   ],
                   "methods": [
-                    "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm",
-                    "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Gravity_Methods.htm",
-                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method"
+                    "https://wcms.epa.gov/environmental-geophysics/potential-field-methods#tab-2",
+                    "https://wcms.epa.gov/environmental-geophysics/potential-field-methods#tab-1",
+                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-frequency-domain-method"
                   ],
                   "label": "1D surface profile"
                 },
@@ -591,14 +591,14 @@
                     "electrical resistivity"
                   ],
                   "methods": [
-                    "Borehole_Geophysical_Methods\\index.htm",
-                    "Borehole_Geophysical_Methods\\General_Crosshole_Procedures.htm",
-                    "Borehole_Geophysical_Methods\\General_In-Hole_Procedures.htm",
-                    "Borehole_Geophysical_Methods\\Logging_Techniques_and_Tools\\index.htm",
-                    "Borehole_Geophysical_Methods\\Logging_Techniques_and_Tools\\Acoustic_Logging.htm",
-                    "Borehole_Geophysical_Methods\\Logging_Techniques_and_Tools\\Electrical_Methods.htm",
-                    "Borehole_Geophysical_Methods\\Logging_Techniques_and_Tools\\Hole-to-Hole_Logging.htm",
-                    "Borehole_Geophysical_Methods\\Logging_Techniques_and_Tools\\Nuclear_Logging.htm"
+                    "https://wcms.epa.gov/environmental-geophysics/geophysical-methods",
+                    "https://wcms.epa.gov/environmental-geophysics/borehole-geophysical-methods",
+                    "https://wcms.epa.gov/environmental-geophysics/general-crosshole-procedures",
+                    "https://wcms.epa.gov/environmental-geophysics/logging-techniques-and-tools",
+                    "https://wcms.epa.gov/environmental-geophysics/logging-techniques-and-tools-acoustic-logging",
+                    "https://wcms.epa.gov/environmental-geophysics/logging-techniques-and-tools-electrical-methods",
+                    "https://wcms.epa.gov/environmental-geophysics/logging-techniques-and-tools-hole-hole-logging",
+                    "https://wcms.epa.gov/environmental-geophysics/logging-techniques-and-tools-nuclear-logging"
                   ],
                   "label": "1D borehole profile"
                 },
@@ -608,12 +608,12 @@
                     "surface nuclear magnetic resonance"
                   ],
                   "methods": [
-                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
-                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm",
-                    "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
-                    "Surface_Geophysical_Methods\\Electrical_Methods\\Self-Potential_(SP)_Method.htm",
-                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm",
-                    "Surface_Geophysical_Methods\\Electrical_Methods\\Equipotential_and_Mise-a-la-Messe_Methods.htm"
+                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-frequency-domain-method",
+                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-time-domain",
+                    "https://wcms.epa.gov/environmental-geophysics/marine-geophysical-methods#tab-2",
+                    "https://wcms.epa.gov/environmental-geophysics/electrical-methods-self-potential-sp-method",
+                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-frequency-domain-method",
+                    "https://wcms.epa.gov/environmental-geophysics/electrical-methods-equipotential-and-mise-la-messe-methods"
                   ],
                   "label": "2D surface aerial map (plan view)"
                 },
@@ -632,11 +632,11 @@
                     "tomography"
                   ],
                   "methods": [
-                    "Surface_Geophysical_Methods\\Electrical_Methods\\Equipotential_and_Mise-a-la-Messe_Methods.htm",
-                    "Surface_Geophysical_Methods\\Electrical_Methods\\Induced_Polarization.htm",
-                    "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
-                    "Surface_Geophysical_Methods\\Electrical_Methods\\Self-Potential_(SP)_Method.htm",
-                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm"
+                    "https://wcms.epa.gov/environmental-geophysics/electrical-methods-equipotential-and-mise-la-messe-methods",
+                    "https://wcms.epa.gov/environmental-geophysics/electrical-methods-induced-polarization",
+                    "https://wcms.epa.gov/environmental-geophysics/marine-geophysical-methods#tab-2",
+                    "https://wcms.epa.gov/environmental-geophysics/electrical-methods-self-potential-sp-method",
+                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-ground-penetrating-radar"
                   ],
                   "label": "2D subsurface cross-section"
                 },
@@ -648,10 +648,10 @@
                     "Cross-hole methods"
                   ],
                   "methods": [
-                    "Borehole_Geophysical_Methods\\Logging_Techniques_and_Tools\\Hole-to-Hole_Logging.htm",
-                    "Surface_Geophysical_Methods\\Electrical_Methods\\Induced_Polarization.htm",
-                    "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
-                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm"
+                    "https://wcms.epa.gov/environmental-geophysics/logging-techniques-and-tools-hole-hole-logging",
+                    "https://wcms.epa.gov/environmental-geophysics/electrical-methods-induced-polarization",
+                    "https://wcms.epa.gov/environmental-geophysics/marine-geophysical-methods#tab-2",
+                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-ground-penetrating-radar"
                   ],
                   "label": "2D cross-borehole image"
                 },
@@ -670,13 +670,13 @@
                     "tomography"
                   ],
                   "methods": [
-                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
-                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm",
-                    "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
-                    "Surface_Geophysical_Methods\\Electrical_Methods\\Self-Potential_(SP)_Method.htm",
-                    "Surface_Geophysical_Methods\\Electrical_Methods\\Equipotential_and_Mise-a-la-Messe_Methods.htm",
-                    "Surface_Geophysical_Methods\\Electrical_Methods\\Induced_Polarization.htm",
-                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm"
+                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-frequency-domain-method",
+                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-time-domain",
+                    "https://wcms.epa.gov/environmental-geophysics/marine-geophysical-methods#tab-2",
+                    "https://wcms.epa.gov/environmental-geophysics/electrical-methods-self-potential-sp-method",
+                    "https://wcms.epa.gov/environmental-geophysics/electrical-methods-equipotential-and-mise-la-messe-methods",
+                    "https://wcms.epa.gov/environmental-geophysics/electrical-methods-induced-polarization",
+                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-frequency-domain-method"
                   ],
                   "label": "3D map (surface and depth)"
                 }
@@ -697,13 +697,13 @@
                     "toluene"
                   ],
                   "methods": [
-                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
-                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
-                    "Surface_Geophysical_Methods\\Electrical_Methods\\Equipotential_and_Mise-a-la-Messe_Methods.htm",
-                    "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
-                    "Surface_Geophysical_Methods\\Electrical_Methods\\Self-Potential_(SP)_Method.htm",
-                    "Surface_Geophysical_Methods\\Electrical_Methods\\Induced_Polarization.htm",
-                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm"
+                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-frequency-domain-method",
+                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-ground-penetrating-radar",
+                    "https://wcms.epa.gov/environmental-geophysics/electrical-methods-equipotential-and-mise-la-messe-methods",
+                    "https://wcms.epa.gov/environmental-geophysics/marine-geophysical-methods#tab-2",
+                    "https://wcms.epa.gov/environmental-geophysics/electrical-methods-self-potential-sp-method",
+                    "https://wcms.epa.gov/environmental-geophysics/electrical-methods-induced-polarization",
+                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-time-domain"
                   ],
                   "label": "LNAPL",
                   "question": [
@@ -729,12 +729,12 @@
                     "hazardous organic compounds"
                   ],
                   "methods": [
-                    "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
-                    "Surface_Geophysical_Methods\\Electrical_Methods\\Equipotential_and_Mise-a-la-Messe_Methods.htm",
-                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm",
-                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
-                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
-                    "Surface_Geophysical_Methods\\Electrical_Methods\\Induced_Polarization.htm"
+                    "https://wcms.epa.gov/environmental-geophysics/marine-geophysical-methods#tab-2",
+                    "https://wcms.epa.gov/environmental-geophysics/electrical-methods-equipotential-and-mise-la-messe-methods",
+                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-time-domain",
+                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-frequency-domain-method",
+                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-ground-penetrating-radar",
+                    "https://wcms.epa.gov/environmental-geophysics/electrical-methods-induced-polarization"
                   ],
                   "label": "DNAPL",
                   "question": [
@@ -756,7 +756,7 @@
                     "surface nuclear magnetic resonance"
                   ],
                   "methods": [
-                    "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm"
+                    "https://wcms.epa.gov/environmental-geophysics/marine-geophysical-methods#tab-2"
                   ],
                   "label": "Radiological waste"
                 },
@@ -766,9 +766,9 @@
                     "seismic methods"
                   ],
                   "methods": [
-                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Seismoelectrical_Method.htm",
-                    "Surface_Geophysical_Methods\\Seismic_Methods\\index.htm",
-                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm"
+                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-seismoelectrical-method",
+                    "https://wcms.epa.gov/environmental-geophysics/seismic-methods",
+                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-ground-penetrating-radar"
                   ],
                   "label": "Vapor"
                 },
@@ -782,10 +782,10 @@
                     "hazardous organic compounds"
                   ],
                   "methods": [
-                    "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
-                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
-                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
-                    "Surface_Geophysical_Methods\\Electrical_Methods\\Equipotential_and_Mise-a-la-Messe_Methods.htm"
+                    "https://wcms.epa.gov/environmental-geophysics/marine-geophysical-methods#tab-2",
+                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-ground-penetrating-radar",
+                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-frequency-domain-method",
+                    "https://wcms.epa.gov/environmental-geophysics/electrical-methods-equipotential-and-mise-la-messe-methods"
                   ],
                   "label": "Soluble"
                 },
@@ -799,10 +799,10 @@
                     "seismic methods"
                   ],
                   "methods": [
-                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
-                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm",
-                    "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
-                    "Surface_Geophysical_Methods\\Electrical_Methods\\Equipotential_and_Mise-a-la-Messe_Methods.htm"
+                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-frequency-domain-method",
+                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-time-domain",
+                    "https://wcms.epa.gov/environmental-geophysics/marine-geophysical-methods#tab-2",
+                    "https://wcms.epa.gov/environmental-geophysics/electrical-methods-equipotential-and-mise-la-messe-methods"
                   ],
                   "label": "Mine waste"
                 },
@@ -814,11 +814,11 @@
                     "electrical resistivity"
                   ],
                   "methods": [
-                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
-                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm",
-                    "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
-                    "Surface_Geophysical_Methods\\Electrical_Methods\\Equipotential_and_Mise-a-la-Messe_Methods.htm",
-                    "Surface_Geophysical_Methods\\Electrical_Methods\\Self-Potential_(SP)_Method.htm"
+                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-frequency-domain-method",
+                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-time-domain",
+                    "https://wcms.epa.gov/environmental-geophysics/marine-geophysical-methods#tab-2",
+                    "https://wcms.epa.gov/environmental-geophysics/electrical-methods-equipotential-and-mise-la-messe-methods",
+                    "https://wcms.epa.gov/environmental-geophysics/electrical-methods-self-potential-sp-method"
                   ],
                   "label": "Brine plume"
                 }
@@ -843,10 +843,10 @@
                             "ground penetrating radar"
                           ],
                           "methods": [
-                            "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
-                            "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm",
-                            "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
-                            "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method"
+                            "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-ground-penetrating-radar",
+                            "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-time-domain",
+                            "https://wcms.epa.gov/environmental-geophysics/marine-geophysical-methods#tab-2",
+                            "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-frequency-domain-method"
                           ],
                           "label": "UST/LUST"
                         },
@@ -870,9 +870,9 @@
                             "SP"
                           ],
                           "methods": [
-                            "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
-                            "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
-                            "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm"
+                            "https://wcms.epa.gov/environmental-geophysics/marine-geophysical-methods#tab-2",
+                            "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-frequency-domain-method",
+                            "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-ground-penetrating-radar"
                           ],
                           "label": "Leaking pipeline"
                         },
@@ -898,9 +898,9 @@
                             "magnetic resonance sounding"
                           ],
                           "methods": [
-                            "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm",
-                            "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
-                            "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Metal_Detectors.htm"
+                            "https://wcms.epa.gov/environmental-geophysics/potential-field-methods#tab-2",
+                            "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-frequency-domain-method",
+                            "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-metal-detectors"
                           ],
                           "label": "Drums"
                         },
@@ -926,7 +926,7 @@
                             "magnetic resonance sounding"
                           ],
                           "methods": [
-                            "Surface_Geophysical_Methods\\Electrical_Methods\\Equipotential_and_Mise-a-la-Messe_Methods.htm"
+                            "https://wcms.epa.gov/environmental-geophysics/electrical-methods-equipotential-and-mise-la-messe-methods"
                           ],
                           "label": "Well"
                         },
@@ -952,7 +952,7 @@
                             "magnetic resonance sounding"
                           ],
                           "methods": [
-                            "Surface_Geophysical_Methods\\Electrical_Methods\\Equipotential_and_Mise-a-la-Messe_Methods.htm"
+                            "https://wcms.epa.gov/environmental-geophysics/electrical-methods-equipotential-and-mise-la-messe-methods"
                           ],
                           "label": "Deep injection well"
                         },
@@ -974,7 +974,7 @@
                             "multiphase flow"
                           ],
                           "methods": [
-                            "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method"
+                            "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-frequency-domain-method"
                           ],
                           "label": "Surface Spill"
                         }
@@ -1008,8 +1008,8 @@
                             "seismic"
                           ],
                           "methods": [
-                            "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
-                            "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm"
+                            "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-frequency-domain-method",
+                            "https://wcms.epa.gov/environmental-geophysics/marine-geophysical-methods#tab-2"
                           ],
                           "label": "Agriculture Type-N"
                         },
@@ -1068,11 +1068,11 @@
                                     "ground penetrating radar"
                                   ],
                                   "methods": [
-                                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
-                                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
-                                    "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
-                                    "Surface_Geophysical_Methods\\Electrical_Methods\\Self-Potential_(SP)_Method.htm",
-                                    "Surface_Geophysical_Methods\\Electrical_Methods\\Equipotential_and_Mise-a-la-Messe_Methods.htm"
+                                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-frequency-domain-method",
+                                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-ground-penetrating-radar",
+                                    "https://wcms.epa.gov/environmental-geophysics/marine-geophysical-methods#tab-2",
+                                    "https://wcms.epa.gov/environmental-geophysics/electrical-methods-self-potential-sp-method",
+                                    "https://wcms.epa.gov/environmental-geophysics/electrical-methods-equipotential-and-mise-la-messe-methods"
                                   ],
                                   "label": "Pump and treat"
                                 },
@@ -1089,9 +1089,9 @@
                                     "Permeable Reactive Barriers"
                                   ],
                                   "methods": [
-                                    "Surface_Geophysical_Methods\\Electrical_Methods\\Self-Potential_(SP)_Method.htm",
-                                    "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
-                                    "Surface_Geophysical_Methods\\Electrical_Methods\\Induced_Polarization.htm"
+                                    "https://wcms.epa.gov/environmental-geophysics/electrical-methods-self-potential-sp-method",
+                                    "https://wcms.epa.gov/environmental-geophysics/marine-geophysical-methods#tab-2",
+                                    "https://wcms.epa.gov/environmental-geophysics/electrical-methods-induced-polarization"
                                   ],
                                   "label": "Permeable reactive barrier (PRB)"
                                 },
@@ -1109,12 +1109,12 @@
                                     "Solute Transport"
                                   ],
                                   "methods": [
-                                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
-                                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm",
-                                    "Surface_Geophysical_Methods\\Electrical_Methods\\Induced_Polarization.htm",
-                                    "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
-                                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
-                                    "Surface_Geophysical_Methods\\Electrical_Methods\\Equipotential_and_Mise-a-la-Messe_Methods.htm"
+                                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-frequency-domain-method",
+                                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-time-domain",
+                                    "https://wcms.epa.gov/environmental-geophysics/electrical-methods-induced-polarization",
+                                    "https://wcms.epa.gov/environmental-geophysics/marine-geophysical-methods#tab-2",
+                                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-ground-penetrating-radar",
+                                    "https://wcms.epa.gov/environmental-geophysics/electrical-methods-equipotential-and-mise-la-messe-methods"
                                   ],
                                   "label": "Solvent or co-solvent flush"
                                 },
@@ -1138,9 +1138,9 @@
                                     "Complex resistivity"
                                   ],
                                   "methods": [
-                                    "Surface_Geophysical_Methods\\Electrical_Methods\\Induced_Polarization.htm",
-                                    "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
-                                    "Surface_Geophysical_Methods\\Electrical_Methods\\Self-Potential_(SP)_Method.htm"
+                                    "https://wcms.epa.gov/environmental-geophysics/electrical-methods-induced-polarization",
+                                    "https://wcms.epa.gov/environmental-geophysics/marine-geophysical-methods#tab-2",
+                                    "https://wcms.epa.gov/environmental-geophysics/electrical-methods-self-potential-sp-method"
                                   ],
                                   "label": "Bioagumentation"
                                 }
@@ -1180,10 +1180,10 @@
                                     "electrical measurements"
                                   ],
                                   "methods": [
-                                    "Surface_Geophysical_Methods\\Electrical_Methods\\Induced_Polarization.htm",
-                                    "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
-                                    "Surface_Geophysical_Methods\\Electrical_Methods\\Self-Potential_(SP)_Method.htm",
-                                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm"
+                                    "https://wcms.epa.gov/environmental-geophysics/electrical-methods-induced-polarization",
+                                    "https://wcms.epa.gov/environmental-geophysics/marine-geophysical-methods#tab-2",
+                                    "https://wcms.epa.gov/environmental-geophysics/electrical-methods-self-potential-sp-method",
+                                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-ground-penetrating-radar"
                                   ],
                                   "label": "Monitored natural attenuation"
                                 }
@@ -1242,13 +1242,13 @@
                     "electromagnetic induction"
                   ],
                   "methods": [
-                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
-                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
-                    "Surface_Geophysical_Methods\\Electrical_Methods\\Induced_Polarization.htm",
-                    "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
-                    "Surface_Geophysical_Methods\\Electrical_Methods\\Equipotential_and_Mise-a-la-Messe_Methods.htm",
-                    "Surface_Geophysical_Methods\\Electrical_Methods\\Self-Potential_(SP)_Method.htm",
-                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm"
+                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-frequency-domain-method",
+                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-ground-penetrating-radar",
+                    "https://wcms.epa.gov/environmental-geophysics/electrical-methods-induced-polarization",
+                    "https://wcms.epa.gov/environmental-geophysics/marine-geophysical-methods#tab-2",
+                    "https://wcms.epa.gov/environmental-geophysics/electrical-methods-equipotential-and-mise-la-messe-methods",
+                    "https://wcms.epa.gov/environmental-geophysics/electrical-methods-self-potential-sp-method",
+                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-frequency-domain-method"
                   ],
                   "label": "Landfill plume map"
                 },
@@ -1274,14 +1274,14 @@
                     "magnetic resonance tomography"
                   ],
                   "methods": [
-                    "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Gravity_Methods.htm",
-                    "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm",
-                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Metal_Detectors.htm",
-                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm",
-                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
-                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
-                    "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
-                    "Surface_Geophysical_Methods\\Electrical_Methods\\Equipotential_and_Mise-a-la-Messe_Methods.htm"
+                    "https://wcms.epa.gov/environmental-geophysics/potential-field-methods#tab-1",
+                    "https://wcms.epa.gov/environmental-geophysics/potential-field-methods#tab-2",
+                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-metal-detectors",
+                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-time-domain",
+                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-ground-penetrating-radar",
+                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-frequency-domain-method",
+                    "https://wcms.epa.gov/environmental-geophysics/marine-geophysical-methods#tab-2",
+                    "https://wcms.epa.gov/environmental-geophysics/electrical-methods-equipotential-and-mise-la-messe-methods"
                   ],
                   "label": "Map contents of landfill"
                 },
@@ -1307,14 +1307,14 @@
                     "magnetic resonance tomography"
                   ],
                   "methods": [
-                    "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Gravity_Methods.htm",
-                    "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm",
-                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Metal_Detectors.htm",
-                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm",
-                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
-                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
-                    "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
-                    "Surface_Geophysical_Methods\\Electrical_Methods\\Equipotential_and_Mise-a-la-Messe_Methods.htm"
+                    "https://wcms.epa.gov/environmental-geophysics/potential-field-methods#tab-1",
+                    "https://wcms.epa.gov/environmental-geophysics/potential-field-methods#tab-2",
+                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-metal-detectors",
+                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-time-domain",
+                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-ground-penetrating-radar",
+                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-frequency-domain-method",
+                    "https://wcms.epa.gov/environmental-geophysics/marine-geophysical-methods#tab-2",
+                    "https://wcms.epa.gov/environmental-geophysics/electrical-methods-equipotential-and-mise-la-messe-methods"
                   ],
                   "label": "Map landfill extent/boundary"
                 }
@@ -1334,8 +1334,8 @@
                     "Self Potential"
                   ],
                   "methods": [
-                    "NOT:Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm",
-                    "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Gravity_Methods.htm"
+                    "NOT:https://wcms.epa.gov/environmental-geophysics/potential-field-methods#tab-2",
+                    "https://wcms.epa.gov/environmental-geophysics/potential-field-methods#tab-1"
                   ],
                   "label": "Greater than 50%"
                 },
@@ -1365,14 +1365,14 @@
                     "TEM"
                   ],
                   "methods": [
-                    "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
-                    "Surface_Geophysical_Methods\\Electrical_Methods\\Equipotential_and_Mise-a-la-Messe_Methods.htm",
-                    "Surface_Geophysical_Methods\\Electrical_Methods\\Self-Potential_(SP)_Method.htm",
-                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
-                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Metal_Detectors.htm",
-                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm",
-                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
-                    "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm"
+                    "https://wcms.epa.gov/environmental-geophysics/marine-geophysical-methods#tab-2",
+                    "https://wcms.epa.gov/environmental-geophysics/electrical-methods-equipotential-and-mise-la-messe-methods",
+                    "https://wcms.epa.gov/environmental-geophysics/electrical-methods-self-potential-sp-method",
+                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-ground-penetrating-radar",
+                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-metal-detectors",
+                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-time-domain",
+                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-frequency-domain-method",
+                    "https://wcms.epa.gov/environmental-geophysics/potential-field-methods#tab-2"
                   ],
                   "label": "Less than or equal to 50%"
                 }
@@ -1405,12 +1405,12 @@
                     "seismic"
                   ],
                   "methods": [
-                    "Surface_Geophysical_Methods\\Seismic_Methods\\Seismic_Reflection_Methods.htm",
-                    "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Gravity_Methods.htm",
-                    "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm",
-                    "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
-                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
-                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm"
+                    "https://wcms.epa.gov/environmental-geophysics/seismic-reflection-methods",
+                    "https://wcms.epa.gov/environmental-geophysics/potential-field-methods#tab-1",
+                    "https://wcms.epa.gov/environmental-geophysics/potential-field-methods#tab-2",
+                    "https://wcms.epa.gov/environmental-geophysics/marine-geophysical-methods#tab-2",
+                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-ground-penetrating-radar",
+                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-time-domain"
                   ],
                   "label": "Map subsurface geology (includes depth to strata)"
                 },
@@ -1431,11 +1431,11 @@
                     "karstic conduit"
                   ],
                   "methods": [
-                    "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm",
-                    "Surface_Geophysical_Methods\\Electrical_Methods\\Equipotential_and_Mise-a-la-Messe_Methods.htm",
-                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Very_Low-Frequency_(VLF)_Method.htm",
-                    "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
-                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm"
+                    "https://wcms.epa.gov/environmental-geophysics/potential-field-methods#tab-2",
+                    "https://wcms.epa.gov/environmental-geophysics/electrical-methods-equipotential-and-mise-la-messe-methods",
+                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-very-low-frequency-vlf-method",
+                    "https://wcms.epa.gov/environmental-geophysics/marine-geophysical-methods#tab-2",
+                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-ground-penetrating-radar"
                   ],
                   "label": "Map or characterize fractures"
                 },
@@ -1449,11 +1449,11 @@
                     "seismic methods"
                   ],
                   "methods": [
-                    "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Gravity_Methods.htm",
-                    "Surface_Geophysical_Methods\\Seismic_Methods\\Seismic_Reflection_Methods.htm",
-                    "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
-                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm",
-                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm"
+                    "https://wcms.epa.gov/environmental-geophysics/potential-field-methods#tab-1",
+                    "https://wcms.epa.gov/environmental-geophysics/seismic-reflection-methods",
+                    "https://wcms.epa.gov/environmental-geophysics/marine-geophysical-methods#tab-2",
+                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-time-domain",
+                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-ground-penetrating-radar"
                   ],
                   "label": "Map bedrock surface or determine depth to bedrock"
                 },
@@ -1471,9 +1471,9 @@
                     "electrical conductivity"
                   ],
                   "methods": [
-                    "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
-                    "Surface_Geophysical_Methods\\Electrical_Methods\\Self-Potential_(SP)_Method.htm",
-                    "Borehole_Geophysical_Methods\\index.htm"
+                    "https://wcms.epa.gov/environmental-geophysics/marine-geophysical-methods#tab-2",
+                    "https://wcms.epa.gov/environmental-geophysics/electrical-methods-self-potential-sp-method",
+                    "https://wcms.epa.gov/environmental-geophysics/geophysical-methods"
                   ],
                   "label": "Groundwater surfacewater interface"
                 },
@@ -1489,8 +1489,8 @@
                     "seismic methods"
                   ],
                   "methods": [
-                    "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
-                    "Surface_Geophysical_Methods\\Seismic_Methods\\index.htm"
+                    "https://wcms.epa.gov/environmental-geophysics/marine-geophysical-methods#tab-2",
+                    "https://wcms.epa.gov/environmental-geophysics/seismic-methods"
                   ],
                   "label": "Map,find or locate groundwater or water table"
                 }
@@ -1517,28 +1517,32 @@
         {
           "keywords": "frozen ground",
           "methods": [
-            "NOT:Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
-            "Surface_Geophysical_Methods\\Electrical_Methods\\Induced_Polarization.htm",
-            "Surface_Geophysical_Methods\\Electrical_Methods\\Self-Potential_(SP)_Method.htm",
-            "Surface_Geophysical_Methods\\Electrical_Methods\\Equipotential_and_Mise-a-la-Messe_Methods.htm"
+            "NOT:https://wcms.epa.gov/environmental-geophysics/marine-geophysical-methods#tab-2",
+            "https://wcms.epa.gov/environmental-geophysics/electrical-methods-induced-polarization",
+            "https://wcms.epa.gov/environmental-geophysics/electrical-methods-self-potential-sp-method",
+            "https://wcms.epa.gov/environmental-geophysics/electrical-methods-equipotential-and-mise-la-messe-methods"
           ],
-          "label": "arctic"
+          "label": "arctic",
+          "question":[]
         },
         {
-          "label": "temperate"
+          "label": "temperate",
+          "question":[]
         },
         {
           "methods": [
             "Warnings_and_Special_Considerations.htm#Dry_Surface_Requires_Significant_Field_Procedures",
             "Warnings_and_Special_Considerations.htm#Some_Methods_Difficult_or_Impossible"
           ],
-          "label": "dry or arid"
+          "label": "dry or arid",
+          "question":[]
         },
         {
           "methods": [
             "Warnings_and_Special_Considerations.htm#Some_Methods_Difficult_or_Impossible"
           ],
-          "label": "tropical"
+          "label": "tropical",
+          "question":[]
         }
       ]
     },
@@ -1548,15 +1552,17 @@
       "label": "What is the type of land surface at the site?",
       "answer": [
         {
-          "label": "Rural: general rural land surface"
+          "label": "Rural: general rural land surface",
+          "question":[]
         },
         {
           "methods": [
-            "NOT:Surface_Geophysical_Methods\\Potentia_Field_Methods\\Gravity_Methods.htm",
-            "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm",
-            "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Very_Low-Frequency_(VLF)_Method.htm"
+            "NOT:https://wcms.epa.gov/environmental-geophysics/potential-field-methods#tab-1",
+            "https://wcms.epa.gov/environmental-geophysics/potential-field-methods#tab-2",
+            "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-very-low-frequency-vlf-method"
           ],
-          "label": "Suburban:  3 or more houses per acre"
+          "label": "Suburban:  3 or more houses per acre",
+          "question":[]
         },
         {
           "label": "Urban: high density city",
@@ -1566,7 +1572,8 @@
               "label": "Can traffic be controlled?",
               "answer": [
                 {
-                  "label": "Yes."
+                  "label": "Yes.",
+                  "question":[]
                 },
                 {
                   "keywords": [
@@ -1578,11 +1585,12 @@
                     "seismic methods"
                   ],
                   "methods": [
-                    "NOT:Surface_Geophysical_Methods\\Potentia_Field_Methods\\Gravity_Methods.htm",
-                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
-                    "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm"
+                    "NOT:https://wcms.epa.gov/environmental-geophysics/potential-field-methods#tab-1",
+                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-ground-penetrating-radar",
+                    "https://wcms.epa.gov/environmental-geophysics/marine-geophysical-methods#tab-2"
                   ],
-                  "label": "No."
+                  "label": "No.",
+                  "question":[]
                 }
               ]
             },
@@ -1593,10 +1601,12 @@
                   "methods": [
                     "Warnings_and_Special_Considerations.htm#Some_Methods_Difficult_or_Impossible"
                   ],
-                  "label": "Greater than 50%"
+                  "label": "Greater than 50%",
+                  "question":[]
                 },
                 {
-                  "label": "Less than or equal to 50%"
+                  "label": "Less than or equal to 50%",
+                  "question":[]
                 }
               ]
             }
@@ -1616,17 +1626,19 @@
                   "help": "",
                   "keywords": [],
                   "methods": [
-                    "NOT:Surface_Geophysical_Methods\\Electromagnetic_Methods\\index.htm",
-                    "Surface_Geophysical_Methods\\Electrical_Methods\\index.htm",
-                    "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm"
+                    "NOT:https://wcms.epa.gov/environmental-geophysics/surface-geophysical-methods",
+                    "https://wcms.epa.gov/environmental-geophysics/surface-geophysical-methods-electrical-methods",
+                    "https://wcms.epa.gov/environmental-geophysics/potential-field-methods#tab-2"
                   ],
-                  "label": "Yes"
+                  "label": "Yes",
+                  "question":[]
                 },
                 {
                   "help": "",
                   "keywords": "",
                   "methods": "",
-                  "label": "No"
+                  "label": "No",
+                  "question":[]
                 }
               ]
             },
@@ -1640,15 +1652,17 @@
                   "help": "",
                   "keywords": [],
                   "methods": [
-                    "NOT:Surface_Geophysical_Methods\\Seismic_Methods\\index.htm"
+                    "NOT:https://wcms.epa.gov/environmental-geophysics/seismic-methods"
                   ],
-                  "label": "Yes"
+                  "label": "Yes",
+                  "question":[]
                 },
                 {
                   "help": "",
                   "keywords": "",
                   "methods": "",
-                  "label": "No"
+                  "label": "No",
+                  "question":[]
                 }
               ]
             },
@@ -1656,7 +1670,8 @@
               "label": "Can traffic be controlled?",
               "answer": [
                 {
-                  "label": "Yes."
+                  "label": "Yes.",
+                  "question":[]
                 },
                 {
                   "keywords": [
@@ -1668,10 +1683,11 @@
                     "seismic methods"
                   ],
                   "methods": [
-                    "NOT:Surface_Geophysical_Methods\\Potentia_Field_Methods\\Gravity_Methods.htm",
-                    "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm"
+                    "NOT:https://wcms.epa.gov/environmental-geophysics/potential-field-methods#tab-1",
+                    "https://wcms.epa.gov/environmental-geophysics/marine-geophysical-methods#tab-2"
                   ],
-                  "label": "No."
+                  "label": "No.",
+                  "question":[]
                 }
               ]
             },
@@ -1682,10 +1698,12 @@
                   "methods": [
                     "Warnings_and_Special_Considerations.htm#Some_Methods_Difficult_or_Impossible"
                   ],
-                  "label": "Greater than 50%"
+                  "label": "Greater than 50%",
+                  "question":[]
                 },
                 {
-                  "label": "Less than or equal to 50%"
+                  "label": "Less than or equal to 50%",
+                  "question":[]
                 }
               ]
             }
@@ -1706,17 +1724,19 @@
                   "help": "",
                   "keywords": [],
                   "methods": [
-                    "NOT:Surface_Geophysical_Methods\\Electromagnetic_Methods\\index.htm",
-                    "Surface_Geophysical_Methods\\Electrical_Methods\\index.htm",
-                    "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm"
+                    "NOT:https://wcms.epa.gov/environmental-geophysics/surface-geophysical-methods",
+                    "https://wcms.epa.gov/environmental-geophysics/surface-geophysical-methods-electrical-methods",
+                    "https://wcms.epa.gov/environmental-geophysics/potential-field-methods#tab-2"
                   ],
-                  "label": "Yes"
+                  "label": "Yes",
+                  "question":[]
                 },
                 {
                   "help": "",
                   "keywords": [],
                   "methods": [],
-                  "label": "No"
+                  "label": "No",
+                  "question":[]
                 }
               ]
             },
@@ -1731,7 +1751,7 @@
                   "help": "",
                   "keywords": [],
                   "methods": [
-                    "NOT:Surface_Geophysical_Methods\\Seismic_Methods\\index.htm"
+                    "NOT:https://wcms.epa.gov/environmental-geophysics/seismic-methods"
                   ],
                   "label": "Yes"
                 },
@@ -1760,10 +1780,10 @@
                     "seismic methods"
                   ],
                   "methods": [
-                    "NOT:Surface_Geophysical_Methods\\Potentia_Field_Methods\\Gravity_Methods.htm",
-                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
-                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm",
-                    "Surface_Geophysical_Methods\\Electrical_Methods\\index.htm"
+                    "NOT:https://wcms.epa.gov/environmental-geophysics/potential-field-methods#tab-1",
+                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-ground-penetrating-radar",
+                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-time-domain",
+                    "https://wcms.epa.gov/environmental-geophysics/surface-geophysical-methods-electrical-methods"
                   ],
                   "label": "No."
                 }
@@ -1806,8 +1826,8 @@
                     "seismic methods"
                   ],
                   "methods": [
-                    "NOT:Surface_Geophysical_Methods\\Potentia_Field_Methods\\Gravity_Methods.htm",
-                    "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm"
+                    "NOT:https://wcms.epa.gov/environmental-geophysics/potential-field-methods#tab-1",
+                    "https://wcms.epa.gov/environmental-geophysics/marine-geophysical-methods#tab-2"
                   ],
                   "label": "No."
                 }
@@ -1829,25 +1849,25 @@
                   ],
                   "methods": [
                     "Warnings_and_Special_Considerations.htm#Some_Methods_Difficult_or_Impossible",
-                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Metal_Detectors.htm",
-                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
+                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-metal-detectors",
+                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-ground-penetrating-radar",
                     "Warnings_and_Special_Considerations.htm"
                   ],
                   "label": "Greater than 50%"
                 },
                 {
                   "methods": [
-                    "Surface_Geophysical_Methods\\Electrical_Methods\\index.htm",
-                    "Surface_Geophysical_Methods\\Electrical_Methods\\Equipotential_and_Mise-a-la-Messe_Methods.htm",
-                    "Surface_Geophysical_Methods\\Electrical_Methods\\Induced_Polarization.htm",
-                    "Surface_Geophysical_Methods\\Electrical_Methods\\Self-Potential_(SP)_Method.htm",
-                    "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
-                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
-                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
-                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Metal_Detectors.htm",
-                    "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Seismoelectrical_Method.htm",
-                    "Surface_Geophysical_Methods\\Seismic_Methods\\index.htm",
-                    "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm",
+                    "https://wcms.epa.gov/environmental-geophysics/surface-geophysical-methods-electrical-methods",
+                    "https://wcms.epa.gov/environmental-geophysics/electrical-methods-equipotential-and-mise-la-messe-methods",
+                    "https://wcms.epa.gov/environmental-geophysics/electrical-methods-induced-polarization",
+                    "https://wcms.epa.gov/environmental-geophysics/electrical-methods-self-potential-sp-method",
+                    "https://wcms.epa.gov/environmental-geophysics/marine-geophysical-methods#tab-2",
+                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-frequency-domain-method",
+                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-ground-penetrating-radar",
+                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-metal-detectors",
+                    "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-seismoelectrical-method",
+                    "https://wcms.epa.gov/environmental-geophysics/seismic-methods",
+                    "https://wcms.epa.gov/environmental-geophysics/potential-field-methods#tab-2",
                     "Warnings_and_Special_Considerations.htm"
                   ],
                   "label": "Less than or equal to 50%"
@@ -1868,7 +1888,7 @@
                 },
                 {
                   "methods": [
-                    "NOT:Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm"
+                    "NOT:https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-ground-penetrating-radar"
                   ],
                   "label": "Marine"
                 }
@@ -1880,19 +1900,19 @@
               "answer": [
                 {
                   "methods": [
-                    "Marine_Geophysical_Methods\\index.htm"
+                    "https://wcms.epa.gov/environmental-geophysics/marine-geophysical-methods"
                   ],
                   "label": "creek/stream"
                 },
                 {
                   "methods": [
-                    "Marine_Geophysical_Methods\\index.htm"
+                    "https://wcms.epa.gov/environmental-geophysics/marine-geophysical-methods"
                   ],
                   "label": "river"
                 },
                 {
                   "methods": [
-                    "Marine_Geophysical_Methods\\index.htm"
+                    "https://wcms.epa.gov/environmental-geophysics/marine-geophysical-methods"
                   ],
                   "label": "lake"
                 },
@@ -1931,21 +1951,21 @@
           "help": "",
           "keywords": [],
           "methods": [
-            "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
-            "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Tilt_Angle_Method",
-            "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
-            "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm",
-            "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Gravity_Methods.htm",
-            "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm",
-            "Surface_Geophysical_Methods\\Seismic_Methods\\Seismic_Reflection_Methods.htm",
-            "Surface_Geophysical_Methods\\Seismic_Methods\\index.htm",
-            "Surface_Geophysical_Methods\\Seismic_Methods\\Surface_Wave_Methods.htm",
+            "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-frequency-domain-method",
+            "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-frequency-domain-method#Tilt_Angle_Method",
+            "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-ground-penetrating-radar",
+            "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-time-domain",
+            "https://wcms.epa.gov/environmental-geophysics/potential-field-methods#tab-1",
+            "https://wcms.epa.gov/environmental-geophysics/potential-field-methods#tab-2",
+            "https://wcms.epa.gov/environmental-geophysics/seismic-reflection-methods",
+            "https://wcms.epa.gov/environmental-geophysics/seismic-methods",
+            "https://wcms.epa.gov/environmental-geophysics/surface-wave-methods",
             "Warnings_and_Special_Considerations.htm",
-            "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm",
-            "Surface_Geophysical_Methods\\Electrical_Methods\\Self-Potential_(SP)_Method.htm",
-            "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
-            "Surface_Geophysical_Methods\\Electrical_Methods\\Induced_Polarization.htm",
-            "Surface_Geophysical_Methods\\Electrical_Methods\\Equipotential_and_Mise-a-la-Messe_Methods.htm"
+            "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-frequency-domain-method",
+            "https://wcms.epa.gov/environmental-geophysics/electrical-methods-self-potential-sp-method",
+            "https://wcms.epa.gov/environmental-geophysics/marine-geophysical-methods#tab-2",
+            "https://wcms.epa.gov/environmental-geophysics/electrical-methods-induced-polarization",
+            "https://wcms.epa.gov/environmental-geophysics/electrical-methods-equipotential-and-mise-la-messe-methods"
           ],
           "label": "Competent Bedrock"
         },
@@ -1996,13 +2016,13 @@
           "help": "",
           "keywords": [],
           "methods": [
-            "Surface_Geophysical_Methods\\Electromagnetic_Methods\\index.htm",
-            "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm",
-            "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Tilt_Angle_Method",
-            "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method",
-            "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Metal_Detectors.htm",
-            "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm",
-            "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm"
+            "https://wcms.epa.gov/environmental-geophysics/surface-geophysical-methods",
+            "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-frequency-domain-method",
+            "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-frequency-domain-method#Tilt_Angle_Method",
+            "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-frequency-domain-method",
+            "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-metal-detectors",
+            "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-time-domain",
+            "https://wcms.epa.gov/environmental-geophysics/potential-field-methods#tab-2"
           ],
           "label": "Ground Surface"
         },
@@ -2010,10 +2030,10 @@
           "help": "",
           "keywords": [],
           "methods": [
-            "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
-            "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Metal_Detectors.htm",
-            "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm",
-            "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method"
+            "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-ground-penetrating-radar",
+            "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-metal-detectors",
+            "https://wcms.epa.gov/environmental-geophysics/potential-field-methods#tab-2",
+            "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-frequency-domain-method"
           ],
           "label": "< 3 Feet Below Ground Surface (BGS)"
         },
@@ -2021,8 +2041,8 @@
           "help": "",
           "keywords": [],
           "methods": [
-            "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
-            "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm#Terrain_Conductivity_Method"
+            "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-ground-penetrating-radar",
+            "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-frequency-domain-method"
           ],
           "label": "< 10 Feet BGS"
         },
@@ -2030,14 +2050,14 @@
           "help": "",
           "keywords": [],
           "methods": [
-            "Surface_Geophysical_Methods\\Electrical_Methods\\index.htm",
-            "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
-            "Surface_Geophysical_Methods\\Electrical_Methods\\Induced_Polarization.htm",
-            "Surface_Geophysical_Methods\\Seismic_Methods\\index.htm",
-            "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm",
-            "Surface_Geophysical_Methods\\Electrical_Methods\\Equipotential_and_Mise-a-la-Messe_Methods.htm",
-            "Surface_Geophysical_Methods\\Electrical_Methods\\Self-Potential_(SP)_Method.htm",
-            "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm"
+            "https://wcms.epa.gov/environmental-geophysics/surface-geophysical-methods-electrical-methods",
+            "https://wcms.epa.gov/environmental-geophysics/marine-geophysical-methods#tab-2",
+            "https://wcms.epa.gov/environmental-geophysics/electrical-methods-induced-polarization",
+            "https://wcms.epa.gov/environmental-geophysics/seismic-methods",
+            "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-time-domain",
+            "https://wcms.epa.gov/environmental-geophysics/electrical-methods-equipotential-and-mise-la-messe-methods",
+            "https://wcms.epa.gov/environmental-geophysics/electrical-methods-self-potential-sp-method",
+            "https://wcms.epa.gov/environmental-geophysics/potential-field-methods#tab-2"
           ],
           "label": "< 50 feet BGS"
         },
@@ -2052,14 +2072,14 @@
             "resistivity"
           ],
           "methods": [
-            "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm",
-            "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm",
-            "Surface_Geophysical_Methods\\Electrical_Methods\\Self-Potential_(SP)_Method.htm",
-            "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
-            "Surface_Geophysical_Methods\\Electrical_Methods\\Induced_Polarization.htm",
-            "Surface_Geophysical_Methods\\Electrical_Methods\\Equipotential_and_Mise-a-la-Messe_Methods.htm",
-            "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Very_Low-Frequency_(VLF)_Method.htm",
-            "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Gravity_Methods.htm"
+            "https://wcms.epa.gov/environmental-geophysics/potential-field-methods#tab-2",
+            "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-time-domain",
+            "https://wcms.epa.gov/environmental-geophysics/electrical-methods-self-potential-sp-method",
+            "https://wcms.epa.gov/environmental-geophysics/marine-geophysical-methods#tab-2",
+            "https://wcms.epa.gov/environmental-geophysics/electrical-methods-induced-polarization",
+            "https://wcms.epa.gov/environmental-geophysics/electrical-methods-equipotential-and-mise-la-messe-methods",
+            "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-very-low-frequency-vlf-method",
+            "https://wcms.epa.gov/environmental-geophysics/potential-field-methods#tab-1"
           ],
           "label": "< 100 Feet BGS"
         },
@@ -2072,8 +2092,8 @@
             "seismology"
           ],
           "methods": [
-            "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Gravity_Methods.htm",
-            "Surface_Geophysical_Methods\\Seismic_Methods\\index.htm"
+            "https://wcms.epa.gov/environmental-geophysics/potential-field-methods#tab-1",
+            "https://wcms.epa.gov/environmental-geophysics/seismic-methods"
           ],
           "label": "> 500 Feet BGS"
         }
@@ -2081,7 +2101,7 @@
     },
     {
       "type": "radio",
-      "label": "Are manmade features present on the surface at the site?",
+      "label": "Are man made features present on the surface at the site?",
       "answer": [
         {
           "label": "Yes.",
@@ -2132,27 +2152,27 @@
       "answer": [
         {
           "methods": [
-            "Surface_Geophysical_Methods\\index.htm",
-            "Surface_Geophysical_Methods\\Electrical_Methods\\index.htm",
-            "Surface_Geophysical_Methods\\Electrical_Methods\\Self-Potential_(SP)_Method.htm",
-            "Surface_Geophysical_Methods\\Electrical_Methods\\Resistivity_Methods.htm",
-            "Surface_Geophysical_Methods\\Electrical_Methods\\Induced_Polarization.htm",
-            "Surface_Geophysical_Methods\\Electrical_Methods\\Equipotential_and_Mise-a-la-Messe_Methods.htm",
-            "Surface_Geophysical_Methods\\Electromagnetic_Methods\\index.htm",
-            "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Frequency_Domain_Electromagnetic_Methods.htm",
-            "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Ground-Penetrating_Radar.htm",
-            "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Metal_Detectors.htm",
-            "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Seismoelectrical_Method.htm",
-            "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Time-Domain_Electromagnetic_Methods.htm",
-            "Surface_Geophysical_Methods\\Electromagnetic_Methods\\Very_Low-Frequency_(VLF)_Method.htm",
-            "Surface_Geophysical_Methods\\Nuclear_Methods.htm",
-            "Surface_Geophysical_Methods\\Potentia_Field_Methods\\index.htm",
-            "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Gravity_Methods.htm",
-            "Surface_Geophysical_Methods\\Potentia_Field_Methods\\Magnetic_Methods.htm",
-            "Surface_Geophysical_Methods\\Seismic_Methods\\index.htm",
-            "Surface_Geophysical_Methods\\Seismic_Methods\\Seismic_Reflection_Methods.htm",
-            "Surface_Geophysical_Methods\\Seismic_Methods\\Seismic_Reflection_Methods.htm#Common-Offset_Seismic_Reflection_Method",
-            "Surface_Geophysical_Methods\\Seismic_Methods\\Surface_Wave_Methods.htm",
+            "https://wcms.epa.gov/environmental-geophysics/surface-geophysical-methods",
+            "https://wcms.epa.gov/environmental-geophysics/surface-geophysical-methods-electrical-methods",
+            "https://wcms.epa.gov/environmental-geophysics/electrical-methods-self-potential-sp-method",
+            "https://wcms.epa.gov/environmental-geophysics/marine-geophysical-methods#tab-2",
+            "https://wcms.epa.gov/environmental-geophysics/electrical-methods-induced-polarization",
+            "https://wcms.epa.gov/environmental-geophysics/electrical-methods-equipotential-and-mise-la-messe-methods",
+            "https://wcms.epa.gov/environmental-geophysics/surface-geophysical-methods",
+            "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-frequency-domain-method",
+            "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-ground-penetrating-radar",
+            "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-metal-detectors",
+            "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-seismoelectrical-method",
+            "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-time-domain",
+            "https://wcms.epa.gov/environmental-geophysics/electromagnetic-methods-very-low-frequency-vlf-method",
+            "https://wcms.epa.gov/environmental-geophysics/nuclear-methods",
+            "https://wcms.epa.gov/environmental-geophysics/potential-field-methods",
+            "https://wcms.epa.gov/environmental-geophysics/potential-field-methods#tab-1",
+            "https://wcms.epa.gov/environmental-geophysics/potential-field-methods#tab-2",
+            "https://wcms.epa.gov/environmental-geophysics/seismic-methods",
+            "https://wcms.epa.gov/environmental-geophysics/seismic-reflection-methods",
+            "https://wcms.epa.gov/environmental-geophysics/seismic-reflection-methods#Common-Offset_Seismic_Reflection_Method",
+            "https://wcms.epa.gov/environmental-geophysics/surface-wave-methods",
             "Warnings_and_Special_Considerations.htm#Survey_When_Dry",
             "Warnings_and_Special_Considerations.htm#Dry_Surface_Requires_Significant_Field_Procedures",
             "Warnings_and_Special_Considerations.htm#Some_Methods_Difficult_or_Impossible"
@@ -2203,7 +2223,8 @@
           "methods": [
             "Warnings_and_Special_Considerations.htm#Some_Methods_Difficult_or_Impossible"
           ],
-          "label": "Pipes"
+          "label": "Pipes",
+          "question": []
         },
         {
           "methods": [
@@ -2251,10 +2272,11 @@
           ]
         },
         {
+          "label": "Utility or other trenches",
           "methods": [
             "Warnings_and_Special_Considerations.htm#Some_Methods_Difficult_or_Impossible"
           ],
-          "label": "Utility or other trenches"
+          "question": []
         },
         {
           "label": "Wells",

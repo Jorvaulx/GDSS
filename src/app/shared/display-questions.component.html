@@ -4,13 +4,13 @@
     <div [ngSwitch]="item.type">
       <div *ngSwitchCase="'radio'">
         <div [ngClass]="{'arrow':item.depth>0&&item.show}"></div>
-        <radio-component [data]="item"></radio-component>
+        <radio-component [data]="item" [allQuestions]="allQuestions"></radio-component>
       </div>
       <div *ngSwitchCase="'checkbox'">
-        <checkbox-component [data]="item"></checkbox-component>
+        <checkbox-component [data]="item" [allQuestions]="allQuestions"></checkbox-component>
       </div>
       <div *ngSwitchDefault>
-        <textbox-component [data]="item"></textbox-component></div>
+        <textbox-component [data]="item" [allQuestions]="allQuestions"></textbox-component></div>
     </div>
   </div>
 </div>

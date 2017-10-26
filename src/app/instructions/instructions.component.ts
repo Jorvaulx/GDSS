@@ -4,7 +4,7 @@ import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-instuctions-panel',
-  templateUrl: './instructions.component.html', 
+  templateUrl: './instructions.component.html',
   styleUrls: ['./instructions.component.css']
 })
 export class InstructionsComponent {
@@ -23,8 +23,8 @@ export class InstructionsComponent {
 
   @ViewChild('content')
   set content(ref: any) {
-    console.log(ref);
     if (this.localStorage.getItem('disclaimer')!=='true') {
+      console.log('opening modal');
       this.open(ref);
     }
   }
@@ -35,11 +35,11 @@ export class InstructionsComponent {
         this.localStorage.setItem('disclaimer','true');
       }
       this.closeResult = `Closed with: ${result}`;
-      console.log('Closed', this.closeResult);
+      console.log(this.closeResult);
     }, (reason) => {
       console.log('reason', reason);
       this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
-      console.log('Dismissed', this.closeResult);
+      console.log(this.closeResult);
     });
   }
 

@@ -74,7 +74,7 @@
 <ng-template #content let-c="close" let-d="dismiss">
   <div class="modal-header">
     <h4 class="modal-title">Disclaimer</h4>
-    <button type="button" class="close" aria-label="Close" (click)="('Cross click')">
+    <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
       <span aria-hidden="true">&times;</span>
     </button>
   </div>
@@ -84,8 +84,8 @@
     only and that the results provided by this application do note guarantee any level of accuracy.</p>
   </div>
   <div class="modal-footer">
-    <button type="button" class="btn btn-secondary" (click)="('Agree')">I Agree</button>
-    <button type="button" class="btn btn-secondary" (click)="('Exit')">Exit</button>
+    <button type="button" class="btn btn-secondary" (click)="c('Agree')">I Agree</button>
+    <button type="button" class="btn btn-secondary" (click)="d('Exit')">Exit</button>
   </div>
 </ng-template>
 

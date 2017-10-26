@@ -14,21 +14,21 @@ import {QuestionItemList} from "../models/question-item-list";
 export class InputComponent implements OnInit {
   title = 'Input';
   questionList: Array<Question>;
+  completeQuestionCount: number;
 
   constructor(private inputService: InputService) {
   }
-
 
   getTestQuestions(): void {
     this.inputService.getTestQuestions().then(questionItem => {
       this.questionList = questionItem
       console.log('getTestQuestions:', this.questionList);
+      this.completeQuestionCount = this.inputService.completeQuestionCount(this.questionList);
+      console.log('getTestQuestions - completeQuestionCount:',this.completeQuestionCount);
     });
   }
-
 
   ngOnInit(): void {
     this.getTestQuestions();
   }
-
 }

@@ -23,7 +23,7 @@ export class NavigationComponent implements OnInit {
   }
 
   handleNavigation(): void {
-    console.log("nav click", Array.isArray(this.questions), this.questions);
+    console.log("handleNavigation:", Array.isArray(this.questions), this.questions);
     let question: Question = this.nextQuestion(this.questions);
     let nextQuestionProcessed: boolean = false;
     if (question) {

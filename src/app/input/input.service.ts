@@ -1,31 +1,26 @@
 import {Injectable} from '@angular/core';
-import {Http, Response} from '@angular/http';
+import {Http} from '@angular/http';
 
 import 'rxjs/add/operator/catch';
 import 'rxjs/add/operator/toPromise';
 import {CoolLocalStorage} from 'angular2-cool-storage';
+import * as xml2js from 'xml2js'
 
-import {CheckboxComponent} from '../shared/checkbox.component';
-
-import {QuestionItem} from '../models/question-item';
 import {Questions} from '../models/questions';
 import {Question} from '../models/question';
-import {RadioComponent} from '../shared/radio.component';
-import {TextComponent} from '../shared/text.component';
-import {QuestionItemList} from "../models/question-item-list";
 import {Answer} from "../models/answer";
 
 @Injectable()
 export class InputService {
-  private headers = new Headers({'Content-Type': 'application/json'});
-  private questionsUrl = 'assets/question.json';  // URL to web api
+  private headers = new Headers({'Content-Type': 'application/json','Access-Control-Allow-Origin':'*'});
+  private questionsUrl:string = 'assets/question.json';  // URL to web api
+  private keywordUrl:string = 'assets/testexport.txt';
 
   constructor(private http: Http,
               private localStorage: CoolLocalStorage) {
   }
 
-  getQuestions(): Promise<Questions> {
-    //if (!this.localStorage.tryGetObject('questions')) {
+  retrieveQuestions(): Promise<Questions> {
     console.log('not in Cache');
     return this.http.get(this.questionsUrl)
       .toPromise()
@@ -36,28 +31,30 @@ export class InputService {
         return body.question || {};
       })
       .catch(this.handleError);
-    // } else {
-    //   console.log('from Cache');
-    //   return Promise.resolve(this.localStorage.getObject<Questions>('questions'));
-    // }
   }
 
   getTestQuestions(): Promise<Array<Question>> {
-    // if (!this.localStorage.tryGetObject('questionInstance')) {
     console.log('buildQuestions');
     return this.buildQuestions();
-    // }
-    //
-    // console.log('from Cache');
-    // return Promise.resolve(this.localStorage.getObject<QuestionItemList>('questionInstance'));
+  }
+
+  getKeywords(): Array<String> {
+    let results:Array<String> = new Array<string>();
+    return results;
   }
 
   buildQuestions(): Promise<Array<Question>> {
     let questionList: Array<Question> = new Array<Question>();
     let self = this;
 
-    const tempQuestions = [];
-    return this.getQuestions().then(questions => {
+    let tempQuestions = new Array<Question>();
+    var  questions = this.localStorage.getObject('questionInstance');
+    if (questions) {
+      console.log('questions from cache:',questions);
+      return Promise.resolve(questions);
+    }
+
+    return this.retrieveQuestions().then(questions => {
       let first = true;
       console.log('questions length', questions);
       jQuery.each(questions, function (index, value) {
@@ -65,7 +62,6 @@ export class InputService {
         let answers: Array<Answer> = new Array<Answer>();
         const depth = 0;
 
-        console.log('value', value);
         value['answer'].forEach(function (answerItem) {
           let answer = new Answer();
           answer.label = answerItem.label;
@@ -94,7 +90,6 @@ export class InputService {
         }
         question.help = value['help'] ? value['help'] : '';
         question.label = value['label'] ? value['label'] : 'label missing';
-        console.log('set type', question);
 
         tempQuestions.push(question);
       });
@@ -124,12 +119,12 @@ export class InputService {
         let answer = new Answer();
         answer.label = answerItem.label;
         answer.value = '';
-        answer.help = answerItem.help?answerItem.help:'';
+        answer.help = answerItem.help ? answerItem.help : '';
         answer.keywords = answerItem.keywords ? answerItem.keywords : [];
         answer.methods = answerItem.methods ? answerItem.methods : [];
         if (answerItem.question) {
           answer.question = self.buildTree(answerItem.question, depth);
-        }  else {
+        } else {
           answer.question = new Array<Question>();
         }
         answers.push(answer);
@@ -142,29 +137,33 @@ export class InputService {
   }
 
   saveQuestion(questionLabel: String, answer: String[]): void {
-    // console.log('questions e',questionLabel,answer);
-    // this.getTestQuestions().then(questions => {
-    //   let first = true;
-    //   console.log('questions',questions,questionLabel,answer);
-    // });
   }
 
-  private determineComponent(question: Question) {
-    switch (question.type) {
-      case 'checkbox': {
-        return CheckboxComponent;
-      }
-      case 'textline': {
-        return TextComponent;
-      }
-      default: {
-        return RadioComponent;
-      }
+  completeQuestionCount(questionList: Array<Question>): number {
+    var self = this;
+
+    let completeCount: number;
+    if (!questionList) {
+      completeCount = 0;
+    } else {
+      completeCount = questionList.length;
+      jQuery.each(questionList, function (index: number, question: Question) {
+        jQuery.each(question.answer, function (index: number, answer: Answer) {
+          if (answer.question && answer.question.length) {
+            completeCount += self.completeQuestionCount(answer.question);
+          }
+        });
+      });
     }
+
+    return completeCount;
   }
+
 
   private handleError(error: any): Promise<any> {
     console.error('An error occurred', error); // for demo purposes only
     return Promise.reject(error.message || error);
   }
+
+
 }

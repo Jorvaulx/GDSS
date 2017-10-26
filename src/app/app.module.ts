@@ -16,6 +16,8 @@ import {AppRoutingModule} from './app-routing.module';
 
 /* Services */
 import {InputService} from "./input/input.service";
+import {KeywordService} from "./input/keyword.service";
+
 
 @NgModule({
   declarations: [
@@ -29,7 +31,10 @@ import {InputService} from "./input/input.service";
     NgbModule.forRoot(),
     CoolStorageModule
   ],
-  providers: [InputService],
+  providers: [
+    InputService,
+    KeywordService
+  ],
   bootstrap: [AppComponent],
   schemas: [NO_ERRORS_SCHEMA]
 })

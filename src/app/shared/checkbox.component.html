@@ -10,26 +10,29 @@
       </div>
       <div class="secondColumn" (click)="toggleExpand()">
         <ng-template [ngIf]="!data.value&&!data.expanded">
-          <img src="../../assets/images/lock.png" width="50"/>
+          <img src="../../assets/images/lock.png" title="Questions unlocked when prior questions are answered."
+               alt="Questions unlocked when prior questions are answered."/>
         </ng-template>
-        <ng-template [ngIf]="data.expanded"> -</ng-template>
-        <ng-template [ngIf]="data.value&&!data.expanded"> +</ng-template>
+        <ng-template [ngIf]="data.value&&!data.expanded"> Clear</ng-template>
       </div>
     </div>
-    <div id="checkbox-site" *ngIf="data.expanded">
-      <div *ngFor="let answer of data.answer">
-        <input type="checkbox" name="answer" value="">
-        <label class="option" for=" ">{{answer.label}}<br> <i>{{answer.help}}</i></label>
-      </div>
-      <div *ngIf="enableNavigation">
-        <navigation-container [questions]="nextQuestions"></navigation-container>
+    <div id="checkbox-site" *ngIf="data.expanded; else notActive">
+      <div *ngFor="let answer of checkbox">
+        <input type="checkbox" name="answer" value="" [checked]="answer.checked">
+        <label class="option" for=" " (click)="selectAnswer(answer)">{{answer.label}}<br> <i>{{answer.help}}</i></label>
       </div>
     </div>
+    <ng-template #notActive>
+      <not-active [answers]="data.value"></not-active>
+    </ng-template>
+  </div>
+  <div *ngIf="enableNavigation">
+    <navigation-container [questions]="nextQuestions"></navigation-container>
   </div>
 
   <div *ngFor="let answer of data.answer">
     <div *ngIf="answer.question">
-      <display-questions [questions]="answer.question"></display-questions>
+      <display-questions [questions]="answer.question" [allQuestions]="allQuestions"></display-questions>
     </div>
   </div>
 </div>

@@ -1,7 +1,8 @@
 
 <h2>Questions:</h2>
-<div style="width:100px;background:orange;margin-left:200px;">% Complete</div>
+<input type="hidden" id="completeCount" value="{{completeQuestionCount}}">
+<div align="right"> <div id="progressBar">% Complete</div></div><br>
 <ul *ngIf="questionList">
-  <display-questions [questions]="questionList"></display-questions>
+  <display-questions [questions]="questionList" [allQuestions]="questionList"></display-questions>
 </ul>
 

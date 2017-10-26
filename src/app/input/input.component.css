@@ -66,6 +66,7 @@ div.secondColumn img {
   transform: scale(-1, 1);
   vertical-align: top;
   float:left;
+  padding-right:8px;
 }
 .arrow + radio-component {
   display: inline-block;
@@ -73,4 +74,14 @@ div.secondColumn img {
 }
 .padLeft10 {
   padding-left:10px;
+}
+#progressBar {
+  background-color: #5cb85c;
+  width: 0;
+  height: 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  min-width: 15%;
 }

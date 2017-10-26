@@ -12,9 +12,10 @@ import {Question} from "../models/question";
 
 export class DisplayQuestionComponent implements OnInit {
   @Input() questions: Array<Question>;
+  @Input() allQuestions: Array<Question>;
 
   ngOnInit(): void {
-    console.log("display-questions - questions:", this.questions);
+    // console.log("display-questions - questions:", this.questions);
   }
   getCSSClass(depth:number):string {
     let cssClass:string ='';

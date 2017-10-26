@@ -40,7 +40,7 @@
 
   <div *ngFor="let answer of data.answer">
     <div *ngIf="answer.question">
-      <display-questions [questions]="answer.question"></display-questions>
+      <display-questions [questions]="answer.question" [allQuestions]="allQuestions"></display-questions>
     </div>
   </div>
 </div>
