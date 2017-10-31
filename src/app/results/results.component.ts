@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {ResultsService} from "../input/results.service";
+import {ResultsService} from "./results.service";
 import {Result} from "../models/Result";
 
 @Component({
@@ -15,7 +15,9 @@ export class ResultsComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.results = this.resultsService.getResults();
-    console.log(this.results)
+    this.resultsService.getResults().then(results =>{
+      this.results = results;
+      console.log(this.results);
+    });
   }
 }

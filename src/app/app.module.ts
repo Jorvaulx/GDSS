@@ -16,7 +16,7 @@ import {AppRoutingModule} from './app-routing.module';
 
 /* Services */
 import {InputService} from "./input/input.service";
-import {ResultsService} from "./input/results.service";
+import {ResultsService} from "./results/results.service";
 
 
 @NgModule({

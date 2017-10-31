@@ -1,8 +1,9 @@
-import {Injectable} from "@angular/core";
+import {Injectable, OnInit} from "@angular/core";
 import {Http} from "@angular/http";
 import {CoolLocalStorage} from "angular2-cool-storage";
 import {Question} from "../models/question";
 import {Result} from "../models/Result";
+import {Citation} from "../models/citation";
 
 @Injectable()
 export class ResultsService {
@@ -12,9 +13,13 @@ export class ResultsService {
               private localStorage: CoolLocalStorage) {
   }
 
-  retrieveKeywordsFile(): Promise<any> {
+  retrieveCitationKeywordsFile(): Promise<any> {
     var self = this;
     console.log('this.keywordUrl', this.keywordUrl);
+    var item = this.localStorage.getObject('keywordsCitations');
+    if (item) {
+      return Promise.resolve(item);
+    }
     return this.http.get(this.keywordUrl)
       .toPromise()
       .then(res => {
@@ -24,34 +29,58 @@ export class ResultsService {
         var initialObj = self.xmlToJson(xmlDOM); // Convert XML to JSON
         console.log("jsonObj", initialObj);
 
-        this.localStorage.setObject('keywords', initialObj || {});
+        this.localStorage.setObject('keywordsCitations', initialObj || {});
         return initialObj;
       });
   }
 
-  getKeywordFile(): any {
-    return this.localStorage.getObject('keywords') || this.retrieveKeywordsFile();
-  }
-
-  getResults(): Result {
+  getResults(): Promise<Result> {
     let results: Result = new Result();
     let questions: Array<Question> = $.extend(this.localStorage.getObject('questionInstance'), new Array<Question>()); // Copy from JSONObject to Array<Question>
-    results = this.getFromResults(results, questions);
+    this.getFromResults(results, questions); //ByReference
+    console.log('results', results.citations);
+    return this.retrieveCitationKeywordsFile().then(item => {
+      this.getCitations(results, item);
+      return results;
+    });
+  }
+
+  getCitations(results: Result, item: any): Result {
+    var self = this;
+    console.log('item', item, item.xml.records.record.length);
+
+    $.each(item.xml.records.record, function (recordIndex, element) {
+      console.log('element', element);
+      if (element.keywords && Array.isArray(element.keywords.keyword)) {
+        element.keywords.keyword.every(function (value, index, array) {
+          if (results.keywords.indexOf(value.toLowerCase()) > -1) {
+            let citation: Citation = new Citation();
+            citation.authors = self.handleAuthors(element);
+            citation.title = self.handleTitle(element);
+            citation.keywords = element.keywords.keyword.join(', ');
+
+            console.log('text:', citation);
+            results.citations.push(citation);
+            return false;
+          }
+          return true;
+        });
+      }
+
+    });
+
     return results;
   }
 
   getFromResults(results: Result, questions: Array<Question>): Result {
     var self = this;
     jQuery.each(questions, function (index, question: Question) {
-      console.log('question:', question);
       if (question['value']) {
         question['answer'].forEach(function (answerItem) {
           if (question['value'].indexOf(answerItem.value) > -1) {
             results = self.getFromResults(results, answerItem.question);
             if (answerItem.keywords) {
-              console.log("keywords array:", answerItem.keywords);
               answerItem.keywords.forEach(function (keyword) {
-                console.log("keyword:", keyword, keyword.toLowerCase().substring(0, 4), keyword.toLowerCase().substring(4, keyword.length));
                 if (keyword.toLowerCase().substring(0, 4) == 'not:') {
                   let index: number = results.keywords.indexOf(keyword.substring(4, keyword.length));
                   if (index != -1) {
@@ -65,7 +94,6 @@ export class ResultsService {
             }
             if (answerItem.methods)
               answerItem.methods.forEach(function (method) {
-                console.log("methods:", method, method.toLowerCase().substring(0, 4), method.toLowerCase().substring(4, method.length));
                 if (method.toLowerCase().substring(0, 4) == 'not:') {
                   let index: number = results.methods.indexOf(method.substring(4, method.length));
                   if (index != -1) {

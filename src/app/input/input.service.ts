@@ -137,9 +137,6 @@ export class InputService {
     return results;
   }
 
-  saveQuestion(questionLabel: String, answer: String[]): void {
-  }
-
   completeQuestionCount(questionList: Array<Question>): number {
     var self = this;
 

@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {ResultsService} from "./input/results.service";
+import {ResultsService} from "./results/results.service";
 
 @Component({
   selector: 'app-root',
@@ -10,11 +10,10 @@ export class AppComponent implements OnInit {
   title = 'Geophysical Decision Support System (GDSS)';
 
 
-  constructor(private resultsService: ResultsService) {
+  constructor() {
   }
 
   ngOnInit():void {
     console.log('onInit App');
-    this.resultsService.getKeywordFile();
   }
 }
