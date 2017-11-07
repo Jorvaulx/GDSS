@@ -13,7 +13,6 @@ export class NotActiveComponent {
   @Input()
   set answers(answers: Array<string>) {
     this._answers = answers;
-    console.log("not-active:",answers);
   }
 
   get answers(): Array<string> {

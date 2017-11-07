@@ -13,6 +13,7 @@ import {TextComponent} from '../shared/text.component';
 import {QuestionDirective} from '../shared/question.directive';
 import {NotActiveComponent} from "../shared/not-active.component";
 import {DisplayQuestionComponent} from "../shared/display-questions.component";
+import {ActionComponent} from "../shared/action.component";
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import {DisplayQuestionComponent} from "../shared/display-questions.component";
     QuestionDirective,
     NavigationComponent,
     NotActiveComponent,
-    DisplayQuestionComponent],
+    DisplayQuestionComponent,
+    ActionComponent],
   exports: [InputComponent],
   entryComponents: [CheckboxComponent, RadioComponent, TextComponent, NotActiveComponent],
   providers: []

@@ -7,6 +7,7 @@
         <radio-component [data]="item" [allQuestions]="allQuestions"></radio-component>
       </div>
       <div *ngSwitchCase="'checkbox'">
+        <div [ngClass]="{'arrow':item.depth>0&&item.show}"></div>
         <checkbox-component [data]="item" [allQuestions]="allQuestions"></checkbox-component>
       </div>
       <div *ngSwitchDefault>

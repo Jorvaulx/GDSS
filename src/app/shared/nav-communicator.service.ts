@@ -22,6 +22,7 @@ export class NavCommunicatorService {
 
   clearQuestion(value: boolean) {
     this.clear.next(value);
+    console.log('clearQuestions:',value);
   }
 
   nextQuestion(questionList: Array<Question>): Question {
@@ -43,14 +44,12 @@ export class NavCommunicatorService {
               console.log('nextQuestion call:', answer.question);
               question = self.nextQuestion(answer.question);
               if (question) {
-                console.log('exit each loop - question found', question);
                 return false;
               }
             }
           }
         });
         if (question) {
-          console.log('exit every loop - question found', question);
           return false;
         }
       }

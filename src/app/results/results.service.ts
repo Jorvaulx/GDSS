@@ -68,7 +68,7 @@ export class ResultsService {
       }
 
     });
-
+    results.citations.sort()
     return results;
   }
 
@@ -100,7 +100,9 @@ export class ResultsService {
                     results.methods.splice(index, 1);
                   }
                 } else {
-                  results.methods.push(method);
+                  if (method.substring(0, 39) != 'Warnings_and_Special_Considerations.htm') {
+                    results.methods.push(method);
+                  }
                 }
               });
           }
@@ -108,7 +110,8 @@ export class ResultsService {
       }
 
     });
-
+    results.methods.sort();
+    results.keywords.sort();
     return results;
   }
 

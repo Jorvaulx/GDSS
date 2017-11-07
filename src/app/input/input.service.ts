@@ -77,8 +77,10 @@ export class InputService {
         });
         question.answer = answers;
         question.type = value['type'];
-        if (!question.type)
+        if (!question.type) {
+          console.log('type not defined? question:',question,value);
           question.type = 'radio';
+        }
         question.type = question.type.trim();
         question.show = true;
         question.depth = 0;
@@ -113,8 +115,11 @@ export class InputService {
       questionItem.show = false;
       questionItem.expanded = false;
       questionItem.depth = depth;
-      if (!questionItem.type)
+      questionItem.type = element.type;
+      if (!questionItem.type) {
+        console.log('type not defined? questionItem:',questionItem,element);
         questionItem.type = 'radio';
+      }
       questionItem.type = questionItem.type.trim();
       element.answer.forEach(function (answerItem) {
         let answer = new Answer();
